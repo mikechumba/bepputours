@@ -51,6 +51,10 @@
   --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02);
   --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03);
   --shadow-hover: 0 12px 30px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.07), 0 1px 3px rgba(0, 0, 0, 0.04);
+
+  /* Semantic aliases used throughout the stylesheet */
+  --color-cream-light: #f9f7f1;
 }
 
 /* Base Reset & Typography */
@@ -199,9 +203,320 @@ ul, ol {
   }
 }
 
+/* Mobile bottom-nav clearance — avoid content hidden behind 60px mobile bar */
+@media (max-width: 54em) {
+  .page-home,
+  .page-explore,
+  .page-trip,
+  .page-guides,
+  .page-experiences {
+    padding-bottom: 68px;
+  }
+}
+
+/* Additional utility classes (complements mb-*, mt-*, text-*) */
+.m-0 { margin: 0 !important; }
+.p-0 { padding: 0 !important; }
+.text-danger { color: #c0392b !important; }
+.fw-600 { font-weight: 600 !important; }
+.d-flex { display: flex; }
+.align-center { align-items: center; }
+.gap-1 { gap: 0.25rem; }
+.gap-2 { gap: 0.5rem; }
+
+/* Section Header (centered variant – used on homepage) */
+.section-header {
+  margin-bottom: 2.5rem;
+}
+
+.section-header.text-center .section-subheading {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Badge Neutral – used in place detail for price levels etc */
+.badge-neutral {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  border: 1px solid var(--color-border);
+}
+
+/* Status badge color variants */
+.status-badge.badge-success {
+  background-color: #ecfdf5;
+  color: #065f46;
+}
+
+.status-badge.badge-warning {
+  background-color: #fffbeb;
+  color: #92400e;
+}
+
+.status-badge.badge-neutral {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal-light);
+}
+
+/* Empty State Card */
+.empty-state-card {
+  padding: 3.5rem 2rem;
+  background-color: var(--color-white);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.empty-icon {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.empty-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin-bottom: 0.5rem;
+}
+
+.empty-desc {
+  font-size: 1rem;
+  color: var(--color-muted);
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+}
+
+.empty-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
 /* ==========================================================================
-   BUTTONS (Banff Aesthetic: Solid Plum, Outline Terracotta, Subtle Pills)
+   TRIP PLANNER: HEADER METRICS BAR, TIMELINE, SIDEBAR
    ========================================================================== */
+.trip-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.trip-metrics-bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1.25rem 1.5rem;
+  background-color: var(--color-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  flex-wrap: wrap;
+}
+
+.metric-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.metric-num {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  line-height: 1.1;
+}
+
+.metric-lbl {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-top: 0.2rem;
+}
+
+.metric-divider {
+  width: 1px;
+  height: 36px;
+  background-color: var(--color-border);
+}
+
+.trip-timeline-col {
+  min-width: 0;
+}
+
+.trip-sidebar-col {
+  min-width: 0;
+}
+
+.timeline-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.timeline-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+}
+
+/* Meta tags inside timeline cards */
+.meta-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-charcoal-light);
+  background-color: var(--color-cream);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-border);
+}
+
+/* Companion suggest prompt */
+.companion-suggest-prompt {
+  font-size: 0.82rem;
+}
+
+/* Node info (route diagram) */
+.node-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+/* ==========================================================================
+   SIDEBAR CARDS (Trip, Place Detail)
+   ========================================================================== */
+.sidebar-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+.sidebar-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+}
+
+.sidebar-sub {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+/* Bus / pass recommendation card */
+.pass-recommend-card {
+  background-color: var(--color-cream);
+  border-color: var(--color-border);
+}
+
+.pass-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.75rem;
+}
+
+.pass-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.pass-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin: 0;
+}
+
+.pass-desc {
+  font-size: 0.9rem;
+  color: var(--color-charcoal-light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ==========================================================================
+   MODAL: General (used in trip, reviews)
+   ========================================================================== */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  padding: 1.5rem;
+}
+
+.modal-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  max-width: 540px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin: 0;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding-top: 1.25rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Form col-6 helper (inside form-row) */
+.col-6 {
+  flex: 1 1 calc(50% - 0.5rem);
+  min-width: 140px;
+}
+
+@media (max-width: 40em) {
+  .col-6 {
+    flex: 1 1 100%;
+  }
+}
+
+/* ==========================================================================
+   PLACE CARD: FIXES
+   ========================================================================== */
+/* view-link — "View →" ghost button in card footer */
+.view-link {
+  color: var(--color-charcoal) !important;
+}
+
+.view-link:hover {
+  color: var(--color-terracotta) !important;
+  background-color: var(--color-cream);
+}
+
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -3196,3 +3511,397 @@ ul, ol {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+/* ==========================================================================
+   PLACE DETAIL PAGE: MISSING STYLES
+   ========================================================================== */
+
+/* Tips box elements */
+.tips-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.65rem;
+}
+
+.tips-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.tips-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-plum);
+  margin: 0;
+}
+
+.tips-text {
+  font-size: 0.93rem;
+  color: var(--color-charcoal-light);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* Box icon — small emoji in pref-box-header */
+.box-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Status badge info variant */
+.status-badge.badge-info {
+  background-color: #eff6ff;
+  color: #1e40af;
+}
+
+.status-badge.badge-muted {
+  background-color: var(--color-cream);
+  color: var(--color-muted);
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+}
+
+/* Place detail grid layout */
+.place-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 64em) {
+  .place-detail-grid {
+    grid-template-columns: 1.85fr 1fr;
+  }
+}
+
+.place-content-col {
+  min-width: 0;
+}
+
+.place-sidebar-col {
+  min-width: 0;
+}
+
+/* Place hero */
+.place-hero-img-wrap {
+  position: absolute;
+  inset: 0;
+}
+
+.place-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.place-hero-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.72) 100%);
+}
+
+.place-hero-container {
+  position: relative;
+  z-index: 2;
+  padding-top: 3rem;
+}
+
+.place-hero-tags {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.85rem;
+}
+
+.place-hero-meta-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  font-size: 0.93rem;
+  color: rgba(255,255,255,0.88);
+  margin-top: 0.65rem;
+}
+
+.meta-item {
+  font-weight: 500;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: rgba(255,255,255,0.82);
+  font-size: 0.88rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--color-white);
+}
+
+/* Sidebar sticky card (place detail) */
+.sidebar-sticky-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  position: sticky;
+  top: calc(var(--header-height) + 60px);
+}
+
+.sidebar-price-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sidebar-price-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sidebar-price-val {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  text-align: right;
+}
+
+.sidebar-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.btn-saved {
+  border-color: var(--color-terracotta) !important;
+  color: var(--color-terracotta) !important;
+}
+
+.sidebar-details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.sidebar-trip-prompt {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  background-color: var(--color-cream);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+}
+
+.trip-prompt-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.trip-prompt-text {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* Detail tags */
+.detail-tags-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.detail-full-desc {
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--color-charcoal-light);
+}
+
+/* Photo gallery grid */
+.place-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.place-gallery-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+/* Matched guides listing */
+.matched-guides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.matched-guide-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.15rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: box-shadow 0.2s ease;
+}
+
+.matched-guide-row:hover {
+  box-shadow: var(--shadow-card);
+}
+
+.matched-guide-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.matched-guide-info {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.matched-guide-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin: 0 0 0.15rem;
+}
+
+.matched-guide-role {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.matched-guide-quote {
+  font-size: 0.84rem;
+  font-style: italic;
+  color: var(--color-charcoal-light);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.matched-guide-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.45rem;
+  flex-shrink: 0;
+}
+
+.matched-guide-rate {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   RESPONSIVE CONSISTENCY FIXES
+   ========================================================================== */
+
+/* Ensure section-header-split collapses gracefully on mobile */
+@media (max-width: 48em) {
+  .section-header-split {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .hero-stats-ribbon {
+    gap: 1.25rem;
+  }
+
+  .trip-metrics-bar {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .metric-num {
+    font-size: 1.1rem;
+  }
+
+  .pref-categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .place-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .matched-guide-row {
+    flex-wrap: wrap;
+  }
+
+  .sidebar-sticky-card {
+    position: static;
+  }
+}
+
+/* Filters secondary row on mobile */
+@media (max-width: 36em) {
+  .filters-secondary-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  .vibe-pills-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+/* ==========================================================================
+   TYPOGRAPHY CONSISTENCY FIXES
+   ========================================================================== */
+
+/* Prevent global p margin from breaking card layouts */
+.place-card p,
+.guide-card p,
+.experience-card p,
+.timeline-card-body p,
+.sidebar-sticky-card p,
+.pref-detail-box p {
+  margin-bottom: 0;
+}
+
+/* Only add bottom margin where needed */
+.detail-lead-text,
+.detail-highlight-p,
+.detail-full-desc {
+  margin-bottom: 1rem;
+}
+
+.pref-panel-subtitle,
+.section-subheading,
+.partner-text {
+  margin-bottom: 0;
+}
+
