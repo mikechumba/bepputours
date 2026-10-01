@@ -209,8 +209,12 @@ ul, ol {
   .page-explore,
   .page-trip,
   .page-guides,
-  .page-experiences {
-    padding-bottom: 68px;
+  .page-experiences,
+  .page-place-detail,
+  .page-guide-detail,
+  .page-request,
+  .page-request-booking {
+    padding-bottom: 74px;
   }
 }
 
@@ -1266,12 +1270,16 @@ ul, ol {
   margin: 0 0.15rem;
 }
 
+.place-card-header-group {
+  margin-bottom: 0.35rem;
+}
+
 .place-card-title,
 .exp-title {
   font-size: 1.25rem;
   font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 0.25rem;
+  line-height: 1.25;
+  margin-bottom: 0.2rem;
   color: var(--color-charcoal);
   transition: color 0.2s ease;
 }
@@ -1282,10 +1290,32 @@ ul, ol {
 }
 
 .place-card-ja {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--color-muted);
   display: block;
-  margin-bottom: 0.65rem;
+  letter-spacing: 0.02em;
+}
+
+/* 📍 Location / Area Tag */
+.place-card-location {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.83rem;
+  color: var(--color-charcoal-light);
+  margin-bottom: 0.55rem;
+  font-weight: 500;
+}
+
+.place-card-location .loc-pin {
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.place-card-location .loc-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Rating, Reviews Count & Popular Signals */
@@ -1408,6 +1438,19 @@ ul, ol {
   font-weight: 700;
 }
 
+.pref-badge-pill.is-verified {
+  background-color: #ecfdf5;
+  color: #065f46;
+  border-color: #34d399;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(16, 185, 129, 0.12);
+}
+
+.pref-badge-pill.is-verified .badge-icon {
+  color: #059669;
+  font-weight: 700;
+}
+
 /* Preference-Specific Review Signal */
 .pref-review-signal {
   display: flex;
@@ -1461,15 +1504,26 @@ ul, ol {
   flex-wrap: wrap;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.8rem;
+  font-size: 0.81rem;
   color: var(--color-muted);
   margin-top: auto;
   margin-bottom: 0.85rem;
-  padding-top: 0.4rem;
+  padding-top: 0.5rem;
 }
 
-.transit-item {
+.place-transit-meta .transit-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   color: var(--color-charcoal-light);
+  font-weight: 500;
+}
+
+.place-transit-meta .transit-hours {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--color-muted);
 }
 
 .place-card-desc,
@@ -1498,6 +1552,32 @@ ul, ol {
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
+}
+
+.btn-trip-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-trip-action .trip-action-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.btn-in-trip {
+  background-color: #059669 !important;
+  color: #ffffff !important;
+  border-color: #059669 !important;
+  box-shadow: 0 2px 6px rgba(5, 150, 105, 0.25);
+}
+
+.btn-in-trip:hover {
+  background-color: #047857 !important;
+  border-color: #047857 !important;
+  transform: translateY(-1px);
 }
 
 .place-price,
@@ -1601,6 +1681,15 @@ ul, ol {
   .micro-guide-inner-grid {
     grid-template-columns: 1.2fr 0.9fr;
   }
+}
+
+.micro-guide-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.micro-guide-visual {
+  position: relative;
 }
 
 .editorial-heading {
@@ -4189,5 +4278,432 @@ ul, ol {
 
 .page-guide-detail .back-link:hover {
   color: var(--color-terracotta);
+}
+
+/* ==========================================================================
+   SITE WRAPPER & CORE LAYOUT
+   ========================================================================== */
+.site-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-main {
+  flex-grow: 1;
+}
+
+/* ==========================================================================
+   EXPERIENCE CARD COMPONENTS & MICRO-CREATOR STRIP
+   ========================================================================== */
+.category-pill-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.exp-creator-strip {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.creator-mini-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+}
+
+.creator-mini-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.creator-mini-name {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  line-height: 1.2;
+}
+
+.creator-mini-role {
+  font-size: 0.72rem;
+  color: var(--color-muted);
+}
+
+.exp-duration-pill {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(4px);
+  color: var(--color-charcoal);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.25rem 0.55rem;
+  border-radius: var(--radius-full);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+}
+
+.exp-highlights-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+  font-size: 0.82rem;
+  color: var(--color-charcoal-light);
+}
+
+.exp-highlights-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.exp-pricing {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+}
+
+.exp-price-sub {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.exp-cta-group {
+  display: flex;
+  align-items: center;
+}
+
+.exp-rating {
+  font-weight: 700;
+  color: #b45309;
+}
+
+.exp-reviews-count {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+/* ==========================================================================
+   GUIDE CARD META & ACTIONS
+   ========================================================================== */
+.guide-meta-main {
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.guide-stars {
+  font-weight: 700;
+  color: #b45309;
+}
+
+.guide-reviews {
+  font-size: 0.82rem;
+  color: var(--color-muted);
+}
+
+.guide-lang-text {
+  font-size: 0.85rem;
+  color: var(--color-charcoal);
+  font-weight: 500;
+}
+
+.lang-globe {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.guide-pricing-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.guide-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ==========================================================================
+   DEAL & ALERT PILLS
+   ========================================================================== */
+.deal-icon,
+.deal-alert-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.deal-text,
+.deal-alert-text {
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.badge-label,
+.chip-label {
+  font-weight: 500;
+  font-size: 0.79rem;
+}
+
+.badge-light {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: var(--color-white);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.btn-secondary {
+  background-color: var(--color-white);
+  color: var(--color-charcoal);
+  border: 1px solid var(--color-border);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-cream-light);
+  border-color: var(--color-charcoal);
+  color: var(--color-charcoal);
+}
+
+/* ==========================================================================
+   HEADER & LOCALIZATION WIDGET
+   ========================================================================== */
+.header-plan-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.lang-globe-icon {
+  font-size: 1rem;
+}
+
+.lang-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.lang-flag {
+  font-size: 1.1rem;
+}
+
+.lang-item-name {
+  font-weight: 500;
+}
+
+.mobile-nav-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.mobile-nav-trip {
+  position: relative;
+}
+
+.save-icon {
+  display: inline-block;
+  line-height: 1;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.place-save-btn:hover .save-icon,
+.place-save-btn.saved .save-icon {
+  transform: scale(1.15);
+}
+
+/* ==========================================================================
+   PREFERENCE DRAWER & FILTER CONTROLS
+   ========================================================================== */
+.pref-icon {
+  font-size: 1rem;
+}
+
+.pref-text {
+  font-weight: 600;
+}
+
+.pref-signal-text {
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--color-charcoal);
+}
+
+.quick-date-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* ==========================================================================
+   PLACE DETAIL: REVIEWS LIST & MODAL FORM
+   ========================================================================== */
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.review-item {
+  padding: 1.35rem;
+  background-color: #faf9f6;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-item:hover {
+  border-color: #d8d2c4;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.review-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.review-author {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-charcoal);
+}
+
+.review-date {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.review-stars,
+.quote-stars {
+  font-size: 0.88rem;
+  color: #b45309;
+}
+
+.review-text {
+  font-size: 0.94rem;
+  line-height: 1.55;
+  color: var(--color-charcoal-light);
+  margin-bottom: 0;
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.matched-guides-sub,
+.nearby-places-sub {
+  font-size: 0.92rem;
+  color: var(--color-muted);
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+}
+
+.signals-derived-block {
+  padding: 1rem 1.25rem;
+  background-color: var(--color-cream-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+}
+
+/* ==========================================================================
+   SIDEBAR GUARANTEE & TRANSIT METRIC TAGS
+   ========================================================================== */
+.sidebar-guarantee {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1rem;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius-md);
+  font-size: 0.82rem;
+  margin-top: 1rem;
+}
+
+.guarantee-text {
+  color: #166534;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.transit-icon {
+  font-size: 0.92rem;
+  flex-shrink: 0;
+}
+
+.timeline-card-titles {
+  flex-grow: 1;
+}
+
+.companion-icon {
+  font-size: 1rem;
+}
+
+/* ==========================================================================
+   FOOTER BIO, BADGES & DISCLAIMER
+   ========================================================================== */
+.footer-brand-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bio {
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 1.25rem;
+}
+
+.footer-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.footer-links-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.35rem;
+}
+
+.disclaimer {
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.45;
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   TOAST NOTIFICATION ENHANCEMENTS
+   ========================================================================== */
+.toast-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.toast-message {
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: var(--color-charcoal);
 }
 

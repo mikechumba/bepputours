@@ -27,17 +27,25 @@
     <!-- Card Content Body -->
     <div class="place-card-body">
       <!-- Title & Japanese Name -->
-      <h3 class="place-card-title">
-        <NuxtLink :to="`/places/${place.id}`">{{ place.name }}</NuxtLink>
-      </h3>
-      <span v-if="place.japaneseName" class="place-card-ja">{{ place.japaneseName }}</span>
+      <div class="place-card-header-group">
+        <h3 class="place-card-title">
+          <NuxtLink :to="`/places/${place.id}`">{{ place.name }}</NuxtLink>
+        </h3>
+        <span v-if="place.japaneseName" class="place-card-ja">{{ place.japaneseName }}</span>
+      </div>
+
+      <!-- 📍 Location / Area -->
+      <div v-if="place.location" class="place-card-location">
+        <span class="loc-pin" aria-hidden="true">📍</span>
+        <span class="loc-text">{{ place.location }}</span>
+      </div>
 
       <!-- Rating + Review Count & Popular Review Signals -->
       <div class="place-card-reviews-block">
         <div class="rating-line">
           <span class="stars-score">⭐ {{ place.rating }}</span>
           <span class="meta-dot">·</span>
-          <span class="review-count">{{ place.reviewsCount }} {{ t('reviews') || 'reviews' }}</span>
+          <span class="review-count">({{ place.reviewsCount }} {{ t('reviews') || 'reviews' }})</span>
         </div>
         <div v-if="place.popularSignals && place.popularSignals.length > 0" class="popular-signals-row">
           <span class="popular-signals-label">Popular:</span>
@@ -45,16 +53,16 @@
         </div>
       </div>
 
-      <!-- Category · Price Level -->
+      <!-- Category & 💰 Price Level -->
       <div class="place-card-category-price">
         <span class="cat-label">{{ place.categoryLabel }}</span>
         <span class="meta-dot">·</span>
-        <span class="price-level-badge">{{ place.priceLevel || '¥¥' }}</span>
+        <span class="price-level-badge" :title="`Price tier: ${place.priceLevel || '¥¥'}`">💰 {{ place.priceLevel || '¥¥' }}</span>
         <span class="meta-dot">·</span>
         <span class="price-text">{{ place.price }}</span>
       </div>
 
-      <!-- Active Deal / Discount Tag -->
+      <!-- 🏷️ Active Deal / Discount Tag -->
       <div v-if="place.deal" class="place-deal-pill">
         <span class="deal-icon">🏷️</span>
         <span class="deal-text">{{ place.deal }}</span>
@@ -66,7 +74,10 @@
           v-for="badge in prominentBadges" 
           :key="badge.key" 
           class="pref-badge-pill"
-          :class="{ 'is-prominent': badge.isProminent }"
+          :class="{ 
+            'is-prominent': badge.isProminent,
+            'is-verified': isVerifiedBadge(badge.key)
+          }"
         >
           <span class="badge-icon">{{ badge.isProminent ? '✓' : badge.icon }}</span>
           <span class="badge-label">{{ badge.label }}</span>
@@ -85,9 +96,12 @@
         <cite v-if="place.quoteReview.author" class="quote-author">— {{ place.quoteReview.author }}</cite>
       </div>
 
-      <!-- Location, Distance & Opening Hours -->
+      <!-- 🚶 Distance / Travel Time & 🕐 Opening Hours -->
       <div class="place-transit-meta">
-        <span class="transit-item">{{ place.distance }}</span>
+        <span v-if="place.distance" class="transit-item">
+          <span class="transit-icon">🚶</span>
+          <span>{{ cleanTransit(place.distance) }}</span>
+        </span>
         <span v-if="place.openingHours" class="transit-hours">
           <span class="meta-dot">·</span>
           <span>🕐 {{ place.openingHours }}</span>
@@ -98,16 +112,17 @@
       <div class="place-card-footer">
         <button 
           type="button" 
-          class="btn btn-sm"
-          :class="isInTrip(place.id) ? 'btn-success' : 'btn-outline-primary'"
+          class="btn btn-sm btn-trip-action"
+          :class="isInTrip(place.id) ? 'btn-in-trip' : 'btn-outline-primary'"
           :id="`btn-trip-${place.id}`"
           @click.prevent="toggleTripPlace(place)"
         >
-          {{ isInTrip(place.id) ? (t('in_trip') || '✓ In Trip') : (t('add_to_trip') || '+ Add to Trip') }}
+          <span class="trip-action-icon">{{ isInTrip(place.id) ? '✓' : '+' }}</span>
+          <span>{{ isInTrip(place.id) ? (t('in_trip') || 'In Itinerary') : (t('add_to_trip') || 'Add to Itinerary') }}</span>
         </button>
         
         <NuxtLink :to="`/places/${place.id}`" class="btn btn-sm btn-ghost view-link" :id="`btn-details-${place.id}`">
-          {{ t('details') || 'View' }} →
+          {{ t('details') || 'Details' }} →
         </NuxtLink>
       </div>
     </div>
@@ -131,6 +146,17 @@ const {
   getPlaceBadges,
   getPlaceReviewSignal
 } = useBeppu()
+
+// Strip redundant leading emoji (like 📍) from distance string so 🚶 icon renders cleanly
+const cleanTransit = (distanceStr: string) => {
+  if (!distanceStr) return ''
+  return distanceStr.replace(/^[📍🚶\s·]+/, '').trim()
+}
+
+// Distinguish verified claims (e.g. halal certified, official accessibility) from basic options
+const isVerifiedBadge = (key: string) => {
+  return key === 'halal-certified' || key === 'wheelchair' || key === 'step-free'
+}
 
 // Badges tailored to user preferences (matching rise to the top, max 3-4 displayed)
 const prominentBadges = computed(() => {
