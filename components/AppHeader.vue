@@ -69,6 +69,19 @@
           </div>
         </div>
 
+        <!-- Beppu Explorer Pass Trigger -->
+        <button 
+          type="button" 
+          class="btn btn-sm header-pass-btn"
+          :class="hasUserPass ? 'btn-pass-active' : 'btn-outline-primary'"
+          id="btn-header-beppu-pass"
+          :title="hasUserPass ? 'Beppu Pass Active (Click to view digital card)' : 'Get Beppu Explorer Pass for exclusive discounts'"
+          @click="openPassModal()"
+        >
+          <span class="pass-btn-icon">🎫</span>
+          <span class="pass-btn-text">{{ hasUserPass ? (t('pass_btn_active') || 'Pass Active ✓') : (t('pass_btn_get') || 'Get Pass 🎫') }}</span>
+        </button>
+
         <NuxtLink to="/trip" class="btn btn-sm btn-primary header-plan-btn" id="btn-header-my-trip">
           <span>{{ t('nav_trip') }}</span>
           <span class="badge badge-light trip-counter-pill">{{ tripCount }}</span>
@@ -82,7 +95,14 @@
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useBeppu, type SupportedLocale } from '~/composables/useBeppu'
 
-const { t, currentLocale, setLocale, itinerary } = useBeppu()
+const { 
+  t, 
+  currentLocale, 
+  setLocale, 
+  itinerary, 
+  hasUserPass, 
+  openPassModal 
+} = useBeppu()
 
 const isScrolled = ref(false)
 const isLangMenuOpen = ref(false)
@@ -113,7 +133,7 @@ const selectLang = (code: SupportedLocale) => {
 }
 
 const handleScroll = () => {
-  if (process.client) {
+  if (import.meta.client) {
     isScrolled.value = window.scrollY > 20
   }
 }
@@ -125,14 +145,14 @@ const handleClickOutside = (e: MouseEvent) => {
 }
 
 onMounted(() => {
-  if (process.client) {
+  if (import.meta.client) {
     window.addEventListener('scroll', handleScroll, { passive: true })
     document.addEventListener('click', handleClickOutside)
   }
 })
 
 onUnmounted(() => {
-  if (process.client) {
+  if (import.meta.client) {
     window.removeEventListener('scroll', handleScroll)
     document.removeEventListener('click', handleClickOutside)
   }

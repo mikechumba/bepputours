@@ -1,0 +1,282 @@
+{
+  "beppu-hell-tour": {
+    "placeId": "beppu-hell-tour",
+    "savingsTag": "¥400 OFF",
+    "savingsAmount": 400,
+    "memberPrice": "¥1,800",
+    "originalPrice": "¥2,200",
+    "badgeLabel": "18% Member Savings",
+    "locales": {
+      "en": {
+        "dealText": "¥400 OFF all-hells ticket (pay ¥1,800) + Free Jigoku steamed custard pudding",
+        "perk": "Free Jigoku Steamed Custard Pudding",
+        "howToRedeem": "Show your digital Beppu Pass at the Umi Jigoku or Chinoike Jigoku main ticket window."
+      },
+      "ja": {
+        "dealText": "共通観覧券400円引き（会員価格¥1,800） ＋ 名物地獄蒸しプリン1個無料進呈",
+        "perk": "名物地獄蒸し焼きプリン無料引換",
+        "howToRedeem": "海地獄または血の池地獄の有人窓口でデジタルパスをご提示ください。"
+      },
+      "ko": {
+        "dealText": "지옥 순례 공통 관람권 400엔 할인 (회원가 ¥1,800) + 명물 지옥 찜 푸딩 무료 증정",
+        "perk": "명물 지옥 찜 커스터드 푸딩 1개 증정",
+        "howToRedeem": "우미 지옥 또는 치노이케 지옥 매표소에서 디지털 패스를 제시하세요."
+      },
+      "zh": {
+        "dealText": "7大地狱通用观览通票立减400日元（会员仅需¥1,800） + 赠送招牌地狱蒸布丁1份",
+        "perk": "免费获赠招牌地狱蒸布丁1份",
+        "howToRedeem": "在海地狱或血之池地狱人工售票处出示数字通票即可兑换。"
+      },
+      "yue": {
+        "dealText": "7大地獄共通觀覽套票即減400日圓（會員價¥1,800） + 免費送招牌地獄蒸布甸1個",
+        "perk": "免費獲贈招牌地獄蒸布甸1個",
+        "howToRedeem": "於海地獄或血之池地獄售票處出示手機通行證即可兌換。"
+      }
+    }
+  },
+  "takegawara-onsen": {
+    "placeId": "takegawara-onsen",
+    "savingsTag": "33% OFF",
+    "savingsAmount": 100,
+    "memberPrice": "¥200",
+    "originalPrice": "¥300",
+    "badgeLabel": "33% Member Savings",
+    "locales": {
+      "en": {
+        "dealText": "¥100 OFF General Bath (pay only ¥200) + Free Commemorative Onsen Keepsake Towel",
+        "perk": "Free Traditional Onsen Keepsake Towel",
+        "howToRedeem": "Present your pass at the front counter wooden reception desk."
+      },
+      "ja": {
+        "dealText": "普通浴100円引き（会員価格¥200） ＋ 特製レトロ温泉記念タオル無料進呈",
+        "perk": "特製レトロ温泉記念タオル進呈",
+        "howToRedeem": "番台の受付でデジタルパスをご提示ください。"
+      },
+      "ko": {
+        "dealText": "일반탕 100엔 할인 (회원가 단돈 ¥200) + 오리지널 기념 온천 수건 무료 증정",
+        "perk": "타케가와라 오리지널 기념 수건 증정",
+        "howToRedeem": "전통 반다이(카운터) 접수처에서 디지털 패스를 보여주세요."
+      },
+      "zh": {
+        "dealText": "普通大浴场立减100日元（会员仅需¥200） + 免费赠送复古竹瓦纪念温泉毛巾",
+        "perk": "免费赠送复古竹瓦纪念温泉毛巾",
+        "howToRedeem": "在古色古香的前台木质柜台出示通票即可。"
+      },
+      "yue": {
+        "dealText": "大眾湯即減100日圓（會員價只需¥200） + 免費送復古竹瓦紀念溫泉毛巾",
+        "perk": "免費送復古竹瓦紀念溫泉毛巾",
+        "howToRedeem": "於傳統掌櫃前台出示手機通行證即可享受。"
+      }
+    }
+  },
+  "kannawa-steam-district": {
+    "placeId": "kannawa-steam-district",
+    "savingsTag": "30% OFF",
+    "savingsAmount": 160,
+    "memberPrice": "¥350",
+    "originalPrice": "¥510",
+    "badgeLabel": "Steam Kitchen Special",
+    "locales": {
+      "en": {
+        "dealText": "¥160 OFF Steam Kiln Basic Rental (pay ¥350) + Free Oita Sweet Potato Steam Basket",
+        "perk": "Complimentary Oita Sweet Potato Basket",
+        "howToRedeem": "Show digital pass when purchasing your steam oven ticket."
+      },
+      "ja": {
+        "dealText": "地獄蒸し釜基本使用料160円引き（¥350） ＋ 大分特産甘藷（さつまいも）蒸籠無料",
+        "perk": "大分県産さつまいも蒸し籠サービス",
+        "howToRedeem": "釜利用券売機横の案内スタッフにパス画面をお見せください。"
+      },
+      "ko": {
+        "dealText": "지옥 찜 가마 기본 대여료 160엔 할인 (¥350) + 오이타 특산 고구마 찜 바구니 무료",
+        "perk": "오이타 고구마 찜 바구니 증정",
+        "howToRedeem": "가마 이용 티켓 구매 시 직원에게 패스를 제시하세요."
+      },
+      "zh": {
+        "dealText": "地狱蒸灶台使用费立减160日元（实付¥350） + 免费获赠大分名产甜薯蒸笼1份",
+        "perk": "免费获赠大分特产甜薯蒸笼1份",
+        "howToRedeem": "在购买石灶使用券时向现场工作人员出示通票。"
+      },
+      "yue": {
+        "dealText": "地獄蒸石灶租用費立減160日圓（實付¥350） + 免費獲贈大分名產甜薯1蒸籠",
+        "perk": "免費送大分名產甜薯1蒸籠",
+        "howToRedeem": "購買租灶券時向工作人員出示手機通行證。"
+      }
+    }
+  },
+  "beppu-ropeway": {
+    "placeId": "beppu-ropeway",
+    "savingsTag": "¥400 OFF",
+    "savingsAmount": 400,
+    "memberPrice": "¥1,400",
+    "originalPrice": "¥1,800",
+    "badgeLabel": "Gondola VIP Discount",
+    "locales": {
+      "en": {
+        "dealText": "¥400 OFF Roundtrip Gondola (pay ¥1,400) + Priority Line & Free Peak Telescope Token",
+        "perk": "Priority Boarding + Peak View Telescope Token",
+        "howToRedeem": "Scan pass barcode at Kogen Station Ticket Counter."
+      },
+      "ja": {
+        "dealText": "往復大型ゴンドラ400円引き（¥1,400） ＋ 優先搭乗ゲート＆山頂展望双眼鏡メダル",
+        "perk": "優先搭乗＆展望双眼鏡専用メダル",
+        "howToRedeem": "高原駅きっぷ売り場窓口でパスをご提示ください。"
+      },
+      "ko": {
+        "dealText": "왕복 곤돌라 400엔 할인 (¥1,400) + 우선 탑승 게이트 및 정상 전망 망원경 코인",
+        "perk": "우선 탑승권 + 전망 망원경 코인 증정",
+        "howToRedeem": "고원역 매표소에서 패스를 스캔하세요."
+      },
+      "zh": {
+        "dealText": "往返大型缆车立减400日元（会员¥1,400） + 享VIP优先通道及山顶高倍望远镜代币",
+        "perk": "快速登车特权 + 观景双筒望远镜代币",
+        "howToRedeem": "在别府高原站售票窗口出示通票二维码。"
+      },
+      "yue": {
+        "dealText": "來回大型纜車即減400日圓（會員¥1,400） + 享VIP優先登車及山頂望遠鏡代幣",
+        "perk": "優先登車通道 + 觀景高倍望遠鏡代幣",
+        "howToRedeem": "於別府高原站售票處出示手機通行證換領。"
+      }
+    }
+  },
+  "hyotan-onsen": {
+    "placeId": "hyotan-onsen",
+    "savingsTag": "20% OFF",
+    "savingsAmount": 190,
+    "memberPrice": "¥750",
+    "originalPrice": "¥940",
+    "badgeLabel": "Michelin 3-Star Discount",
+    "locales": {
+      "en": {
+        "dealText": "20% OFF Bath Admission (pay ¥750) + Free Sand Bath Yukata Rental (Save ¥350)",
+        "perk": "Free Sand Bath Yukata Rental (Value ¥350)",
+        "howToRedeem": "Show active pass to the front lobby reception desk."
+      },
+      "ja": {
+        "dealText": "入浴料20%引き（¥750） ＋ 砂湯専用浴衣レンタル無料（¥350相当）",
+        "perk": "砂湯専用浴衣レンタル無料（350円相当）",
+        "howToRedeem": "フロント受付でデジタルパスをご提示ください。"
+      },
+      "ko": {
+        "dealText": "입장료 20% 할인 (¥750) + 모래찜질 전용 유카타 대여 무료 (¥350 상당)",
+        "perk": "모래찜질 전용 유카타 무료 대여",
+        "howToRedeem": "프론트 로비 접수처에서 패스 화면을 보여주세요."
+      },
+      "zh": {
+        "dealText": "门票享8折特惠（仅¥750） + 免费租用特制砂汤浴衣（立省¥350）",
+        "perk": "免费租用砂汤浴衣（价值350日元）",
+        "howToRedeem": "在入场大厅前台柜台出示通票即可享受优惠。"
+      },
+      "yue": {
+        "dealText": "入場門票享8折特惠（只需¥750） + 免費租用專用砂浴浴衣（立慳¥350）",
+        "perk": "免費租用砂浴專用浴衣（價值350日圓）",
+        "howToRedeem": "於正門接待大堂前台出示手機通行證即可。"
+      }
+    }
+  },
+  "beppu-tower-station": {
+    "placeId": "beppu-tower-station",
+    "savingsTag": "Save ¥700",
+    "savingsAmount": 700,
+    "memberPrice": "Free Storage",
+    "originalPrice": "¥700",
+    "badgeLabel": "Free Station Storage",
+    "locales": {
+      "en": {
+        "dealText": "Free All-Day Luggage Storage at Station Desk (Save ¥700) + 15% OFF Oita Souvenirs",
+        "perk": "Free Luggage Storage + 15% Souvenir Discount",
+        "howToRedeem": "Present pass at the JR Beppu Station Tourist Information Counter."
+      },
+      "ja": {
+        "dealText": "別府駅観光案内所での手荷物預かり無料（¥700相当） ＋ 大分銘品お土産15%割引",
+        "perk": "当日手荷物一時預かり無料 ＆ 土産15%オフ",
+        "howToRedeem": "別府駅構内の観光案内所カウンターでパスを提示してください。"
+      },
+      "ko": {
+        "dealText": "벳푸역 관광안내소 당일 짐 보관 무료 (¥700 상당) + 오이타 명산품 기념품 15% 할인",
+        "perk": "무료 수하물 보관 + 기념품 15% 할인 쿠폰",
+        "howToRedeem": "JR 벳푸역 동쪽 출구 관광안내소 창구에서 패스를 제시하세요."
+      },
+      "zh": {
+        "dealText": "别府站旅游服务中心全天行李免费寄存（省¥700） + 站内特产店全场85折",
+        "perk": "免费全天行李寄存 + 特产纪念品85折",
+        "howToRedeem": "在JR别府站内观光案内所服务台出示通票。"
+      },
+      "yue": {
+        "dealText": "別府站旅遊諮詢處全日行李免費寄存（慳¥700） + 站內名產伴手禮全單85折",
+        "perk": "免費全日行李寄存 + 特產店全單85折",
+        "howToRedeem": "於JR別府站觀光案內所櫃台出示手機通行證。"
+      }
+    }
+  },
+  "myoban-yu-no-hana": {
+    "placeId": "myoban-yu-no-hana",
+    "savingsTag": "25% OFF",
+    "savingsAmount": 150,
+    "memberPrice": "¥450",
+    "originalPrice": "¥600",
+    "badgeLabel": "25% Milky Bath Off",
+    "locales": {
+      "en": {
+        "dealText": "25% OFF Milky Open-Air Rock Bath (pay ¥450) + Free Take-Home Yunohana Minerals Pouch",
+        "perk": "Free Traditional Yunohana Mineral Pack",
+        "howToRedeem": "Present digital pass at the historic thatched hut shop entrance."
+      },
+      "ja": {
+        "dealText": "大露天白濁岩風呂25%引き（¥450） ＋ 伝統の国指定無形文化財「薬用湯の花」小袋贈呈",
+        "perk": "無形文化財「湯の花」入浴剤パック進呈",
+        "howToRedeem": "わらぶき小屋売店カウンターにてパスをご提示ください。"
+      },
+      "ko": {
+        "dealText": "유백색 노천 암석탕 25% 할인 (¥450) + 일본 국가무형문화재 '유노하나' 입욕 파우치 증정",
+        "perk": "명물 천연 '유노하나' 파우치 무료 증정",
+        "howToRedeem": "초가 오두막 상점 입구 카운터에서 패스를 제시하세요."
+      },
+      "zh": {
+        "dealText": "白浊绝景露天岩石温泉享75折特惠（¥450） + 赠送日本国家非遗「药用汤之花」便携装",
+        "perk": "赠送国家非遗天然「汤之花」入浴包",
+        "howToRedeem": "在传统茅草屋纪念品商店售票台出示通票。"
+      },
+      "yue": {
+        "dealText": "白濁絕景露天岩石溫泉享75折特惠（¥450） + 送日本國家非遺「藥用湯之花」隨身裝",
+        "perk": "贈送天然「湯之花」溫泉礦物包1份",
+        "howToRedeem": "於茅草小屋商店售票前台出示手機通行證。"
+      }
+    }
+  },
+  "jukkokubashi-alley": {
+    "placeId": "jukkokubashi-alley",
+    "savingsTag": "10% OFF",
+    "savingsAmount": 300,
+    "memberPrice": "10% OFF",
+    "originalPrice": "¥2,500 avg",
+    "badgeLabel": "14 Partner Izakayas",
+    "locales": {
+      "en": {
+        "dealText": "10% OFF Total Food & Drink Bill across 14 Partner Retro Izakayas + Free Welcome Drink",
+        "perk": "Free Welcome Craft Drink or Draft Beer",
+        "howToRedeem": "Show your active Beppu Pass to staff before ordering."
+      },
+      "ja": {
+        "dealText": "北浜昭和路地・提携居酒屋14店にて飲食代金10%割引 ＋ ファーストドリンク1杯無料",
+        "perk": "地ビールまたは乾杯ドリンク1杯無料",
+        "howToRedeem": "ご注文時に店員へデジタルパス画面をご提示ください。"
+      },
+      "ko": {
+        "dealText": "기타하마 레트로 골목 제휴 이자카야 14곳 총 결제액 10% 할인 + 첫 잔 웰컴 드링크 무료",
+        "perk": "생맥주 또는 웰컴 드링크 1잔 무료",
+        "howToRedeem": "주문 시 직원에게 디지털 패스 화면을 보여주세요."
+      },
+      "zh": {
+        "dealText": "北滨怀旧巷弄14家特约居酒屋全单享9折 + 免费获赠首杯大分生啤或特调饮料",
+        "perk": "免费获赠首杯大分生啤或迎宾特饮",
+        "howToRedeem": "点餐前向服务员出示数字通票即可享用折扣。"
+      },
+      "yue": {
+        "dealText": "北濱懷舊巷弄14間特約居酒屋全單享9折 + 免費送第一杯大分生啤或迎賓飲品",
+        "perk": "免費送首杯大分生啤或迎賓特飲",
+        "howToRedeem": "下單前向店員出示手機通行證即可享用優惠。"
+      }
+    }
+  }
+}

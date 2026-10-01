@@ -92,8 +92,17 @@
     "preferences_accessibility": "Preferences & Accessibility",
     "practical_info": "Practical Information",
     "map_directions": "Location & Transit Map",
-    "nearby_places": "Nearby Places & Suggested Guides",
-    "review_signals": "Guest Review Signals"
+    "review_signals": "Guest Review Signals",
+    "nav_pass": "Beppu Pass",
+    "pass_title": "Beppu Explorer Pass",
+    "pass_btn_get": "Get Pass 🎫",
+    "pass_btn_active": "Pass Active ✓",
+    "pass_unlock_cta": "Unlock Passholder Discount →",
+    "pass_active_badge": "✓ Passholder Discount",
+    "pass_price_label": "Pass Member Price",
+    "pass_savings_prefix": "Save up to",
+    "pass_modal_headline": "Unlock Exclusive Discounts Across Beppu",
+    "pass_modal_sub": "Instant digital subscriber pass for hot springs, cable car gondolas, steam cooking, and local guides."
   },
   "ja": {
     "brand_name": "別府",
@@ -188,8 +197,17 @@
     "preferences_accessibility": "こだわり対応とアクセシビリティ",
     "practical_info": "基本情報・利用案内",
     "map_directions": "アクセス・交通マップ",
-    "nearby_places": "周辺スポット ＆ おすすめガイド",
-    "review_signals": "クチコミからの注目シグナル"
+    "review_signals": "クチコミからの注目シグナル",
+    "nav_pass": "別府パス",
+    "pass_title": "別府エクスプローラーパス",
+    "pass_btn_get": "パス入手 🎫",
+    "pass_btn_active": "パス有効 ✓",
+    "pass_unlock_cta": "会員割引を適用 →",
+    "pass_active_badge": "✓ パス会員特典",
+    "pass_price_label": "パス会員価格",
+    "pass_savings_prefix": "最大割引",
+    "pass_modal_headline": "別府の温泉・名所を特別会員価格で巡る",
+    "pass_modal_sub": "地獄めぐり、ロープウェイ、竹瓦温泉、地獄蒸しなど参加施設で使えるデジタル周遊パス。"
   },
   "ko": {
     "brand_name": "벳부",
@@ -284,8 +302,17 @@
     "preferences_accessibility": "맞춤 환경 & 접근성 안내",
     "practical_info": "이용 안내 & 영업 정보",
     "map_directions": "위치 & 찾아오시는 길",
-    "nearby_places": "주변 명소 & 추천 가이드",
-    "review_signals": "실제 방문객 리뷰 시그널"
+    "review_signals": "실제 방문객 리뷰 시그널",
+    "nav_pass": "벳푸 패스",
+    "pass_title": "벳푸 익스플로러 패스",
+    "pass_btn_get": "패스 발급 🎫",
+    "pass_btn_active": "패스 사용중 ✓",
+    "pass_unlock_cta": "패스 회원 할인 적용 →",
+    "pass_active_badge": "✓ 패스 회원 할인",
+    "pass_price_label": "패스 회원가",
+    "pass_savings_prefix": "최대 할인",
+    "pass_modal_headline": "벳푸 전역의 온천과 명소를 특별 회원가로",
+    "pass_modal_sub": "지옥 순례, 로프웨이, 전통 모래찜질 온천, 지옥 찜 요리까지 즉시 할인되는 디지털 패스."
   },
   "zh": {
     "brand_name": "别府",
@@ -380,8 +407,17 @@
     "preferences_accessibility": "偏好适配与无障碍环境",
     "practical_info": "实用信息与营业指引",
     "map_directions": "交通路线与地图导航",
-    "nearby_places": "周边打卡与推荐向导",
-    "review_signals": "真实住客评价亮点"
+    "review_signals": "真实住客评价亮点",
+    "nav_pass": "别府通票",
+    "pass_title": "别府探索通票",
+    "pass_btn_get": "获取通票 🎫",
+    "pass_btn_active": "通票已生效 ✓",
+    "pass_unlock_cta": "解锁通票折扣 →",
+    "pass_active_badge": "✓ 通票会员专享折扣",
+    "pass_price_label": "通票会员特价",
+    "pass_savings_prefix": "最高立省",
+    "pass_modal_headline": "尊享别府各大地狱温泉与特色景点会员特价",
+    "pass_modal_sub": "一卡畅游地狱温泉、大型缆车、百年竹瓦温泉、地狱蒸石灶烹饪的数字探索通行证。"
   },
   "yue": {
     "brand_name": "別府",
@@ -476,7 +512,16 @@
     "preferences_accessibility": "偏好支援與無障礙環境",
     "practical_info": "實用資訊與營業指南",
     "map_directions": "交通路線與地圖指引",
-    "nearby_places": "周邊景點與特選嚮導",
-    "review_signals": "真實旅客評價特點"
+    "review_signals": "真實旅客評價特點",
+    "nav_pass": "別府通行證",
+    "pass_title": "別府探索通行證",
+    "pass_btn_get": "獲取通行證 🎫",
+    "pass_btn_active": "通行證生效中 ✓",
+    "pass_unlock_cta": "解鎖專屬優惠 →",
+    "pass_active_badge": "✓ 通行證會員專屬優惠",
+    "pass_price_label": "通行證會員價",
+    "pass_savings_prefix": "最高立慳",
+    "pass_modal_headline": "尊享別府各大地獄溫泉與人氣景點專屬會員價",
+    "pass_modal_sub": "暢玩地獄套票、全景纜車、百年竹瓦溫泉、地獄蒸石灶烹調嘅官方數碼通行證。"
   }
 }

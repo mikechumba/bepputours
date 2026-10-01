@@ -245,12 +245,56 @@
             <div class="section-num-pill">Section 4</div>
             <h2 class="detail-section-title">{{ t('deals_discounts') || 'Deals & Discounts' }}</h2>
 
+            <!-- Exclusive Beppu Pass Subscriber Section -->
+            <div v-if="placePassDiscount" class="passholder-promo-card mb-4" :class="{ 'is-active': hasUserPass }">
+              <div class="passholder-promo-top">
+                <div class="pass-brand-badge">
+                  <span class="pass-icon">🎫</span>
+                  <span class="pass-badge-name">Beppu Explorer Pass Exclusive</span>
+                </div>
+                <span class="pass-status-pill" :class="hasUserPass ? 'badge-pass-active' : 'badge-pass-locked'">
+                  {{ hasUserPass ? '✓ Unlocked with your Pass' : 'Locked · Passholder Only' }}
+                </span>
+              </div>
+              <div class="passholder-deal-content">
+                <div class="passholder-savings-highlight">
+                  <span class="savings-amount">{{ placePassDiscount.savingsTag }}</span>
+                  <span class="savings-label">Subscriber Discount</span>
+                </div>
+                <div class="passholder-details">
+                  <h4 class="passholder-deal-title">{{ placePassDiscount.dealText }}</h4>
+                  <p v-if="placePassDiscount.perk" class="passholder-deal-perk">
+                    ★ <strong>Member Perk:</strong> {{ placePassDiscount.perk }}
+                  </p>
+                  <p class="passholder-redeem-hint">
+                    ℹ️ {{ placePassDiscount.howToRedeem }}
+                  </p>
+                </div>
+              </div>
+              <div class="passholder-card-footer">
+                <button 
+                  v-if="!hasUserPass"
+                  type="button" 
+                  class="btn btn-primary btn-sm"
+                  @click="openPassModal(place)"
+                >
+                  Sign Up & Unlock {{ placePassDiscount.savingsTag }} Discount 🎫
+                </button>
+                <div v-else class="passholder-active-confirmation">
+                  <span class="conf-text">✓ Your digital pass is active. Show your member QR at entry to claim this rate.</span>
+                  <button type="button" class="btn btn-sm btn-ghost" @click="openPassModal(place)">
+                    View Digital Pass Card →
+                  </button>
+                </div>
+              </div>
+            </div>
+
             <!-- Active Promotional Deal -->
             <div v-if="place.deal" class="active-promo-banner mb-4">
-              <div class="promo-badge-tag">Active Special Offer</div>
+              <div class="promo-badge-tag">Standard Offer</div>
               <h3 class="promo-title">{{ place.deal }}</h3>
               <p class="promo-desc">
-                Present your Kamenoi Bus Free Pass or tourist pass at the ticket window to instantly claim this discount.
+                Present your Kamenoi Bus Free Pass or tourist pass at the ticket window to claim this discount.
               </p>
             </div>
 
@@ -551,13 +595,50 @@
         <!-- Right: Action & Key Info Sticky Card -->
         <div class="place-sidebar-col">
           <div class="sidebar-sticky-card">
+            <!-- Price Row: Standard vs Subscriber Rate -->
             <div class="sidebar-price-row mb-3">
               <span class="sidebar-price-label">Admission / Cost</span>
-              <span class="sidebar-price-val">{{ place.price }}</span>
+              <div v-if="hasUserPass && placePassDiscount?.memberPrice" class="sidebar-member-price-box text-end">
+                <del class="sidebar-old-price">{{ place.price }}</del>
+                <div class="sidebar-price-val text-success">{{ placePassDiscount.memberPrice }}</div>
+                <span class="pass-member-tag">Passholder Rate</span>
+              </div>
+              <span v-else class="sidebar-price-val">{{ place.price }}</span>
+            </div>
+
+            <!-- Passholder Unlocked Banner in Sidebar -->
+            <div v-if="hasUserPass && placePassDiscount" class="sidebar-pass-unlocked-card mb-3">
+              <div class="sidebar-pass-unlocked-header">
+                <span class="badge-pass-verified">✓ Beppu Pass Applied</span>
+                <span class="pass-savings-chip">{{ placePassDiscount.savingsTag }}</span>
+              </div>
+              <p class="sidebar-pass-deal-text">{{ placePassDiscount.dealText }}</p>
+              <div v-if="placePassDiscount.perk" class="sidebar-pass-perk">
+                ★ <strong>Perk:</strong> {{ placePassDiscount.perk }}
+              </div>
+            </div>
+
+            <!-- Pass Teaser in Sidebar (When user does not have pass) -->
+            <div 
+              v-else-if="placePassDiscount" 
+              class="sidebar-pass-teaser-card mb-3"
+              @click="openPassModal(place)"
+              title="Click to activate Beppu Explorer Pass"
+            >
+              <div class="pass-teaser-top">
+                <span class="pass-teaser-badge">🎫 Beppu Pass</span>
+                <span class="pass-teaser-savings">{{ placePassDiscount.savingsTag }}</span>
+              </div>
+              <p class="pass-teaser-desc">
+                Subscribers pay only <strong>{{ placePassDiscount.memberPrice }}</strong> + get {{ placePassDiscount.perk }}.
+              </p>
+              <button type="button" class="btn btn-sm btn-outline-accent w-100 mt-2">
+                Unlock with Beppu Pass →
+              </button>
             </div>
 
             <!-- Active Deal Snippet in Sidebar -->
-            <div v-if="place.deal" class="sidebar-deal-alert mb-3">
+            <div v-if="place.deal && !hasUserPass" class="sidebar-deal-alert mb-3">
               <span class="deal-alert-icon">🏷️</span>
               <span class="deal-alert-text">{{ place.deal }}</span>
             </div>
@@ -683,11 +764,18 @@ const {
   toggleTripPlace,
   isSaved,
   toggleSave,
-  showToast
+  showToast,
+  hasUserPass,
+  openPassModal,
+  getPlacePassDiscount
 } = useBeppu()
 
 const place = computed(() => {
   return getPlaceById(placeId)
+})
+
+const placePassDiscount = computed(() => {
+  return getPlacePassDiscount(placeId)
 })
 
 const matchedGuides = computed(() => {

@@ -7,6 +7,7 @@
     <AppFooter />
     <MobileBottomNav />
     <ToastContainer />
+    <PassModal />
   </div>
 </template>
 
@@ -18,7 +19,7 @@ const { initClientState, currentLocale } = useBeppu()
 
 onMounted(() => {
   initClientState()
-  if (process.client) {
+  if (import.meta.client) {
     document.documentElement.lang = currentLocale.value
   }
 })

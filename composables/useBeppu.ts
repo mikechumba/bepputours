@@ -4,6 +4,7 @@ import placesData from '~/data/places.json'
 import experiencesData from '~/data/experiences.json'
 import guidesData from '~/data/guides.json'
 import defaultItineraryData from '~/data/itinerary.json'
+import passDiscountsData from '~/data/passDiscounts.json'
 
 export type SupportedLocale = 'en' | 'ja' | 'ko' | 'zh' | 'yue'
 
@@ -553,6 +554,24 @@ export function useBeppu() {
   const bookings = useState<any[]>('beppu_bookings', () => [])
   const isHydrated = useState<boolean>('beppu_hydrated', () => false)
 
+  // Beppu Explorer Pass (Subscriber Feature) State
+  const hasUserPass = useState<boolean>('beppu_has_user_pass', () => false)
+  const userPassDetails = useState<{
+    active: boolean
+    memberId: string
+    memberName: string
+    plan: string
+    expiresDate: string
+  }>('beppu_user_pass_details', () => ({
+    active: false,
+    memberId: 'BP-2026-8842',
+    memberName: 'Explorer Member',
+    plan: 'Beppu Explorer Pass (All-Inclusive)',
+    expiresDate: '2026-12-31'
+  }))
+  const showPassModal = useState<boolean>('beppu_show_pass_modal', () => false)
+  const passModalPlace = useState<any | null>('beppu_pass_modal_place', () => null)
+
   // Global user preferences for dietary, accessibility, budget, experience, practical
   const userPreferences = useState<UserPreferences>('beppu_user_preferences', () => ({
     dietary: [],
@@ -591,6 +610,14 @@ export function useBeppu() {
         if (storedPrefs) {
           userPreferences.value = JSON.parse(storedPrefs)
         }
+        const storedPass = localStorage.getItem('beppu_has_user_pass')
+        if (storedPass !== null) {
+          hasUserPass.value = JSON.parse(storedPass)
+        }
+        const storedPassDetails = localStorage.getItem('beppu_user_pass_details')
+        if (storedPassDetails) {
+          userPassDetails.value = JSON.parse(storedPassDetails)
+        }
       } catch (e) {
         console.error('Failed to load local storage state:', e)
       }
@@ -625,14 +652,76 @@ export function useBeppu() {
     return str
   }
 
+  // Beppu Explorer Pass Actions & Helpers
+  const openPassModal = (place?: any) => {
+    passModalPlace.value = place || null
+    showPassModal.value = true
+  }
+
+  const closePassModal = () => {
+    showPassModal.value = false
+    passModalPlace.value = null
+  }
+
+  const activatePass = (name: string = 'Explorer Member', email: string = 'guest@bepputour.jp') => {
+    hasUserPass.value = true
+    const memberId = 'BP-2026-' + Math.floor(1000 + Math.random() * 9000)
+    userPassDetails.value = {
+      active: true,
+      memberId,
+      memberName: name.trim() || 'Explorer Member',
+      plan: 'Beppu Explorer Pass (All-Inclusive)',
+      expiresDate: '2026-12-31'
+    }
+    if (import.meta.client) {
+      localStorage.setItem('beppu_has_user_pass', JSON.stringify(true))
+      localStorage.setItem('beppu_user_pass_details', JSON.stringify(userPassDetails.value))
+    }
+    closePassModal()
+    showToast(t('pass_activated_toast') || '🎉 Beppu Explorer Pass activated! Subscriber discounts unlocked at all participating locations.', 'success')
+  }
+
+  const deactivatePass = () => {
+    hasUserPass.value = false
+    userPassDetails.value.active = false
+    if (import.meta.client) {
+      localStorage.setItem('beppu_has_user_pass', JSON.stringify(false))
+      localStorage.setItem('beppu_user_pass_details', JSON.stringify(userPassDetails.value))
+    }
+    showToast('Beppu Explorer Pass subscription paused.', 'info')
+  }
+
+  // Get place-specific subscriber discount definition localized in current locale
+  const getPlacePassDiscount = (placeOrId: any) => {
+    const id = typeof placeOrId === 'string' ? placeOrId : placeOrId?.id
+    if (!id) return null
+    const def = (passDiscountsData as Record<string, any>)[id]
+    if (!def) return null
+    const lang = currentLocale.value || 'en'
+    const loc = def.locales?.[lang] || def.locales?.en || {}
+    return {
+      placeId: id,
+      savingsTag: def.savingsTag,
+      savingsAmount: def.savingsAmount,
+      memberPrice: def.memberPrice,
+      originalPrice: def.originalPrice,
+      badgeLabel: def.badgeLabel,
+      dealText: loc.dealText || def.locales?.en?.dealText || '',
+      perk: loc.perk || def.locales?.en?.perk || '',
+      howToRedeem: loc.howToRedeem || def.locales?.en?.howToRedeem || ''
+    }
+  }
+
   // Localize an entity's fields based on currentLocale
   const localize = (item: any) => {
     if (!item) return {}
     const lang = currentLocale.value || 'en'
     const localized = item.locales?.[lang] || item.locales?.['en'] || {}
+    const passDisc = item.id ? getPlacePassDiscount(item.id) : null
     return {
       ...item,
-      ...localized
+      ...localized,
+      passDiscount: passDisc
     }
   }
 
@@ -1071,6 +1160,16 @@ export function useBeppu() {
     // Toasts
     toasts,
     showToast,
-    removeToast
+    removeToast,
+    // Beppu Explorer Pass (Subscriber Feature)
+    hasUserPass,
+    userPassDetails,
+    showPassModal,
+    passModalPlace,
+    openPassModal,
+    closePassModal,
+    activatePass,
+    deactivatePass,
+    getPlacePassDiscount
   }
 }

@@ -53,17 +53,60 @@
         </div>
       </div>
 
-      <!-- Category & 💰 Price Level -->
+      <!-- Category & 💰 Price Level (Dynamic Pass Discount) -->
       <div class="place-card-category-price">
         <span class="cat-label">{{ place.categoryLabel }}</span>
         <span class="meta-dot">·</span>
         <span class="price-level-badge" :title="`Price tier: ${place.priceLevel || '¥¥'}`">💰 {{ place.priceLevel || '¥¥' }}</span>
         <span class="meta-dot">·</span>
-        <span class="price-text">{{ place.price }}</span>
+        <!-- When Pass is active: show member discounted price -->
+        <span v-if="hasUserPass && passDiscount?.memberPrice" class="price-passholder-wrap">
+          <del class="price-strike">{{ place.price }}</del>
+          <span class="price-member">{{ passDiscount.memberPrice }}</span>
+          <span class="pass-member-tag">Pass Price</span>
+        </span>
+        <span v-else class="price-text">{{ place.price }}</span>
       </div>
 
-      <!-- 🏷️ Active Deal / Discount Tag -->
-      <div v-if="place.deal" class="place-deal-pill">
+      <!-- SUBSCRIBER PASS DISCOUNT: UNLOCKED STATE (When user has pass) -->
+      <div v-if="hasUserPass && passDiscount" class="place-pass-unlocked-card">
+        <div class="pass-unlocked-head">
+          <span class="badge-pass-verified">✓ Passholder Discount</span>
+          <span class="pass-savings-chip">{{ passDiscount.savingsTag }}</span>
+        </div>
+        <div class="pass-unlocked-body">
+          <span class="unlocked-deal-icon">🎟️</span>
+          <span class="unlocked-deal-text">{{ passDiscount.dealText }}</span>
+        </div>
+        <div v-if="passDiscount.perk" class="pass-unlocked-perk">
+          <span class="perk-star">★</span> Perk: <strong>{{ passDiscount.perk }}</strong>
+        </div>
+      </div>
+
+      <!-- SUBSCRIBER PASS DISCOUNT: LOCKED TEASER (When user does NOT have pass) -->
+      <div 
+        v-else-if="passDiscount" 
+        class="place-pass-teaser" 
+        @click.prevent.stop="openPassModal(place)"
+        title="Click to unlock subscriber discount with Beppu Pass"
+      >
+        <div class="pass-teaser-inner">
+          <div class="pass-teaser-left">
+            <span class="pass-teaser-icon">🎫</span>
+            <span class="pass-teaser-badge">Beppu Pass</span>
+            <span class="pass-teaser-savings">{{ passDiscount.savingsTag }}</span>
+          </div>
+          <div class="pass-teaser-right">
+            <span class="pass-teaser-cta">Unlock {{ passDiscount.memberPrice }} →</span>
+          </div>
+        </div>
+        <div v-if="passDiscount.perk" class="pass-teaser-perk">
+          + {{ passDiscount.perk }}
+        </div>
+      </div>
+
+      <!-- 🏷️ Standard Deal Tag (if no pass discount or as extra promo) -->
+      <div v-if="place.deal && !hasUserPass" class="place-deal-pill">
         <span class="deal-icon">🏷️</span>
         <span class="deal-text">{{ place.deal }}</span>
       </div>
@@ -144,8 +187,16 @@ const {
   isSaved,
   toggleSave,
   getPlaceBadges,
-  getPlaceReviewSignal
+  getPlaceReviewSignal,
+  hasUserPass,
+  openPassModal,
+  getPlacePassDiscount
 } = useBeppu()
+
+// Place-specific passholder discount definition
+const passDiscount = computed(() => {
+  return getPlacePassDiscount(props.place.id)
+})
 
 // Strip redundant leading emoji (like 📍) from distance string so 🚶 icon renders cleanly
 const cleanTransit = (distanceStr: string) => {

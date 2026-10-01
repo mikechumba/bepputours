@@ -4707,3 +4707,879 @@ ul, ol {
   color: var(--color-charcoal);
 }
 
+/* ==========================================================================
+   BEPPU EXPLORER PASS FEATURE (Subscribers & Place Discounts)
+   ========================================================================== */
+
+/* 1. Header Pass Button */
+.header-pass-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-full);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+}
+
+.header-pass-btn:not(.btn-pass-active) {
+  border: 1.5px solid var(--color-terracotta);
+  color: var(--color-terracotta);
+  background: rgba(178, 83, 64, 0.05);
+}
+
+.header-pass-btn:not(.btn-pass-active):hover {
+  background: var(--color-terracotta);
+  color: var(--color-white);
+  box-shadow: 0 4px 12px rgba(178, 83, 64, 0.25);
+  transform: translateY(-1px);
+}
+
+.header-pass-btn.btn-pass-active {
+  background: linear-gradient(135deg, #137333 0%, #0d5424 100%);
+  color: #ffffff !important;
+  border: 1.5px solid #137333;
+  box-shadow: 0 2px 8px rgba(19, 115, 51, 0.25);
+}
+
+.header-pass-btn.btn-pass-active:hover {
+  background: linear-gradient(135deg, #0f5c29 0%, #0a3f1b 100%);
+  box-shadow: 0 4px 14px rgba(19, 115, 51, 0.35);
+  transform: translateY(-1px);
+}
+
+/* 2. Place Card Pass Pricing & Badges */
+.price-passholder-wrap {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  font-weight: 700;
+}
+
+.price-strike {
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.price-member {
+  color: #137333;
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.pass-member-tag {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background-color: #e6f4ea;
+  color: #137333;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(19, 115, 51, 0.2);
+}
+
+/* Unlocked pass discount card inside PlaceCard */
+.place-pass-unlocked-card {
+  background: linear-gradient(135deg, #f0fdf4 0%, #e6f9ed 100%);
+  border: 1px solid #bbf7d0;
+  border-radius: var(--radius-md);
+  padding: 0.75rem 0.9rem;
+  margin-bottom: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transition: transform 0.2s ease;
+}
+
+.place-pass-unlocked-card:hover {
+  transform: translateY(-1px);
+  border-color: #86efac;
+}
+
+.pass-unlocked-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.badge-pass-verified {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #15803d;
+  background: rgba(22, 163, 74, 0.12);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.pass-savings-chip {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #991b1b;
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  padding: 0.18rem 0.5rem;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.02em;
+}
+
+.pass-unlocked-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #14532d;
+  line-height: 1.35;
+}
+
+.unlocked-deal-icon {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.pass-unlocked-perk {
+  font-size: 0.78rem;
+  color: #166534;
+  line-height: 1.35;
+  padding-top: 0.2rem;
+  border-top: 1px dashed rgba(22, 101, 52, 0.2);
+}
+
+.pass-unlocked-perk .perk-star {
+  color: #d97706;
+}
+
+/* Locked Pass Teaser inside PlaceCard (Inviting sign-up) */
+.place-pass-teaser {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border: 1px dashed #f59e0b;
+  border-radius: var(--radius-md);
+  padding: 0.65rem 0.85rem;
+  margin-bottom: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.place-pass-teaser:hover {
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-color: #d97706;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);
+}
+
+.pass-teaser-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.pass-teaser-left {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pass-teaser-icon {
+  font-size: 1.05rem;
+}
+
+.pass-teaser-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #92400e;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.pass-teaser-savings {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: #b45309;
+  background: rgba(245, 158, 11, 0.18);
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-full);
+}
+
+.pass-teaser-cta {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #b25340;
+  transition: color 0.15s ease;
+  white-space: nowrap;
+}
+
+.place-pass-teaser:hover .pass-teaser-cta {
+  color: #8c3b2b;
+  text-decoration: underline;
+}
+
+.pass-teaser-perk {
+  font-size: 0.75rem;
+  color: #78350f;
+  margin-top: 0.3rem;
+  padding-top: 0.25rem;
+  border-top: 1px dotted rgba(180, 83, 9, 0.2);
+  line-height: 1.25;
+}
+
+/* 3. Place Detail Page: Passholder Promo Card */
+.passholder-promo-card {
+  background: #ffffff;
+  border: 1.5px solid #e5e7eb;
+  border-radius: var(--radius-lg);
+  padding: 1.4rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s ease;
+}
+
+.passholder-promo-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ea7660 0%, #b25340 50%, #43273b 100%);
+}
+
+.passholder-promo-card.is-active {
+  background: linear-gradient(180deg, #f0fdf4 0%, #ffffff 100%);
+  border-color: #86efac;
+}
+
+.passholder-promo-card.is-active::before {
+  background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+}
+
+.passholder-promo-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.pass-brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.pass-brand-badge .pass-icon {
+  font-size: 1.3rem;
+}
+
+.pass-badge-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-plum);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.pass-status-pill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.pass-status-pill.badge-pass-locked {
+  background-color: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.pass-status-pill.badge-pass-active {
+  background-color: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.passholder-deal-content {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin-bottom: 1.15rem;
+}
+
+@media (max-width: 600px) {
+  .passholder-deal-content {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+.passholder-savings-highlight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #b25340 0%, #8c3b2b 100%);
+  color: #ffffff;
+  padding: 0.75rem 1.1rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  min-width: 120px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(178, 83, 64, 0.2);
+}
+
+.passholder-promo-card.is-active .passholder-savings-highlight {
+  background: linear-gradient(135deg, #15803d 0%, #166534 100%);
+  box-shadow: 0 4px 10px rgba(21, 128, 61, 0.2);
+}
+
+.passholder-savings-highlight .savings-amount {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.passholder-savings-highlight .savings-label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+  margin-top: 0.2rem;
+}
+
+.passholder-details {
+  flex: 1;
+}
+
+.passholder-deal-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin-bottom: 0.4rem;
+  line-height: 1.3;
+}
+
+.passholder-deal-perk {
+  font-size: 0.88rem;
+  color: #166534;
+  background: #f0fdf4;
+  padding: 0.4rem 0.7rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.4rem;
+  border: 1px solid #dcfce7;
+}
+
+.passholder-redeem-hint {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.passholder-card-footer {
+  border-top: 1px solid var(--color-border);
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.passholder-active-confirmation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.passholder-active-confirmation .conf-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #15803d;
+}
+
+/* 4. Detail Page Sidebar Pass Elements */
+.sidebar-member-price-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.sidebar-old-price {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  font-weight: 500;
+}
+
+.sidebar-pass-unlocked-card {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1.5px solid #86efac;
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+}
+
+.sidebar-pass-unlocked-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.sidebar-pass-deal-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #14532d;
+  margin-bottom: 0.35rem;
+  line-height: 1.35;
+}
+
+.sidebar-pass-perk {
+  font-size: 0.8rem;
+  color: #166534;
+  line-height: 1.35;
+}
+
+.sidebar-pass-teaser-card {
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+  border: 1.5px dashed #f59e0b;
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar-pass-teaser-card:hover {
+  background: #fef3c7;
+  border-color: #d97706;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(217, 119, 6, 0.15);
+}
+
+.sidebar-pass-teaser-card .pass-teaser-desc {
+  font-size: 0.82rem;
+  color: #78350f;
+  margin: 0.35rem 0 0.5rem;
+  line-height: 1.35;
+}
+
+/* 5. Pass Modal (PassModal.vue) */
+.pass-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(38, 38, 38, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  animation: modalFadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.pass-modal-card {
+  background-color: #ffffff;
+  border-radius: var(--radius-xl);
+  max-width: 620px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding: 2rem 2.25rem;
+  animation: modalPop 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPop {
+  from { opacity: 0; transform: scale(0.96) translateY(12px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.pass-modal-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-cream);
+  border: 1px solid var(--color-border);
+  font-size: 1.4rem;
+  color: var(--color-charcoal);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  transition: all 0.15s ease;
+  z-index: 10;
+}
+
+.pass-modal-close:hover {
+  background: var(--color-plum);
+  color: #ffffff;
+  border-color: var(--color-plum);
+}
+
+/* Place context banner inside modal */
+.pass-modal-place-banner {
+  background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+  border: 1px solid #fed7aa;
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.place-banner-icon {
+  font-size: 1.5rem;
+}
+
+.place-banner-subtitle {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #9a3412;
+}
+
+.place-banner-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin: 0.15rem 0 0.4rem;
+}
+
+.place-banner-deal-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  border: 1px solid #fdba74;
+}
+
+.deal-pill-tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #c2410c;
+}
+
+.deal-pill-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+}
+
+/* Digital Pass Card (Subscribed View) */
+.digital-pass-card {
+  background: linear-gradient(135deg, #2e1728 0%, #43273b 50%, #1f111c 100%);
+  color: #ffffff;
+  border-radius: var(--radius-lg);
+  padding: 1.6rem 1.8rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(67, 39, 59, 0.35);
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.digital-pass-card::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(234, 118, 96, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.pass-card-chip {
+  width: 42px;
+  height: 30px;
+  background: linear-gradient(135deg, #ffd700 0%, #d4af37 100%);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+.pass-card-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.pass-brand-icon {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.pass-brand-title {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.pass-brand-sub {
+  display: block;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.pass-card-meta-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0.75rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pass-meta-label {
+  display: block;
+  font-size: 0.68rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.15rem;
+}
+
+.pass-meta-val {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pass-card-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pass-status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #86efac;
+  font-weight: 600;
+}
+
+.status-pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.35);
+  animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+  0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+  70% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+.pass-qr-badge {
+  background: #ffffff;
+  color: #1f111c;
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.instruction-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.85rem;
+  background: var(--color-cream);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.25rem;
+  line-height: 1.45;
+  color: var(--color-charcoal);
+}
+
+.instruction-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.pass-places-showcase {
+  background: #fbfbf9;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.2rem;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.showcase-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-plum);
+  margin-bottom: 0.6rem;
+}
+
+.unlocked-perks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.unlocked-perk-item {
+  font-size: 0.82rem;
+  line-height: 1.35;
+  display: flex;
+  gap: 0.4rem;
+  color: var(--color-charcoal);
+}
+
+.perk-place-name {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.perk-place-benefit {
+  color: #15803d;
+}
+
+.pass-modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* Unsubscribed Sign-Up Form */
+.pass-modal-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--color-plum);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+}
+
+.pass-modal-lead {
+  font-size: 0.95rem;
+  color: var(--color-charcoal-light);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+.pass-perks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 540px) {
+  .pass-perks-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pass-perk-box {
+  background: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.85rem 1rem;
+}
+
+.pass-perk-box .perk-icon {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+  display: inline-block;
+}
+
+.pass-perk-box .perk-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  margin-bottom: 0.2rem;
+}
+
+.pass-perk-box .perk-desc {
+  font-size: 0.78rem;
+  color: var(--color-muted);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.pass-signup-form .form-row-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 540px) {
+  .pass-signup-form .form-row-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pass-form-perk-callout {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius-md);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.pass-form-perk-callout .callout-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.pass-guarantee-note {
+  font-size: 0.78rem;
+  margin-top: 0.5rem;
+}
+
