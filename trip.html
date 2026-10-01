@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Beppu | Itinerary Builder & Local Companion</title>
+  <meta name="description" content="View and customize your personalized Beppu trip itinerary. Reorder stops, adjust times, and find a local guide to join you.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♨️</text></svg>">
+  <style>
+    .trip-stat-chip {
+      background: white;
+      border: 1px solid var(--color-cream-300);
+      border-radius: var(--radius-lg);
+      padding: 12px 18px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-sm);
+    }
+    .trip-stat-val {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--color-slate-950);
+      line-height: 1.1;
+    }
+    .trip-stat-lbl {
+      font-size: 0.75rem;
+      color: var(--color-slate-500);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .day-selector-pills {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
+    .custom-stop-form {
+      background: white;
+      border: 1px solid var(--color-cream-300);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+    .time-editable-badge {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-teal-700);
+      background: var(--color-teal-50);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: all var(--transition-fast);
+      border: 1px solid transparent;
+    }
+    .time-editable-badge:hover {
+      background: white;
+      border-color: var(--color-teal-600);
+      box-shadow: var(--shadow-sm);
+    }
+    .field-error-msg {
+      color: #D32F2F;
+      font-size: 0.76rem;
+      font-weight: 600;
+      margin-top: 4px;
+      display: none;
+    }
+    .conflict-warning {
+      background: #FFF9E6;
+      border: 1px solid #FFE7A3;
+      border-radius: var(--radius-sm);
+      padding: 6px 10px;
+      font-size: 0.78rem;
+      color: #8C6200;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">♨️</div>
+          <div class="brand-text">
+            <span class="brand-title">Beppu</span>
+            <span class="brand-subtitle" data-i18n="brand_sub">Hot Springs & Local Guides</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="explore.html" class="nav-link" data-i18n="nav_explore">Explore</a>
+        <a href="experiences.html" class="nav-link" data-i18n="nav_experiences">Experiences</a>
+        <a href="guides.html" class="nav-link" data-i18n="nav_guides">Guides</a>
+        <a href="trip.html" class="nav-link active">
+          <span data-i18n="nav_trip">My Trip</span>
+          <span class="nav-badge-count js-trip-count">0</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-dropdown-wrap">
+          <button class="lang-switch-btn js-lang-dropdown-btn" aria-label="Select Language" aria-haspopup="true" aria-expanded="false">
+            <span>🌐</span>
+            <span class="js-active-lang-label">English</span>
+            <span style="font-size:0.65rem; opacity:0.7;">▼</span>
+          </button>
+          <div class="lang-dropdown-menu" role="menu">
+            <button class="lang-dropdown-item" data-lang="en">🇬🇧 English</button>
+            <button class="lang-dropdown-item" data-lang="ko">🇰🇷 한국어 (Korean)</button>
+            <button class="lang-dropdown-item" data-lang="zh">🇨🇳 简体中文 (Chinese)</button>
+            <button class="lang-dropdown-item" data-lang="yue">🇭🇰 繁體中文 / 粵語 (Cantonese)</button>
+            <button class="lang-dropdown-item" data-lang="ja">🇯🇵 日本語 (Japanese)</button>
+          </div>
+        </div>
+
+        <a href="trip.html" class="user-avatar-pill">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Tourist Avatar" class="user-avatar-img">
+          <span class="user-avatar-name" id="user-display-name">Sarah</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Title Banner -->
+  <section style="background: linear-gradient(180deg, var(--color-cream-100) 0%, var(--color-cream-50) 100%); padding: 40px 0 24px; border-bottom: 1px solid var(--color-cream-300);">
+    <div class="container">
+      <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap: 20px;">
+        <div>
+          <span class="badge badge-local" style="margin-bottom: 8px;">Personalized Schedule</span>
+          <h1 class="section-title" style="font-size: 2.8rem; margin-bottom: 6px;" data-i18n="trip_title">
+            My Beppu
+          </h1>
+          <p class="section-subtitle" data-i18n="trip_sub">
+            Tailored for couples traveling without a car. Move comfortably at your own pace.
+          </p>
+        </div>
+
+        <!-- Quick Summary Stats -->
+        <div style="display:flex; gap: 12px; flex-wrap: wrap;">
+          <div class="trip-stat-chip">
+            <span class="trip-stat-val" id="stat-stops-count">0</span>
+            <span class="trip-stat-lbl">Planned Stops</span>
+          </div>
+          <div class="trip-stat-chip">
+            <span class="trip-stat-val">Kamenoi</span>
+            <span class="trip-stat-lbl">Bus Pass Transit</span>
+          </div>
+          <div class="trip-stat-chip">
+            <span class="trip-stat-val" id="stat-guides-count">0</span>
+            <span class="trip-stat-lbl">Companions Booked</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Itinerary Layout -->
+  <main class="container" style="padding: 36px 24px 80px;">
+
+    <!-- Active Day Tabs -->
+    <div class="day-selector-pills">
+      <button class="filter-pill active" data-day="all" id="day-pill-all">Full Trip Overview</button>
+      <button class="filter-pill" data-day="sat" id="day-pill-sat">Saturday · Day 1</button>
+      <button class="filter-pill" data-day="sun" id="day-pill-sun">Sunday · Day 2</button>
+      <div style="margin-left: auto; display: flex; gap: 8px;">
+        <button class="btn btn-secondary btn-sm" id="btn-toggle-add-custom">
+          + Add Custom Stop
+        </button>
+        <button class="btn btn-secondary btn-sm" id="btn-reset-demo" title="Reset to sample itinerary">
+          ↺ Reset Sample Plan
+        </button>
+      </div>
+    </div>
+
+    <!-- Add Custom Stop Form (collapsible with validation) -->
+    <div class="custom-stop-form" id="custom-stop-box" style="display:none;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; color: var(--color-slate-900);">Add a Custom Activity or Dining Stop</h3>
+        <span style="font-size: 0.8rem; color: var(--color-slate-500);">Persisted in your local itinerary</span>
+      </div>
+
+      <div style="display:grid; grid-template-columns: 2fr 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+        <div>
+          <label style="display:block; font-size:0.8rem; font-weight:700; margin-bottom:4px;">Activity / Place Name *</label>
+          <input type="text" id="custom-stop-title" placeholder="e.g. Lunch at Toyotsune (Tempura)" class="form-input" style="padding:10px 12px; font-size:0.9rem;">
+          <div class="field-error-msg" id="err-custom-title">Please enter a stop title (min 2 characters).</div>
+        </div>
+
+        <div>
+          <label style="display:block; font-size:0.8rem; font-weight:700; margin-bottom:4px;">Time (e.g. 12:45 PM) *</label>
+          <input type="text" id="custom-stop-time" placeholder="12:45 PM" class="form-input" style="padding:10px 12px; font-size:0.9rem;">
+          <div class="field-error-msg" id="err-custom-time">Enter a valid time (e.g. 1:30 PM).</div>
+        </div>
+
+        <div>
+          <label style="display:block; font-size:0.8rem; font-weight:700; margin-bottom:4px;">Planned Day</label>
+          <select id="custom-stop-day" class="form-select" style="padding:10px 12px; font-size:0.9rem;">
+            <option value="Day 1 · Saturday" selected>Day 1 · Saturday</option>
+            <option value="Day 2 · Sunday">Day 2 · Sunday</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 14px;">
+        <label style="display:block; font-size:0.8rem; font-weight:700; margin-bottom:4px;">Notes & Tips (Optional)</label>
+        <input type="text" id="custom-stop-notes" placeholder="e.g. Famous for crispy jumbo shrimp tempura bowl. Arrive early to beat queue." class="form-input" style="padding:10px 12px; font-size:0.9rem;">
+      </div>
+
+      <div style="display:flex; justify-content:flex-end; gap:8px;">
+        <button class="btn btn-secondary btn-sm" id="btn-cancel-custom">Cancel</button>
+        <button class="btn btn-primary btn-sm" id="btn-save-custom">Add to Timeline</button>
+      </div>
+    </div>
+
+    <div class="itinerary-container">
+      <!-- Left Column: Visual Timeline & Reorder Controls -->
+      <div>
+        <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom: 16px;">
+          <h2 style="font-size: 1.3rem; font-weight: 700; color: var(--color-slate-900);" id="timeline-header-title">
+            Planned Itinerary Timeline
+          </h2>
+          <span style="font-size: 0.85rem; color: var(--color-slate-500);">Click time badge to edit time</span>
+        </div>
+
+        <!-- Dynamic Timeline List -->
+        <div class="itinerary-timeline" id="timeline-items-list">
+          <!-- Injected via JavaScript -->
+        </div>
+
+        <!-- Bottom Timeline Action: Find a Guide for Itinerary -->
+        <div style="margin-top: 32px; background: linear-gradient(135deg, var(--color-cream-100) 0%, var(--color-teal-50) 100%); border: 1px solid var(--color-teal-100); border-radius: var(--radius-xl); padding: 28px; text-align: center;">
+          <span class="badge badge-micro" style="margin-bottom: 8px;">Connect on Your Terms</span>
+          <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 8px; color: var(--color-slate-950);">
+            Want someone to join you for part of this day?
+          </h3>
+          <p style="color: var(--color-slate-600); max-width: 540px; margin: 0 auto 20px; font-size: 0.95rem;">
+            You can request an APU student or local guide to meet you at any stop above (like Beppu Station or the Hell Tour) to make the experience smooth and memorable.
+          </p>
+          <a href="guides.html" class="btn btn-primary" data-i18n="cta_find_join">
+            Find someone to join you →
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Visual Map Representation & Trip Summary -->
+      <aside>
+        <div class="map-summary-card">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 12px;">
+            <h3 style="font-size: 1.15rem; font-weight: 700;">Route Map</h3>
+            <span class="badge badge-local">No Car · Bus Pass</span>
+          </div>
+
+          <!-- Interactive Visual Map Box -->
+          <div class="map-visual-box">
+            <div class="map-mock-bg" id="map-canvas-mock">
+              <!-- Stylized Beppu Bay water contour -->
+              <div style="position:absolute; right:0; top:0; bottom:0; width:35%; background:rgba(180, 215, 230, 0.45); border-left: 2px dashed rgba(60, 130, 160, 0.3);">
+                <span style="position:absolute; top:20px; right:12px; font-size:0.7rem; font-weight:700; color:#4A7B90; letter-spacing:0.05em;">BEPPU BAY</span>
+              </div>
+              <div style="position:absolute; left:12px; bottom:12px; font-size:0.7rem; font-weight:700; color:#5D7C68;">
+                ▲ Mt. Tsurumi (1,375m)
+              </div>
+
+              <!-- Pinned Stops with dynamic pins -->
+              <div id="map-dynamic-pins-container">
+                <div class="map-pin" style="top: 70%; left: 52%;" title="1. Beppu Station">
+                  <span class="map-pin-inner">1</span>
+                </div>
+                <div class="map-pin" style="top: 25%; left: 35%; background-color:#267069;" title="2. Jigoku Hells">
+                  <span class="map-pin-inner">2</span>
+                </div>
+                <div class="map-pin" style="top: 35%; left: 38%; background-color:#267069;" title="3. Kannawa Village">
+                  <span class="map-pin-inner">3</span>
+                </div>
+                <div class="map-pin" style="top: 42%; left: 44%; background-color:#267069;" title="4. Hyotan Onsen">
+                  <span class="map-pin-inner">4</span>
+                </div>
+                <div class="map-pin" style="top: 75%; left: 58%; background-color:#DCA34D;" title="5. Retro Alley Dining">
+                  <span class="map-pin-inner">5</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="font-size: 0.82rem; color: var(--color-slate-500); margin-bottom: 20px; line-height: 1.5;">
+            📍 Pins show sequential order of planned route from Beppu Station through Kannawa steam district and back for evening dining.
+          </div>
+
+          <div style="border-top: 1px solid var(--color-cream-200); padding-top: 18px;">
+            <div style="font-size: 0.85rem; font-weight: 700; margin-bottom: 10px; color: var(--color-slate-900);">
+              Transit Strategy Tips:
+            </div>
+            <ul style="font-size: 0.82rem; color: var(--color-slate-600); padding-left: 18px; line-height: 1.6;">
+              <li>Take Kamenoi Bus #5 or #7 from Station West Exit to Kannawa (20 min).</li>
+              <li>Hyotan Onsen and Jigoku Hells are within 8–10 min walk of each other in Kannawa.</li>
+              <li>Evening izakayas in Kitahama are an easy 5 min walk back from Beppu Station East Exit.</li>
+            </ul>
+          </div>
+
+          <div style="margin-top: 20px; display:flex; flex-direction:column; gap:8px;">
+            <a href="explore.html" class="btn btn-secondary btn-sm" style="width: 100%;">
+              + Explore More Places to Add
+            </a>
+            <button class="btn btn-secondary btn-sm" id="btn-clear-all-itinerary" style="width: 100%; color: var(--color-terracotta);">
+              Clear Entire Itinerary
+            </button>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- Mobile Bottom Nav -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
+    <ul class="bottom-nav-list">
+      <li class="bottom-nav-item">
+        <a href="index.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🏠</span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="explore.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🗺️</span>
+          <span>Explore</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="experiences.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🍜</span>
+          <span>Local</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="guides.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">👥</span>
+          <span>Guides</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="trip.html" class="bottom-nav-link active">
+          <span class="bottom-nav-icon">📋</span>
+          <span>My Trip</span>
+          <span class="bottom-nav-badge js-trip-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    let activeDayFilter = 'all';
+
+    document.addEventListener('DOMContentLoaded', () => {
+      renderItinerary();
+
+      // Day filter buttons
+      document.querySelectorAll('.day-selector-pills .filter-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.day-selector-pills .filter-pill').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeDayFilter = btn.dataset.day;
+          renderItinerary();
+        });
+      });
+
+      // Reset Demo Plan
+      const resetBtn = document.getElementById('btn-reset-demo');
+      if (resetBtn) {
+        resetBtn.addEventListener('click', () => {
+          if (confirm('Reset to the recommended 2-day Beppu couple itinerary?')) {
+            window.beppuStore.resetItineraryToDefaults();
+            renderItinerary();
+            window.showToast('Reset itinerary to recommended sample plan.', 'success');
+          }
+        });
+      }
+
+      // Clear all itinerary
+      const clearBtn = document.getElementById('btn-clear-all-itinerary');
+      if (clearBtn) {
+        clearBtn.addEventListener('click', () => {
+          if (confirm('Are you sure you want to remove all stops from your itinerary?')) {
+            window.beppuStore.clearItinerary();
+            renderItinerary();
+            window.showToast('Itinerary cleared. Explore places to add new stops!', 'info');
+          }
+        });
+      }
+
+      // Custom stop form toggles
+      const customBox = document.getElementById('custom-stop-box');
+      const toggleBtn = document.getElementById('btn-toggle-add-custom');
+      const cancelBtn = document.getElementById('btn-cancel-custom');
+      const saveBtn = document.getElementById('btn-save-custom');
+
+      if (toggleBtn && customBox) {
+        toggleBtn.addEventListener('click', () => {
+          customBox.style.display = customBox.style.display === 'none' ? 'block' : 'none';
+          if (customBox.style.display === 'block') {
+            document.getElementById('custom-stop-title').focus();
+          }
+        });
+      }
+
+      if (cancelBtn && customBox) {
+        cancelBtn.addEventListener('click', () => {
+          customBox.style.display = 'none';
+          clearCustomErrors();
+        });
+      }
+
+      function clearCustomErrors() {
+        document.querySelectorAll('.field-error-msg').forEach(el => el.style.display = 'none');
+        document.querySelectorAll('.form-input').forEach(el => el.classList.remove('is-invalid'));
+      }
+
+      if (saveBtn) {
+        saveBtn.addEventListener('click', () => {
+          clearCustomErrors();
+
+          const titleInput = document.getElementById('custom-stop-title');
+          const timeInput = document.getElementById('custom-stop-time');
+          const daySelect = document.getElementById('custom-stop-day');
+          const notesInput = document.getElementById('custom-stop-notes');
+
+          const title = titleInput.value.trim();
+          const time = timeInput.value.trim() || '12:00 PM';
+          const day = daySelect.value;
+          const notes = notesInput.value.trim();
+
+          let hasError = false;
+
+          if (!title || title.length < 2) {
+            titleInput.classList.add('is-invalid');
+            document.getElementById('err-custom-title').style.display = 'block';
+            hasError = true;
+          }
+
+          if (!window.beppuStore.validateTimeFormat(time)) {
+            timeInput.classList.add('is-invalid');
+            document.getElementById('err-custom-time').style.display = 'block';
+            hasError = true;
+          }
+
+          if (hasError) return;
+
+          const res = window.beppuStore.addToItinerary({
+            title,
+            time,
+            day,
+            notes: notes || 'Personal discovery',
+            duration: '1 – 1.5 hours',
+            cost: 'Free'
+          });
+
+          if (!res.success) {
+            window.showToast(res.error, 'warning');
+            return;
+          }
+
+          // Clear inputs
+          titleInput.value = '';
+          timeInput.value = '';
+          notesInput.value = '';
+          customBox.style.display = 'none';
+
+          renderItinerary();
+          window.showToast(`Added "${title}" to ${day}!`, 'success');
+        });
+      }
+
+      // Re-render when store updates
+      window.addEventListener('beppu:itinerarychange', renderItinerary);
+    });
+
+    function renderItinerary() {
+      const container = document.getElementById('timeline-items-list');
+      const countEl = document.getElementById('stat-stops-count');
+      const guidesEl = document.getElementById('stat-guides-count');
+      const headerTitle = document.getElementById('timeline-header-title');
+      if (!container) return;
+
+      const allItems = window.beppuStore.itinerary;
+      const items = window.beppuStore.getItinerary(activeDayFilter);
+
+      if (countEl) countEl.textContent = allItems.length;
+
+      const guidesCount = allItems.filter(i => i.assignedGuideId).length;
+      if (guidesEl) guidesEl.textContent = guidesCount;
+
+      if (headerTitle) {
+        if (activeDayFilter === 'sat') headerTitle.textContent = 'Saturday (Day 1) Timeline';
+        else if (activeDayFilter === 'sun') headerTitle.textContent = 'Sunday (Day 2) Timeline';
+        else headerTitle.textContent = 'Full Trip Overview Timeline';
+      }
+
+      if (items.length === 0) {
+        container.innerHTML = `
+          <div style="background:white; border-radius:var(--radius-lg); padding:36px; text-align:center; border:1px dashed var(--color-cream-300);">
+            <div style="font-size:2.5rem; margin-bottom:12px;">🗺️</div>
+            <h3 style="font-size:1.2rem; margin-bottom:8px;">No stops planned for this view</h3>
+            <p style="color:var(--color-slate-500); margin-bottom:20px;">Add places from Explore or add custom stops above!</p>
+            <a href="explore.html" class="btn btn-primary btn-sm">Explore Sights</a>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = items.map((item, index) => {
+        // Global index in main itinerary
+        const globalIdx = allItems.findIndex(i => i.id === item.id);
+
+        return `
+          <div class="timeline-item" data-id="${item.id}">
+            <div class="timeline-node"></div>
+            <div class="timeline-header">
+              <span class="time-editable-badge js-edit-time" data-id="${item.id}" data-time="${item.time}" title="Click to adjust time">
+                🕒 ${item.time} ✎
+              </span>
+              <div class="timeline-actions">
+                ${globalIdx > 0 ? `
+                  <button class="timeline-btn-icon js-move-up" data-index="${globalIdx}" title="Move Up">↑</button>
+                ` : ''}
+                ${globalIdx < allItems.length - 1 ? `
+                  <button class="timeline-btn-icon js-move-down" data-index="${globalIdx}" title="Move Down">↓</button>
+                ` : ''}
+                <button class="timeline-btn-icon js-remove-stop" data-id="${item.id}" title="Remove Stop" style="color:var(--color-terracotta);">✕</button>
+              </div>
+            </div>
+
+            <div style="font-size:0.75rem; color:var(--color-slate-500); font-weight:700; text-transform:uppercase; margin-bottom:2px;">
+              ${item.day || 'Day 1'}
+            </div>
+            <h3 class="timeline-title">${item.title}</h3>
+            <p class="timeline-notes">${item.notes || 'No extra notes provided'}</p>
+
+            <div style="display:flex; justify-content:space-between; align-items:center; font-size:0.8rem; color:var(--color-slate-500);">
+              <span>⏱️ ${item.duration} · 🎟️ ${item.cost}</span>
+              ${item.placeId ? `<a href="place.html?id=${item.placeId}" style="color:var(--color-teal-700);font-weight:600;">View Details →</a>` : ''}
+            </div>
+
+            ${item.assignedGuideId ? `
+              <div class="timeline-guide-attached">
+                <div class="timeline-guide-info">
+                  <span>🤝</span>
+                  <span>Companion: <strong>${item.guideName}</strong> (${item.guideRole || 'Guide'})</span>
+                </div>
+                <span class="badge ${item.status === 'confirmed' ? 'badge-verified' : 'badge-micro'}">
+                  ${item.status === 'confirmed' ? '✓ Confirmed' : '⚡ Requested'}
+                </span>
+              </div>
+            ` : `
+              <div style="margin-top:12px; padding-top:10px; border-top:1px dashed var(--color-cream-200); display:flex; justify-content:flex-end;">
+                <a href="request.html?place=${encodeURIComponent(item.title)}" style="font-size:0.8rem; color:var(--color-teal-700); font-weight:600; text-decoration:underline;">
+                  + Request a local guide for this stop
+                </a>
+              </div>
+            `}
+          </div>
+        `;
+      }).join('');
+
+      // Attach reordering and deletion listeners
+      container.querySelectorAll('.js-move-up').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const idx = parseInt(btn.dataset.index, 10);
+          window.beppuStore.reorderItinerary(idx, idx - 1);
+        });
+      });
+
+      container.querySelectorAll('.js-move-down').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const idx = parseInt(btn.dataset.index, 10);
+          window.beppuStore.reorderItinerary(idx, idx + 1);
+        });
+      });
+
+      container.querySelectorAll('.js-remove-stop').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const id = btn.dataset.id;
+          window.beppuStore.removeFromItinerary(id);
+          window.showToast('Removed stop from itinerary', 'info');
+        });
+      });
+
+      // Attach inline time adjustment with validation prompt
+      container.querySelectorAll('.js-edit-time').forEach(badge => {
+        badge.addEventListener('click', () => {
+          const id = badge.dataset.id;
+          const currentTime = badge.dataset.time;
+          const newTime = prompt('Adjust scheduled time (e.g. 11:30 AM or 14:00):', currentTime);
+          if (newTime !== null && newTime.trim()) {
+            const res = window.beppuStore.updateItineraryItem(id, { time: newTime.trim() });
+            if (!res.success) {
+              window.showToast(res.error, 'warning');
+            } else {
+              renderItinerary();
+              window.showToast(`Updated time to ${newTime.trim()}`, 'success');
+            }
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1951 @@
+[
+  {
+    "id": "beppu-hell-tour",
+    "japaneseName": "別府地獄めぐり",
+    "category": "nature",
+    "priceLevel": "¥¥",
+    "rating": 4.8,
+    "reviewsCount": 342,
+    "isPopular": true,
+    "isLocalFavorite": false,
+    "image": "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1528164344705-475426879c0d?auto=format&fit=crop&w=800&q=80"
+    ],
+    "openingHours": "8:30 AM – 5:00 PM (Daily)",
+    "nearbyPlaces": [
+      "kannawa-steam-district",
+      "hyotan-onsen"
+    ],
+    "suggestedGuides": [
+      "maria-santos",
+      "kenji-takahashi",
+      "chloe-chan"
+    ],
+    "attributes": {
+      "dietary": {
+        "halalStatus": "options",
+        "vegetarianOptions": true,
+        "veganOptions": false,
+        "glutenFree": true,
+        "allergyFriendly": true,
+        "noAlcohol": true,
+        "kosher": false
+      },
+      "accessibility": {
+        "wheelchairAccessible": true,
+        "stepFreeAccess": true,
+        "accessibleRestroom": true,
+        "strollerFriendly": true
+      },
+      "budgetOffers": {
+        "tier": "mid",
+        "discountsAvailable": true,
+        "studentDiscount": false,
+        "groupFamilyDiscount": true,
+        "touristPassDiscount": true
+      },
+      "experience": {
+        "familyFriendly": true,
+        "soloFriendly": true,
+        "coupleDate": true,
+        "groups": true,
+        "kidFriendly": true,
+        "quiet": false,
+        "nightlife": false,
+        "photoFriendly": true
+      },
+      "practical": {
+        "reservationRequired": false,
+        "walkInsAccepted": true,
+        "cashless": true,
+        "englishSupport": true,
+        "multilingualSupport": true,
+        "wifi": true,
+        "parking": true
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Beppu Jigoku (Seven Hells) Tour",
+        "categoryLabel": "Geothermal Wonder",
+        "deal": "🏷️ 10% off entry with Kamenoi Bus 2-Day Pass",
+        "shortDesc": "Spectacular geothermal wonders including sea-blue hot pools, red mud springs, and geysers.",
+        "whyVisit": "Beppu's signature geological wonder. Seven dramatic boiling springs strictly meant for viewing, accompanied by natural steam-cooked treats and panoramic footbaths.",
+        "fullDesc": "The 'Hells' (Jigoku) are seven dramatic geothermal hot springs strictly meant for viewing rather than bathing. From the cobalt-blue boiling waters of Umi Jigoku surrounded by Japanese gardens, to the iron-rich crimson waters of Chinoike Jigoku, this is Beppu's most celebrated geological spectacle. Natural steam vents cook onsen eggs and puddings on-site.",
+        "location": "Kannawa & Shibaseki Districts, Beppu",
+        "distance": "📍 2.4 km · 20 min bus from Beppu Station",
+        "duration": "2.5 – 3 hours",
+        "price": "¥2,200 (All-hells pass)",
+        "tips": "Buy the combined 7-hell ticket if you plan to visit 3 or more. Wear comfortable walking shoes. Kamenoi Bus #5 or #7 takes you directly from Beppu Station West Exit.",
+        "tags": [
+          "Must-Visit",
+          "Geothermal",
+          "Family Friendly",
+          "Iconic",
+          "No Car Needed"
+        ],
+        "popularSignals": [
+          "Geothermal marvels",
+          "Steamed custard pudding",
+          "Warm footbaths"
+        ],
+        "quoteReview": {
+          "author": "Liam & Sarah (UK)",
+          "tag": "Accessibility",
+          "text": "Umi Jigoku has wide ramps and smooth paved paths throughout. Very easy to navigate with our toddler stroller!"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "Positive · Paved gentle ramps & accessible elevator at Umi Jigoku",
+          "families": "Frequently recommended · Kids loved the stamp rally booklet",
+          "dietary": "Vegetarian & Halal options · Steamed corn and eggs cooked in pure volcanic steam"
+        }
+      },
+      "ja": {
+        "name": "別府地獄めぐり",
+        "categoryLabel": "奇観・地熱ワンダー",
+        "deal": "🏷️ 亀の井バスフリーパス提示で共通観覧券10%割引",
+        "shortDesc": "コバルトブルーの海地獄から真紅の血の池地獄まで、地球の息吹を体感する名物地獄めぐり。",
+        "whyVisit": "千年以上前から噴気・熱泥・熱湯が湧出する別府最大の観光名所。7つの奇観と名物地獄蒸しプリンが揃います。",
+        "fullDesc": "千年以上昔から噴気や熱泥、熱湯が噴出していたことから「地獄」と名付けられた7つの奇観泉。国指定名勝の海地獄や日本最古の天然地獄・血の池地獄など、入浴ではなく観賞を楽しむ別府随一の観光名所です。湧き出る蒸気で蒸した名物「地獄蒸し焼きプリン」や温泉卵は必食です。",
+        "location": "別府市 鉄輪・柴石エリア",
+        "distance": "📍 2.4 km · 別府駅西口よりバスで約20分",
+        "duration": "2.5 〜 3時間",
+        "price": "¥2,200（7地獄共通観覧券）",
+        "tips": "3カ所以上巡るなら共通券がお得です。別府駅西口から5番または7番バスで直行可能。歩きやすい靴でお越しください。",
+        "tags": [
+          "定番名所",
+          "地熱景観",
+          "家族連れ歓迎",
+          "バス移動可",
+          "名物グルメ"
+        ],
+        "popularSignals": [
+          "国指定名勝海地獄",
+          "名物プリン",
+          "無料足湯"
+        ],
+        "quoteReview": {
+          "author": "タカシ＆エミ (日本)",
+          "tag": "バリアフリー",
+          "text": "海地獄はスロープが整備されており、車椅子やベビーカーでも快適に見学できました。"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "高評価 · 海地獄にスロープ＆バリアフリー展望台完備",
+          "families": "家族旅行に最適 · スタンプラリーと足湯が子どもに大人気",
+          "dietary": "ベジタリアン対応 · 温泉蒸気の温野菜や温泉卵が好評"
+        }
+      },
+      "ko": {
+        "name": "벳푸 지옥 온천 순례 (지옥순례 7선)",
+        "categoryLabel": "자연 화산 경관",
+        "deal": "🏷️ 카메노이 버스 프리 패스 제시 시 공통권 10% 할인",
+        "shortDesc": "코발트 블루 바다 지옥부터 붉은 피의 연못 지옥까지, 장엄한 7대 온천 기형 탐방.",
+        "whyVisit": "100도에 달하는 천연 온천 열탕과 간헐천이 피어오르는 벳푸 최고의 상징적 명소.",
+        "fullDesc": "입욕용이 아닌 관람 전용으로 지정된 7곳의 신비로운 지열 온천천. 푸른 열탕이 피어오르는 '우미 지고쿠(바다 지옥)'와 붉은 진흙이 끓어오르는 '치노이케 지고쿠(피의 연못)' 등 벳푸 최고의 지질학적 명소입니다. 현장에서 온천 증기로 쪄낸 달콤한 온천 푸딩과 달걀을 즐길 수 있습니다.",
+        "location": "벳푸시 간나와 및 시바세키 지구",
+        "distance": "📍 2.4 km · 벳푸역 서쪽 출구에서 버스 약 20분",
+        "duration": "2.5 ~ 3시간",
+        "price": "¥2,200 (7개 지옥 공통 관람권)",
+        "tips": "3곳 이상 방문할 예정이라면 공통관람권을 구매하는 것이 훨씬 경제적입니다. 벳푸역 서구에서 5번 또는 7번 버스로 환승 없이 직행할 수 있습니다.",
+        "tags": [
+          "필수 코스",
+          "화산 경관",
+          "가족 친화적",
+          "대중교통 편리",
+          "벳푸 명물"
+        ],
+        "popularSignals": [
+          "우미 지고쿠 절경",
+          "온천 푸딩",
+          "족욕 체험"
+        ],
+        "quoteReview": {
+          "author": "박지훈 가족 (한국)",
+          "tag": "접근성",
+          "text": "바다 지옥 쪽은 경사로가 완만하고 포장 상태가 훌륭해서 유모차 끌고 다니기 정말 좋았습니다!"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "긍정적 평가 · 주요 지옥 완만한 경사로 및 장애인 화장실 완비",
+          "families": "가족 여행 적극 추천 · 7대 지옥 스탬프 투어와 족욕탕 인기",
+          "dietary": "채식 및 무돈육 · 자연 온천 증기 계란 및 옥수수 간식"
+        }
+      },
+      "zh": {
+        "name": "别府地狱巡礼（七大地狱）",
+        "categoryLabel": "地热地质奇观",
+        "deal": "🏷️ 出示龟之井巴士周游券享通票9折优惠",
+        "shortDesc": "从湛蓝如海的海地狱到赤红炽热的血池地狱，近距离感受火山地热的磅礴震撼。",
+        "whyVisit": "别府最具代表性的地质景观，七处沸腾奇泉、纯地热焖蒸甜点与天然足汤一站打卡。",
+        "fullDesc": "“地狱”是指别府千年来喷涌天然高温泥浆与热气的七处天然奇泉，专供游览观赏而非浸泡。海地狱的蔚蓝池水与日式庭园相映成趣，血之池地狱的赤红地浆气势磅礴。景区内还可以品尝用地热纯蒸汽蒸制的地狱布丁与温泉溏心蛋。",
+        "location": "别府市 铁轮及柴石地区",
+        "distance": "📍 2.4 km · 别府站西口乘巴士约20分钟",
+        "duration": "2.5 – 3小时",
+        "price": "¥2,200（七地狱通用通票）",
+        "tips": "计划参观3个以上地狱建议购买通用套票。别府站西口搭乘5路或7路巴士直达铁轮站，无需租车即可轻松游玩。",
+        "tags": [
+          "必游地标",
+          "地热奇观",
+          "亲子家庭",
+          "公共交通直达",
+          "特色美食"
+        ],
+        "popularSignals": [
+          "海地狱景观",
+          "地热焦糖布丁",
+          "免费天然足汤"
+        ],
+        "quoteReview": {
+          "author": "陈先生一家 (中国)",
+          "tag": "无障碍出行",
+          "text": "海地狱内部有平整的缓坡与升降电梯，推婴儿车或轮椅全程毫无阻碍！"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "高度好评 · 海地狱铺设平整斜坡，轮椅婴儿车通行顺畅",
+          "families": "亲子家庭常选 · 7大印章收集活动与足汤体验深受小朋友喜爱",
+          "dietary": "素食与清真友好 · 纯天然火山地热蒸玉米与温泉蛋无肉类交叉"
+        }
+      },
+      "yue": {
+        "name": "別府地獄巡禮（七大地獄）",
+        "categoryLabel": "地熱奇觀",
+        "deal": "🏷️ 憑龜之井巴士Pass購票可享9折優惠",
+        "shortDesc": "由湛藍的海地獄到火紅的血池地獄，近距離感受別府震撼火山地熱。",
+        "whyVisit": "別府最出名嘅地質景觀，近距離觀賞七大沸騰奇泉、品嚐地熱蒸布甸同浸免費足湯。",
+        "fullDesc": "「地獄」係指別府千百年黎噴出天然高溫熱泥同蒸汽嘅七大奇觀泉，純供觀賞唔作浸浴之用。海地獄嘅夢幻蔚藍池水伴隨日式庭院，血之池地獄嘅紅泥泉水蔚為壯觀。現場仲可以用純天然溫泉蒸汽蒸成嘅地獄布甸同溫泉蛋，極受歡迎。",
+        "location": "別府市 鐵輪及柴石區",
+        "distance": "📍 2.4 km · 由別府站西口搭巴士約20分鐘",
+        "duration": "2.5 – 3小時",
+        "price": "¥2,200（七地獄通用套票）",
+        "tips": "如果計劃去3個地獄以上，買七地獄通票最划算。別府站西口搭5號或者7號巴士即可直達鐵輪，唔駛自駕都好方便。",
+        "tags": [
+          "必到地標",
+          "地熱奇觀",
+          "家庭遊客推薦",
+          "巴士直達",
+          "特色地熱美食"
+        ],
+        "popularSignals": [
+          "海地獄蔚藍泉池",
+          "地熱吉士布甸",
+          "免費溫泉足湯"
+        ],
+        "quoteReview": {
+          "author": "張生 (香港)",
+          "tag": "無障礙設施",
+          "text": "海地獄鋪設咗好平嘅輪椅同BB車斜路，同行長輩行得好舒服！"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "極高評價 · 海地獄平整斜坡及升降機，輪椅及推車友善",
+          "families": "家庭自由行推薦 · 蓋印仔遊覽圖冊與免費足湯深得大小朋友喜愛",
+          "dietary": "素食友善 · 溫泉蒸汽蒸粟米同蛋完全無豬肉或酒精污染"
+        }
+      }
+    }
+  },
+  {
+    "id": "takegawara-onsen",
+    "japaneseName": "竹瓦温泉",
+    "category": "onsen",
+    "priceLevel": "¥",
+    "rating": 4.7,
+    "reviewsCount": 289,
+    "isPopular": true,
+    "isLocalFavorite": true,
+    "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=800&q=80"
+    ],
+    "openingHours": "6:30 AM – 10:30 PM (Sand bath opens 8:00 AM)",
+    "nearbyPlaces": [
+      "beppu-tower-station",
+      "jukkokubashi-alley"
+    ],
+    "suggestedGuides": [
+      "maria-santos",
+      "daiki-sato",
+      "chloe-chan"
+    ],
+    "attributes": {
+      "dietary": {
+        "halalStatus": "none",
+        "vegetarianOptions": false,
+        "veganOptions": false,
+        "glutenFree": false,
+        "allergyFriendly": true,
+        "noAlcohol": true,
+        "kosher": false
+      },
+      "accessibility": {
+        "wheelchairAccessible": false,
+        "stepFreeAccess": false,
+        "accessibleRestroom": false,
+        "strollerFriendly": false
+      },
+      "budgetOffers": {
+        "tier": "budget",
+        "discountsAvailable": true,
+        "studentDiscount": false,
+        "groupFamilyDiscount": false,
+        "touristPassDiscount": false
+      },
+      "experience": {
+        "familyFriendly": false,
+        "soloFriendly": true,
+        "coupleDate": true,
+        "groups": false,
+        "kidFriendly": false,
+        "quiet": true,
+        "nightlife": false,
+        "photoFriendly": true
+      },
+      "practical": {
+        "reservationRequired": false,
+        "walkInsAccepted": true,
+        "cashless": false,
+        "englishSupport": true,
+        "multilingualSupport": false,
+        "wifi": false,
+        "parking": false
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Takegawara Onsen",
+        "categoryLabel": "Historic Bathhouse",
+        "deal": "🏷️ Only ¥300 general bath / Stamp booklet special",
+        "shortDesc": "Historic 1879 wooden bathhouse famous for rejuvenating volcanic warm sand baths.",
+        "whyVisit": "The historic heart of Beppu onsen culture. Experience being gently buried in warm geothermal black sand inside a grand 1938 wooden heritage bathhouse.",
+        "fullDesc": "Established in 1879 and rebuilt in 1938 with an imposing Karahafu-style wooden gable roof, Takegawara is the soul of downtown Beppu onsen culture. Choose between the classic deep communal hot bath (at a traditional ¥300 fee) or the legendary Sunayu (warm sand bath), where attendants bury you under naturally heated volcanic sand in a yukata robe for 15 blissful minutes.",
+        "location": "1-4-1 Motomachi, Central Beppu",
+        "distance": "📍 0.6 km · 8 min walk from Beppu Station",
+        "duration": "1 – 1.5 hours",
+        "price": "¥300 (Bath) / ¥1,500 (Sand bath)",
+        "tips": "Sand bath capacity is limited to 8 persons per session. Arrive before 10 AM or after 5 PM to avoid tour queues. Towel rental is available for ¥200.",
+        "tags": [
+          "Sand Bath",
+          "Historic 1879",
+          "Traditional",
+          "Walk from Station",
+          "Local Landmark"
+        ],
+        "popularSignals": [
+          "Warm sand bath (Sunayu)",
+          "Karahafu wooden roof",
+          "Historic ¥300 entry"
+        ],
+        "quoteReview": {
+          "author": "Marcus & Elena",
+          "tag": "Value & Heritage",
+          "text": "The sand bath is an absolute must-do in Beppu. The warmth penetrates your bones and the building feels like a living museum."
+        },
+        "preferenceReviewSignals": {
+          "budget": "Unbeatable value · ¥300 for historical hot bath in central Beppu",
+          "accessibility": "Historic building · Low steps into bathhouse; staff assist guests with mobility questions",
+          "practical": "Tattoo friendly · Discreet tattoos welcomed without special tape required"
+        }
+      },
+      "ja": {
+        "name": "竹瓦温泉",
+        "categoryLabel": "歴史的共同浴場",
+        "deal": "🏷️ 通常入浴わずか300円 / 温泉名人スタンプ対象",
+        "shortDesc": "明治12年創設、風格ある唐破風造りの名湯。名物「砂湯」で体の芯から温まる体験を。",
+        "whyVisit": "明治12年創設、昭和13年再建の唐破風建築。別府で最も歴史ある空間で名物「砂湯」を体感できます。",
+        "fullDesc": "明治12年（1879年）創設、昭和13年建造の唐破風（からはふ）屋根がそびえる別府温泉のシンボル。天井の高い脱衣所一体型の伝統的な内湯（入浴料わずか300円）に加え、浴衣を着て温かい地熱砂に埋もれる名物「砂湯」が人気です。立ちのぼる湯気と歴史の重みが旅情を誘います。",
+        "location": "別府市 元町1-4-1（中心街）",
+        "distance": "📍 0.6 km · 別府駅東口より徒歩約8分",
+        "duration": "1 〜 1.5時間",
+        "price": "入浴 ¥300 / 砂湯 ¥1,500",
+        "tips": "砂湯は一度に体験できる人数が限られているため、朝10時前または夕方17時以降の訪問がスムーズです。貸しタオル（¥200）あり。",
+        "tags": [
+          "名物砂湯",
+          "明治12年創業",
+          "唐破風建築",
+          "駅から徒歩圏",
+          "タトゥー要相談"
+        ],
+        "popularSignals": [
+          "名物砂湯",
+          "唐破風木造建築",
+          "300円で入浴"
+        ],
+        "quoteReview": {
+          "author": "ケンタロウ (東京)",
+          "tag": "伝統とコスパ",
+          "text": "砂湯でじんわり汗をかいた後の爽快感は格別。建物そのものが登録有形文化財級の素晴らしさです。"
+        },
+        "preferenceReviewSignals": {
+          "budget": "コスパ最強 · 別府駅徒歩圏で本物の天然温泉が300円",
+          "accessibility": "歴史的木造建築 · 脱衣所と浴室に段差あり（要介助）",
+          "practical": "タトゥー配慮 · 一般的な共同浴場として寛容に受け入れ"
+        }
+      },
+      "ko": {
+        "name": "다케가와라 온천",
+        "categoryLabel": "역사적 목조 온천",
+        "deal": "🏷️ 일반탕 단돈 300엔 / 온센도 스탬프 명소",
+        "shortDesc": "1879년 개장한 벳푸의 상징적 전통 목욕탕. 미네랄 화산 모래찜질로 유명합니다.",
+        "whyVisit": "1879년 설립된 벳푸 온천 역사의 산실. 카라하후 지붕 아래 따스한 화산 모래에 파묻히는 특별한 경험.",
+        "fullDesc": "1879년에 창설되어 1938년에 재건된 중후한 카라하후 지붕 양식의 목조 온천 건물입니다. 전통 깊은 탕에 몸을 담그는 일반 입욕(300엔)뿐만 아니라, 유카타를 입고 자연 온천열로 데워진 모래 속에 몸을 묻는 '스나유(모래 온천)'가 큰 사랑을 받고 있습니다.",
+        "location": "벳푸시 모토마치 1-4-1 (벳푸 중심부)",
+        "distance": "📍 0.6 km · 벳푸역 동쪽 출구에서 도보 약 8분",
+        "duration": "1 ~ 1.5시간",
+        "price": "일반탕 ¥300 / 모래찜질 ¥1,500",
+        "tips": "모래찜질은 1회 정원이 8명으로 한정되어 있습니다. 오전 10시 이전이나 오후 5시 이후에 방문하면 대기 시간이 짧습니다. 타월 대여 가능(200엔).",
+        "tags": [
+          "모래 온천",
+          "1879년 전통",
+          "목조 건축",
+          "역에서 도보 이동",
+          "현지인 추천"
+        ],
+        "popularSignals": [
+          "화산 모래찜질",
+          "카라하후 목조 건축",
+          "착한 가격 300엔"
+        ],
+        "quoteReview": {
+          "author": "정수진 (한국)",
+          "tag": "모래 온천 후기",
+          "text": "직원분들이 모래를 정성껏 덮어주시는데 피로가 한순간에 녹아내리는 기분이었습니다. 벳푸 여행 필수 코스!"
+        },
+        "preferenceReviewSignals": {
+          "budget": "최고의 가성비 · 시내 중심부에서 300엔에 즐기는 역사적 온천",
+          "accessibility": "전통 건축물 구조 · 탈의실 및 탕 진입 시 계단 단차 있음",
+          "practical": "문신 허용 · 과도하지 않은 작은 타투는 무난하게 입욕 가능"
+        }
+      },
+      "zh": {
+        "name": "竹瓦温泉",
+        "categoryLabel": "历史木造公共浴场",
+        "deal": "🏷️ 普通内汤仅需300日元 / 温泉达人印章点",
+        "shortDesc": "始建于1879年的标志性唐破风木造浴场，以独具特色的地热火山砂浴闻名。",
+        "whyVisit": "始建于明治12年的别府象征，穿上浴衣体验被温热火山砂覆盖全身的舒畅疗愈。",
+        "fullDesc": "竹瓦温泉建于明治12年（1879年），昭和13年重修为宏伟的唐破风木制建筑，被誉为别府公共温泉的灵魂。这里不仅提供低至300日元的古朴公共内汤，更有极具仪式感的“砂汤”——穿上浴衣，由专人将温热细腻的火山矿砂覆盖全身15分钟，温热透骨、舒缓身心。",
+        "location": "别府市元町1-4-1（别府老街区）",
+        "distance": "📍 0.6 km · 别府站东口步行约8分钟",
+        "duration": "1 – 1.5小时",
+        "price": "普通温泉 ¥300 / 砂汤 ¥1,500",
+        "tips": "砂汤每批次接待人数有限，建议上午10点前或下午5点后前往避开人流高峰。馆内提供毛巾租借（200日元）。",
+        "tags": [
+          "天然砂浴",
+          "百年木构",
+          "传统风情",
+          "车站步行可达",
+          "别府象征"
+        ],
+        "popularSignals": [
+          "火山地热砂汤",
+          "唐破风木建筑",
+          "300日元平价入浴"
+        ],
+        "quoteReview": {
+          "author": "林先生 (中国)",
+          "tag": "深度文化体验",
+          "text": "被热砂埋起来15分钟全身发汗，出浴后整个人无比轻松，300日元的门票实在太良心了！"
+        },
+        "preferenceReviewSignals": {
+          "budget": "超高性价比 · 车站旁仅需300日元即可泡正宗百年名汤",
+          "accessibility": "百年老建筑 · 浴室入口有木阶梯，需稍微留意脚下",
+          "practical": "纹身包容度高 · 礼貌接待有纹身的外籍游客，无需遮盖"
+        }
+      },
+      "yue": {
+        "name": "竹瓦溫泉",
+        "categoryLabel": "百年歷史木造浴場",
+        "deal": "🏷️ 大眾湯只需300日圓 / 溫泉名人印章名所",
+        "shortDesc": "始創於1879年嘅標誌性唐破風木造溫泉，招牌地熱黑砂浴舒筋活絡極具名氣。",
+        "whyVisit": "別府最老牌標誌建築，著住日式浴衣享受天然火山暖砂敷身，疲勞盡消。",
+        "fullDesc": "建於明治12年（1879年），擁有壯觀唐破風屋頂嘅竹瓦溫泉係別府溫泉文化嘅核心象徵。你可以選擇體驗傳統原汁原味嘅大眾溫泉（只需300日圓），或者換上日式浴衣，體驗由工作人員將熱氣騰騰嘅天然火山砂敷喺身上的「砂湯」，全身通透溫暖，疲勞盡消。",
+        "location": "別府市元町1-4-1（別府市中心老街）",
+        "distance": "📍 0.6 km · 別府站東口行路約8分鐘",
+        "duration": "1 – 1.5小時",
+        "price": "大眾湯 ¥300 / 砂浴 ¥1,500",
+        "tips": "砂浴每次名額有限，建議朝早10點前或者下晝5點後去最唔使排隊。現場有毛巾租借（¥200）。",
+        "tags": [
+          "招牌砂浴",
+          "百年唐破風",
+          "傳統風情",
+          "車站步行直達",
+          "別府必到"
+        ],
+        "popularSignals": [
+          "招牌火山砂浴",
+          "唐破風百年木建築",
+          "300日圓超值大眾湯"
+        ],
+        "quoteReview": {
+          "author": "陳小姐 (香港)",
+          "tag": "砂浴初體驗",
+          "text": "熱辣辣嘅黑砂敷喺身上15分鐘通體舒泰，出汗極爽，好有去咗舊日本電影場景嘅感覺！"
+        },
+        "preferenceReviewSignals": {
+          "budget": "極高性價比 · 近別府站只需300日圓就可以浸到高水準天然溫泉",
+          "accessibility": "古蹟建築 · 門口浴池有傳統木級，行動不便者建議有人陪同",
+          "practical": "紋身友善 · 身有紋身都可以自然入去享受砂浴"
+        }
+      }
+    }
+  },
+  {
+    "id": "kannawa-steam-district",
+    "japaneseName": "鉄輪温泉 & 地獄蒸し工房",
+    "category": "food",
+    "priceLevel": "¥¥",
+    "rating": 4.9,
+    "reviewsCount": 412,
+    "isPopular": true,
+    "isLocalFavorite": true,
+    "image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80"
+    ],
+    "openingHours": "Workshop: 9:00 AM – 8:00 PM (Last steam 7:00 PM, closed 3rd Tuesday)",
+    "nearbyPlaces": [
+      "beppu-hell-tour",
+      "hyotan-onsen"
+    ],
+    "suggestedGuides": [
+      "kenji-takahashi",
+      "maria-santos",
+      "chloe-chan"
+    ],
+    "attributes": {
+      "dietary": {
+        "halalStatus": "options",
+        "vegetarianOptions": true,
+        "veganOptions": true,
+        "glutenFree": true,
+        "allergyFriendly": true,
+        "noAlcohol": true,
+        "kosher": false
+      },
+      "accessibility": {
+        "wheelchairAccessible": true,
+        "stepFreeAccess": true,
+        "accessibleRestroom": true,
+        "strollerFriendly": true
+      },
+      "budgetOffers": {
+        "tier": "mid",
+        "discountsAvailable": true,
+        "studentDiscount": false,
+        "groupFamilyDiscount": true,
+        "touristPassDiscount": true
+      },
+      "experience": {
+        "familyFriendly": true,
+        "soloFriendly": true,
+        "coupleDate": true,
+        "groups": true,
+        "kidFriendly": true,
+        "quiet": false,
+        "nightlife": false,
+        "photoFriendly": true
+      },
+      "practical": {
+        "reservationRequired": false,
+        "walkInsAccepted": true,
+        "cashless": true,
+        "englishSupport": true,
+        "multilingualSupport": true,
+        "wifi": true,
+        "parking": true
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Kannawa Steam Village & Cooking",
+        "categoryLabel": "Steam Village & Dining",
+        "deal": "🏷️ ¥100 off steam kiln rental with Kamenoi Bus Pass",
+        "shortDesc": "Steam billows from street gutters and rooftops in Beppu's most atmospheric traditional hot spring quarter.",
+        "whyVisit": "Cook your own feast in 100°C natural volcanic steam without electricity or oil. Zero pork or alcohol contamination in vegetable and seafood baskets.",
+        "fullDesc": "Kannawa is the atmospheric heart of Beppu's hot spring history. Steam hisses constantly from rock crevices, chimney stacks, and drain covers. At the Jigokumushi Kobo (Hell Steam Workshop), visitors rent natural geothermal steam cooking kilns and steam local vegetables, seasonal seafood, pork buns, and eggs using pure volcanic steam with zero electricity.",
+        "location": "Kannawa District, North-West Beppu",
+        "distance": "📍 4.2 km · 20 min bus from Beppu Station",
+        "duration": "2 – 3 hours",
+        "price": "Free to stroll · Kiln rental ¥550 + food basket",
+        "tips": "Try the foot steam chambers (ashimushi) right outside the workshop while your pumpkin and dumplings are steaming!",
+        "tags": [
+          "Local Culture",
+          "Interactive Food",
+          "Atmospheric",
+          "Photogenic",
+          "Free Footbaths"
+        ],
+        "popularSignals": [
+          "Geothermal steam cooking",
+          "Mineral sweet pumpkin",
+          "Free foot steam chambers"
+        ],
+        "quoteReview": {
+          "author": "Fatima & Omar (Malaysia)",
+          "tag": "Halal & Vegetarian",
+          "text": "As Muslim travelers, this was our favorite meal in Kyushu: we steamed fresh scallops, sweet potatoes, and eggs with zero pork or mirin!"
+        },
+        "preferenceReviewSignals": {
+          "halal": "4.8/5 from 42 mentions · Pure mineral steam, choose-your-own seafood & produce baskets",
+          "dietary": "Vegan & Gluten-free friendly · Naturally sweet vegetables without added oils or sauces",
+          "accessibility": "Positive · Step-free workshop pavilion, ramps, and accessible outdoor foot steam"
+        }
+      },
+      "ja": {
+        "name": "鉄輪温泉街 ＆ 地獄蒸し工房",
+        "categoryLabel": "湯けむり集落・食体験",
+        "deal": "🏷️ 亀の井バスフリーきっぷ提示で釜利用料100円引き",
+        "shortDesc": "街の至る所から湯けむりが噴き出す情緒満点の温泉街。地熱蒸気で食材を蒸し上げる名物料理。",
+        "whyVisit": "約100度の天然蒸気釜で旬の食材を自ら蒸す体験。油を使わず、素材本来の濃厚な甘みと旨味が引き出されます。",
+        "fullDesc": "別府情緒を最も色濃く残す鉄輪（かんなわ）。石畳の路地やマンホールから白い湯けむりが濛々と立ち上ります。「地獄蒸し工房 鉄輪」では、約100度の天然地熱蒸気釜を使って、大分産の新鮮野菜、海鮮、点心などを自ら蒸して味わう体験が大人気。油を使わず、ミネラルが素材の甘みを引き出します。",
+        "location": "別府市 鉄輪温泉街",
+        "distance": "📍 4.2 km · 別府駅からバスで約20分",
+        "duration": "2 〜 3時間",
+        "price": "散策無料 · 地獄蒸し釜利用料 ¥550〜 + 食材代",
+        "tips": "食材を蒸している待ち時間は、工房前にある無料の「足蒸し（あしむし）」や足湯でリラックスするのがおすすめ！",
+        "tags": [
+          "湯けむり景観",
+          "体験型グルメ",
+          "風情ある街並み",
+          "無料足湯あり",
+          "写真映え"
+        ],
+        "popularSignals": [
+          "地獄蒸し体験",
+          "湯けむり足蒸し",
+          "素材の甘み引き出す蒸気"
+        ],
+        "quoteReview": {
+          "author": "アヤカ (大阪)",
+          "tag": "食のこだわり",
+          "text": "調味料をつけなくても、蒸気中の天然塩分で野菜が信じられないほど甘くて美味しい！"
+        },
+        "preferenceReviewSignals": {
+          "dietary": "ヴィーガン・ハラール対応 · 自分で選ぶ新鮮野菜と海鮮。完全油不使用",
+          "accessibility": "良好 · 工房内は完全段差なしのスロープ設計、車椅子でも利用可能",
+          "families": "ファミリー人気 · 耐熱手袋を着けて釜の蓋を開ける体験に子供も大喜び"
+        }
+      },
+      "ko": {
+        "name": "간나와 온천 마을 & 지옥 찜 공방",
+        "categoryLabel": "온천 연기 마을 & 요리 체험",
+        "deal": "🏷️ 카메노이 버스 패스 소지자 찜 가마 대여료 100엔 할인",
+        "shortDesc": "골목마다 온천 수증기가 피어오르는 정겨운 마을. 자연 지열 증기로 쪄내는 전통 요리.",
+        "whyVisit": "100도에 달하는 천연 화산 증기로 직접 해산물과 채소를 쪄먹는 이색적인 슬로우 푸드 체험.",
+        "fullDesc": "벳푸에서 가장 온천다운 풍경을 자랑하는 간나와 지구입니다. 도로 틈과 맨홀 뚜껑에서 솟구치는 하얀 증기가 몽환적인 분위기를 자아냅니다. '지요쿠무시 코보'에서는 전기를 일절 쓰지 않고 100도에 달하는 천연 온천 열증기를 이용해 오이타의 제철 해산물, 채소, 돼지고기 만두 등을 직접 쪄먹는 이색 식도락을 체험할 수 있습니다.",
+        "location": "벳푸시 간나와 온천가",
+        "distance": "📍 4.2 km · 벳푸역에서 버스 약 20분",
+        "duration": "2 ~ 3시간",
+        "price": "산책 무료 · 가마 대여료 ¥550 + 식재료 바구니",
+        "tips": "재료가 쪄지는 동안 공방 바로 바깥에 마련된 무료 '발 찜질(아시무시)' 시설에서 편안하게 온천 증기 테라피를 받아보세요.",
+        "tags": [
+          "로컬 문화",
+          "이색 미식 체험",
+          "정취 있는 풍경",
+          "포토 스팟",
+          "무료 족욕탕"
+        ],
+        "popularSignals": [
+          "지요쿠무시 지열 가마",
+          "달콤한 온천 단호박",
+          "무료 발 찜질기"
+        ],
+        "quoteReview": {
+          "author": "김태현 (한국)",
+          "tag": "이색 미식 체험",
+          "text": "기름 한 방울 없이 자연 수증기로만 쪄냈는데도 채소의 감칠맛이 최고였습니다. 온천 발 찜질도 무료!"
+        },
+        "preferenceReviewSignals": {
+          "dietary": "비건 & 할랄 친화적 · 돼지고기 없는 해산물 및 채소 바구니 직접 선택 가능",
+          "accessibility": "휠체어 이동 용이 · 평탄한 실내 바닥과 경사로 완비",
+          "families": "아이 동반 추천 · 가마에서 김이 뿜어져 나오는 광경에 가족 모두 만족"
+        }
+      },
+      "zh": {
+        "name": "铁轮温泉街与地热地蒸工坊",
+        "categoryLabel": "温泉烟霞古镇与料理",
+        "deal": "🏷️ 持龟之井巴士周游券租用蒸灶立减100日元",
+        "shortDesc": "青石路面与烟囱处处白烟缭绕，在别府最具风情的古镇亲手用地热蒸汽蒸熟美味。",
+        "whyVisit": "利用100度天然火山地热焖蒸时令蔬菜海鲜，零油脂、锁住原汁原味，清真与素食友好。",
+        "fullDesc": "铁轮是别府温泉历史底蕴最深厚的核心区域。地热白烟从石缝、屋顶与下水道口丝丝漫溢，如梦似幻。在著名的“地狱蒸工房”，游客可以租用天然地热蒸灶，将大分产的时令海鲜、新鲜蔬菜和黑猪肉包放入高达100度的温泉地热蒸汽中焖蒸，无油少盐，锁住天然鲜甜与矿物质养分。",
+        "location": "别府市 铁轮温泉区",
+        "distance": "📍 4.2 km · 别府站搭乘巴士约20分钟",
+        "duration": "2 – 3小时",
+        "price": "老街漫步免费 · 地热蒸灶租借 ¥550 + 食材篮费用",
+        "tips": "食材焖蒸期间，可前往工房外的免费“足蒸”（足部地热蒸汽箱）或足汤享受温热放松！",
+        "tags": [
+          "别府风情",
+          "手作美食体验",
+          "出片率高",
+          "免费足汤",
+          "地热地蒸"
+        ],
+        "popularSignals": [
+          "地热自蒸料理",
+          "天然甘甜南瓜番薯",
+          "免费足部地热蒸汽"
+        ],
+        "quoteReview": {
+          "author": "马先生 (马来西亚)",
+          "tag": "清真饮食友好",
+          "text": "完全由自己挑选新鲜海鲜与根茎蔬菜，纯天然地热焖蒸没有任何猪肉与料酒成分，吃得极其放心！"
+        },
+        "preferenceReviewSignals": {
+          "halal": "4.8分（42次提及）· 自选纯净蔬菜海鲜篮，天然矿物蒸汽无交叉",
+          "dietary": "素食与纯素无忧 · 无油烹饪，保留高山果蔬浓郁天然清甜",
+          "accessibility": "无障碍通行 · 工坊全平坡地面，婴儿车与轮椅均可轻松进入"
+        }
+      },
+      "yue": {
+        "name": "鐵輪溫泉街與地獄地蒸工坊",
+        "categoryLabel": "煙霧古街與地熱料理",
+        "deal": "🏷️ 憑龜之井巴士Pass租用石灶減100日圓",
+        "shortDesc": "石板巷弄同街頭白煙繚繞，喺別府最具韻味嘅古鎮親手用地熱蒸汽蒸熟海鮮蔬果。",
+        "whyVisit": "自選大分時令海產同鮮甜根莖野菜，用天然100度高溫蒸熟，零油少鹽超健康！",
+        "fullDesc": "鐵輪係別府溫泉風情最濃郁嘅地方，成個小鎮隨處可見蒸氣由石縫同排氣管源源不絕冒出。「地獄蒸工房」提供天然純地熱蒸灶出租，你可以揀選大分時令海鮮、鮮甜野菜同埋豬肉包，放入攝氏100度嘅天然溫泉蒸汽之中蒸熟，純天然零油脂，原汁原味超鮮甜！",
+        "location": "別府市 鐵輪溫泉街",
+        "distance": "📍 4.2 km · 由別府站搭巴士約20分鐘",
+        "duration": "2 – 3小時",
+        "price": "街道散步免費 · 地熱蒸灶租借 ¥550 + 食材自選費用",
+        "tips": "蒸緊嘢食嘅時候，工房門口有免費「蒸腳室（足蒸）」同足湯，可以一邊等一邊享受蒸腳！",
+        "tags": [
+          "極有韻味",
+          "互動美食體驗",
+          "打卡勝地",
+          "免費足湯",
+          "地道地熱蒸煮"
+        ],
+        "popularSignals": [
+          "地熱石灶DIY",
+          "天然鮮甜南瓜番薯",
+          "免費街頭足蒸氣"
+        ],
+        "quoteReview": {
+          "author": "何太 (香港)",
+          "tag": "健康原汁原味",
+          "text": "唔使落油同調味料，溫泉礦物質蒸汽直接將番薯同蝦嘅鮮甜味完全鎖住，小朋友大讚好好食！"
+        },
+        "preferenceReviewSignals": {
+          "halal": "4.8分好評（42次提及）· 自揀海產同野菜，純蒸汽蒸熟無豬肉成份",
+          "dietary": "純素及無麩質友好 · 零添加油份，健康又好味",
+          "accessibility": "無障礙設計 · 工房全面平地無梯級，帶BB車輪椅完全無問題"
+        }
+      }
+    }
+  },
+  {
+    "id": "beppu-ropeway",
+    "japaneseName": "別府ロープウェイ・鶴見岳",
+    "category": "nature",
+    "priceLevel": "¥¥",
+    "rating": 4.7,
+    "reviewsCount": 195,
+    "isPopular": true,
+    "isLocalFavorite": false,
+    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80"
+    ],
+    "openingHours": "9:00 AM – 5:00 PM (Summer until 5:30 PM)",
+    "nearbyPlaces": [
+      "myoban-yu-no-hana"
+    ],
+    "suggestedGuides": [
+      "carlos-mendez",
+      "kenji-takahashi"
+    ],
+    "attributes": {
+      "dietary": {
+        "halalStatus": "none",
+        "vegetarianOptions": true,
+        "veganOptions": false,
+        "glutenFree": false,
+        "allergyFriendly": true,
+        "noAlcohol": true,
+        "kosher": false
+      },
+      "accessibility": {
+        "wheelchairAccessible": true,
+        "stepFreeAccess": true,
+        "accessibleRestroom": true,
+        "strollerFriendly": true
+      },
+      "budgetOffers": {
+        "tier": "mid",
+        "discountsAvailable": true,
+        "studentDiscount": true,
+        "groupFamilyDiscount": true,
+        "touristPassDiscount": true
+      },
+      "experience": {
+        "familyFriendly": true,
+        "soloFriendly": true,
+        "coupleDate": true,
+        "groups": true,
+        "kidFriendly": true,
+        "quiet": true,
+        "nightlife": false,
+        "photoFriendly": true
+      },
+      "practical": {
+        "reservationRequired": false,
+        "walkInsAccepted": true,
+        "cashless": true,
+        "englishSupport": true,
+        "multilingualSupport": true,
+        "wifi": true,
+        "parking": true
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Beppu Ropeway & Mt. Tsurumi",
+        "categoryLabel": "Mountain & Panoramic View",
+        "deal": "🏷️ ¥100 roundtrip discount with Kamenoi Pass / Student ID",
+        "shortDesc": "Soar 1,375 meters up Mount Tsurumi for 360-degree vistas across Beppu Bay and the steaming valley.",
+        "whyVisit": "West Japan's largest aerial cable car. Takes you from sea level to 1,375m in 10 minutes with accessible ramps and seasonal flowers or rime ice.",
+        "fullDesc": "West Japan's largest aerial cable car whisks 101 passengers up the flank of Mount Tsurumi in just 10 minutes. At the summit, well-maintained wooded walking trails link seven shrines dedicated to the Seven Lucky Gods. On clear days, the panorama stretches past Beppu Bay to the Kuju Mountain Range and Shikoku Island across the Seto Inland Sea.",
+        "location": "Kankaiji / Minami-Tateishi, Beppu",
+        "distance": "📍 6.8 km · 25 min bus #36 from Beppu Station",
+        "duration": "2 – 2.5 hours",
+        "price": "¥1,800 roundtrip (Adult)",
+        "tips": "Temperatures atop Mount Tsurumi can be 8–10°C colder than the coastline. Pack a light windbreaker even during spring and summer.",
+        "tags": [
+          "Panoramic Views",
+          "Alpine Air",
+          "Fall Foliage / Rime Ice",
+          "Nature Trails"
+        ],
+        "popularSignals": [
+          "360° bay & mountain vistas",
+          "101-passenger cable car",
+          "Seven Lucky Gods trail"
+        ],
+        "quoteReview": {
+          "author": "Daniel K. (Australia)",
+          "tag": "Accessibility & Views",
+          "text": "Staff laid down portable ramps onto the gondola for my mother's wheelchair. The viewing platform over the bay was stunning!"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "Positive · Wheelchair ramp boarding into gondola; barrier-free base & summit station",
+          "budget": "Discounts available · Student ID ¥200 off and bus pass holder discount",
+          "photography": "Outstanding · 360-degree views of Beppu Bay, steam vents, and Shikoku"
+        }
+      },
+      "ja": {
+        "name": "別府ロープウェイ・鶴見岳",
+        "categoryLabel": "山岳・360度大パノラマ",
+        "deal": "🏷️ 亀の井バスフリーきっぷまたは学生証提示で往復100円割引",
+        "shortDesc": "西日本最大級ロープウェイで標高1,375mの鶴見岳山頂へ。別府湾と湯けむりを一望。",
+        "whyVisit": "標高1,375mから別府湾、湯けむり、由布岳を一望。大型ゴンドラは車椅子対応のスロープ乗車が可能です。",
+        "fullDesc": "101人乗りの大型ゴンドラがわずか10分で別府市街から山頂駅へ。鶴見岳山頂からは、湯けむり立ち上る別府市街と別府湾、由布岳、くじゅう連山、晴れた日には瀬戸内海を越えて四国まで見渡せます。春の桜、初夏のミヤマキリシマ、秋の紅葉、冬の霧氷と四季折々の絶景が楽しめます。",
+        "location": "別府市 南立石 鶴見原",
+        "distance": "📍 6.8 km · 別府駅よりバス36番で約25分",
+        "duration": "2 〜 2.5時間",
+        "price": "往復 ¥1,800（大人）",
+        "tips": "山頂は市街地より8〜10度気温が低くなります。春夏でも薄手の上着を持参することをおすすめします。",
+        "tags": [
+          "大パノラマ",
+          "高原の爽快感",
+          "四季の自然美",
+          "ハイキングコース"
+        ],
+        "popularSignals": [
+          "別府湾パノラマ",
+          "西日本最大級ゴンドラ",
+          "七福神めぐり"
+        ],
+        "quoteReview": {
+          "author": "ミチコ (福岡)",
+          "tag": "バリアフリー対応",
+          "text": "係員の方がとても親切で、車椅子の母にもスロープを敷いて乗せてくれました。山頂の景色に大感動です。"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "対応良好 · ゴンドラ乗降時に可動式スロープ設置、駅舎に多目的トイレあり",
+          "budget": "学割・パス割引あり · 学生証提示やバスパス割引に対応",
+          "experience": "絶景フォトスポット · 四季折々の高山植物と別府湾の大海原"
+        }
+      },
+      "ko": {
+        "name": "벳푸 로프웨이 & 쓰루미산",
+        "categoryLabel": "산악 파노라마 뷰",
+        "deal": "🏷️ 카메노이 패스 또는 학생증 제시 시 왕복 100엔 할인",
+        "shortDesc": "해발 1,375m 쓰루미산 정상으로 올라 벳푸만과 온천 증기 골짜기를 360도로 조망합니다.",
+        "whyVisit": "서일본 최대 규모 101인승 케이블카. 휠체어 탑승 지원 및 벳푸만 최고의 360도 절경.",
+        "fullDesc": "서일본 최대 규모를 자랑하는 101인승 케이블카를 타고 단 10분 만에 산 정상부에 도달합니다. 맑은 날에는 벳푸 시내의 하얀 온천 증기는 물론, 벳푸만 너머 세토내해와 시코쿠 섬까지 한눈에 들어옵니다. 봄 벚꽃과 가을 단풍, 겨울 상고대 눈꽃 등 사계절 절경이 펼쳐집니다.",
+        "location": "벳푸시 미나미타테이시",
+        "distance": "📍 6.8 km · 벳푸역에서 36번 버스로 약 25분",
+        "duration": "2 ~ 2.5시간",
+        "price": "왕복 ¥1,800 (성인)",
+        "tips": "정상은 해안 시내보다 기온이 8~10도 가량 낮습니다. 봄이나 여름에도 가벼운 바람막이 겉옷을 준비하세요.",
+        "tags": [
+          "파노라마 전망",
+          "상쾌한 공기",
+          "단풍 및 눈꽃",
+          "자연 산책로"
+        ],
+        "popularSignals": [
+          "벳푸만 파노라마",
+          "101인승 대형 로프웨이",
+          "산 정상 칠복신 산책로"
+        ],
+        "quoteReview": {
+          "author": "이동혁 (한국)",
+          "tag": "전망 & 서비스",
+          "text": "케이블카 탈 때 직원이 휠체어 발판을 직접 깔아줘서 어머니 모시고 편하게 올라갔습니다. 날씨 맑을 때 뷰가 환상적입니다."
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "접근성 우수 · 케이블카 이동형 경사로 완비 및 지상역 무장애 화장실 구비",
+          "budget": "학생 & 교통 패스 할인 · 학생증 소지자 및 버스 패스 할인 적용",
+          "photography": "최고의 포토존 · 온천 수증기와 푸른 벳푸만이 어우러진 전망"
+        }
+      },
+      "zh": {
+        "name": "别府空中索道与鹤见岳",
+        "categoryLabel": "高山观景与自然全景",
+        "deal": "🏷️ 出示龟之井巴士周游券或学生证享往返减100日元",
+        "shortDesc": "乘西日本最大级空中缆车直达海拔1,375米鹤见岳山顶，360度俯瞰别府湾与蒸腾白烟。",
+        "whyVisit": "西日本最大型载客缆车，10分钟登顶俯瞰别府全城烟霞与海湾，配备轮椅平顺登车设施。",
+        "fullDesc": "可容纳101人的大型索道缆车仅需10分钟即可将游客送上海拔1375米的鹤见岳山顶。登高远眺，温泉白烟缭绕的别府市区、蔚蓝的别府湾、久住连山，乃至四国岛轮廓尽收眼底。春有樱花与杜鹃，夏有清凉绿荫，秋赏漫山红叶，冬观剔透树冰，四季景色各异。",
+        "location": "别府市 南立石 鹤见原",
+        "distance": "📍 6.8 km · 别府站搭乘36路巴士约25分钟",
+        "duration": "2 – 2.5小时",
+        "price": "往返票 ¥1,800（成人）",
+        "tips": "鹤见岳山顶气温通常比海边市区低8到10摄氏度。即使春秋季节，也请随身携带一件轻便防风外套。",
+        "tags": [
+          "360度壮阔全景",
+          "高原避暑",
+          "红叶与雾凇",
+          "徒步步道"
+        ],
+        "popularSignals": [
+          "别府海湾全景",
+          "101人大型缆车",
+          "山顶祈福步道"
+        ],
+        "quoteReview": {
+          "author": "张小姐 (中国台湾)",
+          "tag": "无障碍与风景",
+          "text": "工作人员非常周到地为推轮椅的家人铺设活动跳板，山顶的观景台视角无可挑剔！"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "贴心服务 · 缆车车厢与站台铺设无障碍跳板，底站设有专用卫生间",
+          "budget": "学生与通票优惠 · 支持APU等高校学生证折扣与巴士周游券减免",
+          "photography": "出片率极高 · 晴天可眺望整座别府海湾与濑户内海地平线"
+        }
+      },
+      "yue": {
+        "name": "別府空中纜車與鶴見岳",
+        "categoryLabel": "高山展望與自然絕景",
+        "deal": "🏷️ 出示龜之井巴士Pass或學生證享來回減100日圓",
+        "shortDesc": "坐西日本最大型纜車直上海拔1,375米鶴見岳山頂，360度俯瞰別府灣與全城煙霞。",
+        "whyVisit": "10分鐘直上海拔1375米，無死角眺望別府灣海天一色，提供貼心輪椅登車板。",
+        "fullDesc": "載客量達101人嘅大型纜車只需10分鐘，就帶你直達鶴見岳山頂。山頂視野開闊，可以一口氣遠眺白煙蒸騰嘅別府市容、開揚嘅別府灣，晴朗時更可望到瀨戶內海對岸嘅四國島。春天賞櫻、秋天賞滿山紅葉、冬天欣賞剔透霧冰，四季景色如畫。",
+        "location": "別府市 南立石 鶴見原",
+        "distance": "📍 6.8 km · 由別府站搭乘巴士36號約25分鐘",
+        "duration": "2 – 2.5小時",
+        "price": "來回票 ¥1,800（成人）",
+        "tips": "山頂氣溫比市區低大約8至10度，即使春夏季節上山，都強烈建議帶定一件薄風褸禦寒。",
+        "tags": [
+          "360度全景",
+          "登高望遠",
+          "四季美景",
+          "自然步道"
+        ],
+        "popularSignals": [
+          "別府灣360度全景",
+          "西日本最大型纜車",
+          "山頂七福神步道"
+        ],
+        "quoteReview": {
+          "author": "梁生 (香港)",
+          "tag": "無障礙登車",
+          "text": "工作人員好好禮貌，鋪好專用斜板推輪椅入纜車，山頂俯瞰海景真係好壯觀！"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "貼心服務 · 纜車備有移動斜板方便輪椅同嬰兒推車上落",
+          "budget": "學生與周遊券折扣 · 出示海外/本地學生證及龜之井巴士Pass可獲優惠",
+          "photography": "打卡首選 · 天朗氣清時望到瀨戶內海四國島"
+        }
+      }
+    }
+  },
+  {
+    "id": "hyotan-onsen",
+    "japaneseName": "ひょうたん温泉",
+    "category": "onsen",
+    "priceLevel": "¥",
+    "rating": 4.9,
+    "reviewsCount": 520,
+    "isPopular": true,
+    "isLocalFavorite": true,
+    "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=800&q=80"
+    ],
+    "openingHours": "9:00 AM – 1:00 AM (Midnight, open all year)",
+    "nearbyPlaces": [
+      "kannawa-steam-district",
+      "beppu-hell-tour"
+    ],
+    "suggestedGuides": [
+      "daiki-sato",
+      "maria-santos",
+      "chloe-chan"
+    ],
+    "attributes": {
+      "dietary": {
+        "halalStatus": "options",
+        "vegetarianOptions": true,
+        "veganOptions": false,
+        "glutenFree": true,
+        "allergyFriendly": true,
+        "noAlcohol": false,
+        "kosher": false
+      },
+      "accessibility": {
+        "wheelchairAccessible": true,
+        "stepFreeAccess": true,
+        "accessibleRestroom": true,
+        "strollerFriendly": true
+      },
+      "budgetOffers": {
+        "tier": "budget",
+        "discountsAvailable": true,
+        "studentDiscount": false,
+        "groupFamilyDiscount": true,
+        "touristPassDiscount": false
+      },
+      "experience": {
+        "familyFriendly": true,
+        "soloFriendly": true,
+        "coupleDate": true,
+        "groups": true,
+        "kidFriendly": true,
+        "quiet": false,
+        "nightlife": true,
+        "photoFriendly": true
+      },
+      "practical": {
+        "reservationRequired": false,
+        "walkInsAccepted": true,
+        "cashless": true,
+        "englishSupport": true,
+        "multilingualSupport": true,
+        "wifi": true,
+        "parking": true
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Hyotan Onsen",
+        "categoryLabel": "Day Onsen Resort",
+        "deal": "🏷️ Evening soak discount after 8 PM (¥780 admission)",
+        "shortDesc": "Michelin Green Guide 3-star rated bath park with waterfall cascades, steam caves, and sand baths.",
+        "whyVisit": "Japan's only 3-star Michelin hot spring facility. Welcoming to discreet tattoos, with 19 private family baths and powerful waterfall shoulder massage.",
+        "fullDesc": "Hyotan is widely celebrated as the world's only hot spring bath facility awarded three stars by the Michelin Green Guide Japan. It features lush outdoor rock pools, cedar indoor baths, a subterranean stone steam bath, 19 private family onsen, and dramatic 'Taki-yu' waterfall jets that massage tired shoulder muscles with pure spring water cooled via natural bamboo lattice towers.",
+        "location": "159-2 Kannawa, Beppu",
+        "distance": "📍 4.0 km · 20 min bus from Beppu Station",
+        "duration": "2 hours",
+        "price": "¥940 (General admission)",
+        "tips": "One of the rare high-end onsens in Japan welcoming discreet tattoos without special tape. English signage is clearly posted throughout.",
+        "tags": [
+          "Michelin 3-Star",
+          "Outdoor Baths",
+          "Waterfall Massage",
+          "English Signage",
+          "Tattoo Friendly"
+        ],
+        "popularSignals": [
+          "Michelin 3-star",
+          "Waterfall massage jets",
+          "Tattoo friendly"
+        ],
+        "quoteReview": {
+          "author": "Alex & Jordan (USA)",
+          "tag": "Tattoo & Family Friendly",
+          "text": "Both of us have tattoos and felt completely welcomed. The private family baths are immaculate and spacious!"
+        },
+        "preferenceReviewSignals": {
+          "practical": "Tattoo-friendly · Welcomes visitors with tattoos respectfully throughout the facility",
+          "families": "Frequently recommended · 19 barrier-free private family baths with rental yukatas",
+          "accessibility": "Positive · Accessible family bath available with hoist chair on request"
+        }
+      },
+      "ja": {
+        "name": "ひょうたん温泉",
+        "categoryLabel": "日帰り温泉リゾート",
+        "deal": "🏷️ 夜20時以降の入浴は夜割（¥780）適用",
+        "shortDesc": "ミシュラン・グリーンガイド・ジャポンで3つ星を獲得。名物「瀧湯」や蒸し風呂が揃う名湯。",
+        "whyVisit": "ミシュラン3つ星を誇る名湯。19室の家族風呂、タトゥーへの寛容な配慮、竹冷却装置の純生源泉。",
+        "fullDesc": "ミシュラン・グリーンガイド・ジャポンで温泉施設として日本唯一の3つ星を獲得した日帰り温泉の最高峰。竹製冷却装置「湯雨竹」で源泉の泉質を損なわずに適温に冷ました上質な湯が注ぎます。名物の打たせ湯「瀧湯」、ヒノキ風呂、露天風呂、温泉熱を利用した蒸し風呂、家族風呂まで充実。",
+        "location": "別府市 鉄輪159-2",
+        "distance": "📍 4.0 km · 別府駅からバスで約20分",
+        "duration": "2時間",
+        "price": "¥940（大人入浴料）",
+        "tips": "外国人に優しく、タトゥーのあるお客様も歓迎の寛容な温泉施設です。英語案内が充実しています。",
+        "tags": [
+          "ミシュラン3つ星",
+          "露天風呂",
+          "名物瀧湯",
+          "英語表記完備",
+          "タトゥー歓迎"
+        ],
+        "popularSignals": [
+          "ミシュラン三ツ星",
+          "打たせ瀧湯",
+          "タトゥー受入"
+        ],
+        "quoteReview": {
+          "author": "ダイスケ＆リサ (神奈川)",
+          "tag": "家族連れ＆満足度",
+          "text": "貸切家族風呂を利用しました。中庭付きで清潔、小さな子ども連れでも周りを気にせず極楽でした。"
+        },
+        "preferenceReviewSignals": {
+          "practical": "タトゥー歓迎 · 外国人旅行者やタトゥーのある方も安心して入浴可能",
+          "families": "家族旅行に最適 · 19室のコイン式完全入れ替えプライベート家族風呂",
+          "accessibility": "バリアフリー対応 · 車椅子対応の家族風呂（要事前連絡）完備"
+        }
+      },
+      "ko": {
+        "name": "효탄 온천",
+        "categoryLabel": "당일 온천 리조트",
+        "deal": "🏷️ 저녁 8시 이후 야간 할인 적용 (입욕료 ¥780)",
+        "shortDesc": "미슐랭 그린가이드 3스타에 빛나는 명소. 쏟아지는 폭포탕, 모래탕, 증기 동굴탕 완비.",
+        "whyVisit": "일본 온천 중 유일한 미슐랭 3스타. 문신에 개방적이며, 19개의 프라이빗 가족탕과 폭포 마사지 완비.",
+        "fullDesc": "일본 온천 시설 중 유일하게 미슐랭 그린가이드 3스타를 획득한 프리미엄 당일 온천입니다. 대나무 냉각탑으로 물을 희석하지 않고 천연 온도만 낮춰 최상급 수질을 유지합니다. 어깨를 시원하게 두드려주는 명물 폭포수 탕(타키유), 편백나무 탕, 노천 암반탕, 지열 증기 사우나와 가족탕을 갖추고 있습니다.",
+        "location": "벳푸시 간나와 159-2",
+        "distance": "📍 4.0 km · 벳푸역에서 버스 약 20분",
+        "duration": "2시간",
+        "price": "¥940 (성인 일반 입욕료)",
+        "tips": "타투가 있는 외국인 여행객도 환영하는 개방적인 온천 시설입니다. 곳곳에 다국어 안내문이 설치되어 있습니다.",
+        "tags": [
+          "미슐랭 3스타",
+          "노천 온천",
+          "폭포 마사지탕",
+          "외국어 완비",
+          "문신 환영"
+        ],
+        "popularSignals": [
+          "미슐랭 3스타 인증",
+          "어깨 마사지 폭포탕",
+          "타투 허용"
+        ],
+        "quoteReview": {
+          "author": "최원영 (한국)",
+          "tag": "가족탕 & 타투",
+          "text": "팔에 타투가 있어서 온천 찾기 힘들었는데 효탄 온천은 눈치 안 보고 편안하게 이용했습니다. 가족탕도 최고예요!"
+        },
+        "preferenceReviewSignals": {
+          "practical": "문신 허용 · 외국인 관광객 타투에 개방적인 대표 온천",
+          "families": "가족 여행 인기 · 프라이빗 가족 노천탕 19실 운영",
+          "accessibility": "배리어프리 구비 · 완만한 진입로 및 휠체어 이용객 배려 시설"
+        }
+      },
+      "zh": {
+        "name": "葫芦温泉（Hyotan Onsen）",
+        "categoryLabel": "米其林三星日归温泉",
+        "deal": "🏷️ 晚间20点后入场享夜间优惠票价780日元",
+        "shortDesc": "日本唯一荣获米其林绿色指南三星荣誉的温泉设施，拥有壮观瀑布冲击汤与地热蒸气洞窟。",
+        "whyVisit": "日本唯一米其林三星温泉。对轻微纹身包容，备有19间高品质私密家庭汤屋与高落差瀑布打背温泉。",
+        "fullDesc": "葫芦温泉是享誉日本与国际的日归温泉代表。它采用独创的竹制自然冷却架“汤雨竹”，不兑一滴冷水即可将100度高温纯泉降至适温，完好保留矿物滋养成分。馆内拥有令人叹为观止的高落差“泷汤”（瀑布冲打浴）、露天岩风吕、地热蒸汽石室和多达19间私密家庭私汤。",
+        "location": "别府市 铁轮159-2",
+        "distance": "📍 4.0 km · 别府站搭乘巴士约20分钟",
+        "duration": "2小时",
+        "price": "¥940（普通成人入浴）",
+        "tips": "日本少数对轻微纹身完全包容友好的高品质温泉。全馆多语言指引清晰明了，初次入浴也能完全安心。",
+        "tags": [
+          "米其林三星",
+          "露天风吕",
+          "瀑布冲击浴",
+          "多语言标识",
+          "纹身友好"
+        ],
+        "popularSignals": [
+          "米其林三星殊荣",
+          "瀑布冲击打背汤",
+          "纹身友好接待"
+        ],
+        "quoteReview": {
+          "author": "周先生 (中国香港)",
+          "tag": "纹身包容与家庭汤",
+          "text": "身上有小纹身完全没被拦下，私汤每次放全新原汤非常卫生，瀑布冲背打完肩膀特别轻松！"
+        },
+        "preferenceReviewSignals": {
+          "practical": "纹身友好 · 罕见对纹身完全包容友善的高品质日归名汤",
+          "families": "亲子强推 · 19间一客一换水的纯私密家庭庭院汤屋",
+          "accessibility": "无障碍支持 · 设有平缓无障碍通道与无障碍家庭风吕"
+        }
+      },
+      "yue": {
+        "name": "葫蘆溫泉（Hyotan Onsen）",
+        "categoryLabel": "米芝蓮三星日歸溫泉",
+        "deal": "🏷️ 晚上8點後入場享晚間特惠780日圓",
+        "shortDesc": "日本唯一獲米芝蓮綠色指南三星榮譽嘅溫泉設施，招牌瀑布衝擊湯與天然蒸汽室極具特色。",
+        "whyVisit": "全日本唯一米芝蓮三星名湯。紋身包容度高，設有19間獨立私密家庭房，瀑布拍打按摩疲倦肩膀最舒服。",
+        "fullDesc": "葫蘆溫泉係全日本唯一獲米芝蓮三星推薦嘅溫泉浴場。採用專利竹枝冷卻系統「湯雨竹」，完全唔溝稀冷水將滾燙泉水降至舒服溫度。最出名嘅係強力瀑布「瀧湯」幫你按摩疲倦肩膀，仲有檜木室內池、戶外露天岩石池、天然地熱石室蒸氣浴同埋19間私人家庭湯屋。",
+        "location": "別府市 鐵輪159-2",
+        "distance": "📍 4.0 km · 由別府站搭巴士約20分鐘",
+        "duration": "2小時",
+        "price": "¥940（成人一般入場）",
+        "tips": "對身上有紋身嘅遊客十分包容友善，館內英文同中文指示非常清晰，第一次浸溫泉都可以好安心。",
+        "tags": [
+          "米芝蓮三星",
+          "露天溫泉",
+          "瀑布衝擊湯",
+          "多語指示齊全",
+          "紋身包容"
+        ],
+        "popularSignals": [
+          "米芝蓮三星認證",
+          "瀑布衝擊瀧湯",
+          "包容紋身客"
+        ],
+        "quoteReview": {
+          "author": "李生 (香港)",
+          "tag": "家庭房及設施",
+          "text": "租咗家庭獨立露天風呂，每次自動換全新溫泉水超乾淨，完全唔使驚有紋身尷尬，五星推薦！"
+        },
+        "preferenceReviewSignals": {
+          "practical": "紋身友善 · 全日本少數對紋身旅客毫無偏見嘅頂級溫泉",
+          "families": "家庭遊客推薦 · 19間獨立花園家庭私湯屋，帶小朋友首選",
+          "accessibility": "無障礙設施 · 設有平坦斜路與無障礙專用家庭風呂"
+        }
+      }
+    }
+  },
+  {
+    "id": "beppu-tower-station",
+    "japaneseName": "別府駅前 & 油屋熊八像",
+    "category": "local",
+    "priceLevel": "Free",
+    "rating": 4.5,
+    "reviewsCount": 168,
+    "isPopular": true,
+    "isLocalFavorite": true,
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80"
+    ],
+    "openingHours": "Open 24 hours (Tourist Desk 8:30 AM – 6:00 PM)",
+    "nearbyPlaces": [
+      "takegawara-onsen",
+      "jukkokubashi-alley"
+    ],
+    "suggestedGuides": [
+      "maria-santos",
+      "yuna-kim",
+      "chloe-chan"
+    ],
+    "attributes": {
+      "dietary": {
+        "halalStatus": "options",
+        "vegetarianOptions": true,
+        "veganOptions": true,
+        "glutenFree": false,
+        "allergyFriendly": true,
+        "noAlcohol": true,
+        "kosher": false
+      },
+      "accessibility": {
+        "wheelchairAccessible": true,
+        "stepFreeAccess": true,
+        "accessibleRestroom": true,
+        "strollerFriendly": true
+      },
+      "budgetOffers": {
+        "tier": "free",
+        "discountsAvailable": true,
+        "studentDiscount": true,
+        "groupFamilyDiscount": true,
+        "touristPassDiscount": true
+      },
+      "experience": {
+        "familyFriendly": true,
+        "soloFriendly": true,
+        "coupleDate": false,
+        "groups": true,
+        "kidFriendly": true,
+        "quiet": false,
+        "nightlife": false,
+        "photoFriendly": true
+      },
+      "practical": {
+        "reservationRequired": false,
+        "walkInsAccepted": true,
+        "cashless": true,
+        "englishSupport": true,
+        "multilingualSupport": true,
+        "wifi": true,
+        "parking": true
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Beppu Station Plaza & Aburaya Kumahachi",
+        "categoryLabel": "Station Hub & Plaza",
+        "deal": "🏷️ Free 24/7 Hand Bath & Kamenoi pass discount center",
+        "shortDesc": "The welcoming gateway with a free hand-bath (te-yu), bronze tourism founder statue, and retro street culture.",
+        "whyVisit": "Central transit hub where Kamenoi bus passes are bought, luggage is stored, and travelers warm their hands in thermal water straight off the train.",
+        "fullDesc": "Beppu Station is where your journey begins. Just outside the east exit sits the quirky bronze statue of Aburaya Kumahachi (the visionary pioneer who turned Beppu into Japan's hot spring capital) with his flowing cape. Right beside him is a warm, steaming wooden hand bath (Te-yu) open 24/7 for travelers to warm their fingers straight off the train.",
+        "location": "Ekimae-cho, Beppu Station Plaza",
+        "distance": "📍 0.0 km · Central Transport Hub",
+        "duration": "30 – 45 min",
+        "price": "Free",
+        "tips": "Head to the foreigner-friendly Information Desk inside the station to purchase the 1-Day or 2-Day Kamenoi Bus Pass (My Beppu Pass) for big savings.",
+        "tags": [
+          "Gateway",
+          "Free Handbath",
+          "Transit Hub",
+          "Tourist Info",
+          "Luggage Lockers"
+        ],
+        "popularSignals": [
+          "Free steaming hand bath",
+          "Tourist Pass Desk",
+          "Large luggage lockers"
+        ],
+        "quoteReview": {
+          "author": "Maya & James",
+          "tag": "Transit & Helpfulness",
+          "text": "The English-speaking tourist info staff set us up with bus passes and locker storage in 3 minutes. The warm hand bath was a delight!"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "Flawless accessibility · Elevators, escalators, and barrier-free street crossings",
+          "practical": "Transit hub · Foreign visitor center, free high-speed Wi-Fi, and luggage storage",
+          "families": "Kid friendly · Children love touching the warm mineral water right outside the exit"
+        }
+      },
+      "ja": {
+        "name": "別府駅前広場 ＆ 油屋熊八像",
+        "categoryLabel": "玄関口・ステーション広場",
+        "deal": "🏷️ 24時間無料の手湯 ＆ お得なバスパス案内所",
+        "shortDesc": "別府観光の父・油屋熊八像と無料の天然「手湯」が旅人を迎える、街歩きの拠点。",
+        "whyVisit": "別府観光の出発点。24時間源泉掛け流しの「手湯」、亀の井バスのフリーパス販売窓口、コインロッカーが集中。",
+        "fullDesc": "別府の旅のスタート地点。東口広場にはマントを羽織りバンザイのポーズをとる「別府観光の父・油屋熊八」のユニークな銅像が鎮座。そのすぐ脇には24時間源泉掛け流しの木製「手湯」があり、列車を降りてすぐに温泉の温もりを体感できます。駅構内には充実の観光案内所もあります。",
+        "location": "別府市 駅前町（別府駅東口広場）",
+        "distance": "📍 0.0 km · 別府駅直結（徒歩0分）",
+        "duration": "30 〜 45分",
+        "price": "無料",
+        "tips": "構内の観光案内所で「MyべっぷFree（亀の井バスフリー乗車券）」を購入すると、市内移動が劇的にお得かつ快適になります。",
+        "tags": [
+          "旅の拠点",
+          "無料手湯",
+          "観光案内所",
+          "コインロッカー完備",
+          "アクセス抜群"
+        ],
+        "popularSignals": [
+          "24時間無料手湯",
+          "観光案内デスク",
+          "大型コインロッカー"
+        ],
+        "quoteReview": {
+          "author": "サトシ (愛知)",
+          "tag": "利便性と手湯",
+          "text": "電車を降りてすぐ手湯で温まれるのが別府ならでは。案内所の方もバス乗り場を親切に教えてくれました。"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "完全バリアフリー · 改札から東口広場・バス停までエレベーター完備",
+          "practical": "情報拠点 · 多言語パンフレット、無料Wi-Fi、荷物預かり充実",
+          "families": "ファミリー安心 · わかりやすい動線と駅構内バリアフリートイレ完備"
+        }
+      },
+      "ko": {
+        "name": "벳푸역 광장 & 아부라야 쿠마하치 동상",
+        "categoryLabel": "교통 허브 & 역전 광장",
+        "deal": "🏷️ 24시간 천연 손 온천(테유) 무료 & 버스 패스 발권",
+        "shortDesc": "무료 천연 손 온천(테유)과 벳푸 관광의 아버지 동상이 여행자를 반기는 활기찬 관문.",
+        "whyVisit": "벳푸 여행의 출발점이자 중심 교통 허브. 24시간 따뜻한 온천수에 손을 담그고 관광 정보를 얻으세요.",
+        "fullDesc": "벳푸 여행의 출발점인 벳푸역 동쪽 출구 광장입니다. 벳푸를 세계적 온천 도시로 부흥시킨 선구자 아부라야 쿠마하치의 유쾌한 망토 동상이 서 있습니다. 그 옆에는 기차에서 내리자마자 24시간 언제든 따뜻한 온천수를 만져볼 수 있는 천연 목조 '손 온천(테유)'이 무료로 운영되고 있습니다.",
+        "location": "벳푸시 에키마에초 (벳푸역 광장)",
+        "distance": "📍 0.0 km · 벳푸역 직결 (도보 0분)",
+        "duration": "30 ~ 45분",
+        "price": "무료",
+        "tips": "역 내부의 외국인 관광 안내소에서 카메노이 버스 1일/2일 자유이용권(My 벳푸 패스)을 구매하면 교통비를 크게 절약할 수 있습니다.",
+        "tags": [
+          "여행의 관문",
+          "무료 손 온천",
+          "교통 중심",
+          "관광 안내 데스크",
+          "물품 보관함"
+        ],
+        "popularSignals": [
+          "무료 손 온천 (테유)",
+          "친절한 관광안내소",
+          "대형 코인락커"
+        ],
+        "quoteReview": {
+          "author": "윤서연 (한국)",
+          "tag": "역전 편의성",
+          "text": "기차역 나오자마자 김이 모락모락 나는 손 온천에 손을 녹였는데 여행 시작부터 힐링되었습니다."
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "완벽한 무장애 환경 · 엘리베이터 및 점자 블록, 경사로 완비",
+          "practical": "여행자 편의 · 한국어 안내 책자 구비 및 버스 패스 현장 구매 가능",
+          "families": "아이 동반 안심 · 역사 내 기저귀 교환대 및 넓은 가족 화장실 완비"
+        }
+      },
+      "zh": {
+        "name": "别府站前广场与油屋熊八铜像",
+        "categoryLabel": "别府门户与站前广场",
+        "deal": "🏷️ 24小时免费天然杉木手汤 ＆ 巴士通票服务中心",
+        "shortDesc": "迎客的免费天然木造“手汤”、别府观光之父滑稽披风铜像，以及便利的交通枢纽。",
+        "whyVisit": "别府旅行的第一站与综合交通中枢，走出闸口即可浸泡天然温泉手汤，购买优惠巴士通票。",
+        "fullDesc": "别府之旅的精彩起点。站前东口立着披着披风展臂欢呼的“别府观光之父”油屋熊八铜像。铜像旁设有全天24小时流淌的天然杉木“手汤”，刚走出检票口就能将双手浸入温热泉水中感受别府温度。站内设有完善的多语言游客咨询中心。",
+        "location": "别府市 驿前町（别府站东广场）",
+        "distance": "📍 0.0 km · 别府站直通（步行0分钟）",
+        "duration": "30 – 45分钟",
+        "price": "免费",
+        "tips": "出站后可前往站内多语言观光问讯处购买龟之井巴士1日或2日周游券（My Beppu Pass），乘车游览省钱又省心。",
+        "tags": [
+          "交通枢纽",
+          "免费手汤",
+          "观光问讯处",
+          "行李寄存箱",
+          "出行起点"
+        ],
+        "popularSignals": [
+          "24小时免费手汤",
+          "多语种问讯处",
+          "大型行李柜"
+        ],
+        "quoteReview": {
+          "author": "郭先生 (中国上海)",
+          "tag": "问讯与便民",
+          "text": "游客中心有懂中文的服务人员，5分钟内帮我们办好了巴士通票，东口的免费手汤非常暖和！"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "极佳无障碍通行 · 站台电梯直通出站口与巴士乘车点，地面平整",
+          "practical": "旅游服务中心 · 提供免费Wi-Fi、官方中英文地图与大号行李寄存箱",
+          "families": "家庭出行便捷 · 站内配套母婴室与无障碍家庭卫生间"
+        }
+      },
+      "yue": {
+        "name": "別府站前廣場與油屋熊八銅像",
+        "categoryLabel": "別府門戶與站前廣場",
+        "deal": "🏷️ 24小時免費天然杉木手湯 ＆ 巴士Pass銷售處",
+        "shortDesc": "24小時免費天然杉木「手湯」、別府觀光之父招牌銅像，以及最便捷嘅交通樞紐。",
+        "whyVisit": "出閘第一站，浸泡暖笠笠嘅天然木造手湯，買齊龜之井巴士Pass同寄存大行李。",
+        "fullDesc": "別府旅程嘅起步點。東口廣場設有揚起披風歡呼嘅「別府觀光之父」油屋熊八銅像。旁邊更有24小時源泉直流嘅木造天然「手湯」，落火車一出站就可以伸手感受暖笠笠嘅溫泉水。站內設有貼心嘅多國語言遊客諮詢中心同大型行李寄存箱。",
+        "location": "別府市 驛前町（別府站東口廣場）",
+        "distance": "📍 0.0 km · 別府站直通（步行0分鐘）",
+        "duration": "30 – 45分鐘",
+        "price": "免費",
+        "tips": "出閘後記得去站內觀光詢問處買定龜之井巴士1日或2日Pass（My Beppu Pass），坐巴士周圍去最划算。",
+        "tags": [
+          "交通核心",
+          "免費手湯",
+          "旅客中心",
+          "大型儲物櫃",
+          "行程起點"
+        ],
+        "popularSignals": [
+          "24小時免費木手湯",
+          "多語觀光諮詢",
+          "特大儲物櫃"
+        ],
+        "quoteReview": {
+          "author": "黃小姐 (香港)",
+          "tag": "手湯與諮詢",
+          "text": "落車即刻浸到暖笠笠嘅溫泉手湯超驚喜！旅客諮詢處職員好有耐性教點搭巴士去鐵輪。"
+        },
+        "preferenceReviewSignals": {
+          "accessibility": "全方位無障礙 · 站內全平地配備大型升降機，推行李同行長輩毫無阻滯",
+          "practical": "交通核心樞紐 · 龜之井巴士站直達市區各大溫泉，儲物櫃充足",
+          "families": "親子出遊首選 · 站內設有育嬰室同寬敞無障礙洗手間"
+        }
+      }
+    }
+  },
+  {
+    "id": "myoban-yu-no-hana",
+    "japaneseName": "明礬 湯の里 湯の花小屋",
+    "category": "culture",
+    "priceLevel": "¥",
+    "rating": 4.8,
+    "reviewsCount": 221,
+    "isPopular": false,
+    "isLocalFavorite": true,
+    "image": "https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "openingHours": "10:00 AM – 8:00 PM",
+    "nearbyPlaces": [
+      "beppu-ropeway"
+    ],
+    "suggestedGuides": [
+      "daiki-sato",
+      "kenji-takahashi"
+    ],
+    "attributes": {
+      "dietary": {
+        "halalStatus": "options",
+        "vegetarianOptions": true,
+        "veganOptions": true,
+        "glutenFree": true,
+        "allergyFriendly": true,
+        "noAlcohol": true,
+        "kosher": false
+      },
+      "accessibility": {
+        "wheelchairAccessible": false,
+        "stepFreeAccess": false,
+        "accessibleRestroom": true,
+        "strollerFriendly": false
+      },
+      "budgetOffers": {
+        "tier": "budget",
+        "discountsAvailable": true,
+        "studentDiscount": false,
+        "groupFamilyDiscount": false,
+        "touristPassDiscount": false
+      },
+      "experience": {
+        "familyFriendly": true,
+        "soloFriendly": true,
+        "coupleDate": true,
+        "groups": true,
+        "kidFriendly": true,
+        "quiet": true,
+        "nightlife": false,
+        "photoFriendly": true
+      },
+      "practical": {
+        "reservationRequired": false,
+        "walkInsAccepted": true,
+        "cashless": true,
+        "englishSupport": true,
+        "multilingualSupport": false,
+        "wifi": true,
+        "parking": true
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Myoban Yunohanagoya Thatched Huts",
+        "categoryLabel": "Heritage & Mountain Spa",
+        "deal": "🏷️ Free entry to historic straw huts / Bath only ¥600",
+        "shortDesc": "Centuries-old straw huts harvesting natural mineral hot spring crystals high in the mountain mist.",
+        "whyVisit": "Japan's designated Intangible Folk Cultural Property. Watch mineral crystals grow on volcanic steam and soak in misty milky-blue sulfuric waters.",
+        "fullDesc": "Perched high in the misty mountain foothills of Myoban Onsen, triangular straw-thatched huts have been manufacturing 'Yunohana' (flower of hot spring crystals) using an intangible folk cultural property technique dating back to the Edo period. The acidic sulfur waters here create a milky-blue outdoor pool with panoramic views of the Myoban Arch Bridge.",
+        "location": "Myoban Onsen, Beppu",
+        "distance": "📍 5.5 km · 30 min bus from Beppu Station",
+        "duration": "1.5 – 2 hours",
+        "price": "¥600 (Bath) · Free to view huts",
+        "tips": "Do not wear silver jewelry into the sulfur water as it will immediately tarnish. Try the onsen-steamed custard pudding at the tea shop!",
+        "tags": [
+          "Intangible Heritage",
+          "Milky Sulfur Water",
+          "Mountain Views",
+          "Hidden Gem",
+          "Edo History"
+        ],
+        "popularSignals": [
+          "Straw thatched huts",
+          "Milky-blue sulfur bath",
+          "Steamed caramel pudding"
+        ],
+        "quoteReview": {
+          "author": "Sophie & Thomas",
+          "tag": "Heritage & Scenery",
+          "text": "The milky sulfur water overlooking the mountain arch bridge is unforgettable. The steamed custard pudding at the shop is perfection!"
+        },
+        "preferenceReviewSignals": {
+          "dietary": "Vegetarian dessert · Steamed egg pudding and hot sweet potatoes in tea house",
+          "photography": "Iconic photo spot · Straw huts against mist and the Myoban concrete arch bridge",
+          "practical": "Cashless payment supported for souvenirs and bath entry tickets"
+        }
+      },
+      "ja": {
+        "name": "明礬 湯の里・湯の花小屋",
+        "categoryLabel": "伝統文化・秘湯温泉",
+        "deal": "🏷️ 小屋見学無料 / 絶景露天風呂わずか600円",
+        "shortDesc": "江戸時代から続く国の重要無形民俗文化財。わらぶき小屋で薬効豊かな「湯の花」を製造。",
+        "whyVisit": "国の重要無形民俗文化財。江戸時代から続く技術で結晶化する湯の花小屋見学と、白濁の美肌硫黄泉。",
+        "fullDesc": "別府市街を見下ろす山あいの明礬（みょうばん）温泉。三角屋根の茅葺き（かやぶき）小屋が立ち並ぶ風景は江戸時代から受け継がれる国の重要無形民俗文化財です。強酸性の硫黄泉から結晶化させる天然入浴剤「湯の花」の製法を見学できるほか、ミルキーブルーの絶景露天風呂も楽しめます。",
+        "location": "別府市 明礬温泉6組",
+        "distance": "📍 5.5 km · 別府駅からバスで約30分",
+        "duration": "1.5 〜 2時間",
+        "price": "入浴 ¥600 · 小屋見学無料",
+        "tips": "硫黄成分が非常に強いため、銀のアクセサリーは変色しますので必ず外してご入浴ください。売店の温泉プリンも絶品です。",
+        "tags": [
+          "無形文化財",
+          "白濁の硫黄泉",
+          "山の絶景",
+          "穴場名所",
+          "江戸時代の技術"
+        ],
+        "popularSignals": [
+          "国の無形民俗文化財",
+          "白濁ミルキーブルー露天",
+          "名物湯の里プリン"
+        ],
+        "quoteReview": {
+          "author": "マサユキ (京都)",
+          "tag": "秘湯と景観",
+          "text": "明礬大橋を見渡すミルキーブルーの硫黄泉は別府随一の湯ざわり。湯の花小屋の藁葺き屋根も風情満点です。"
+        },
+        "preferenceReviewSignals": {
+          "dietary": "甘味充実 · 温泉蒸気で蒸した名物プリンはベジタリアン対応",
+          "experience": "文化と絶景 · 江戸時代から続く伝統製法を無料で間近に見学可能",
+          "practical": "キャッシュレス対応 · 売店・入浴券売所で電子決済利用可能"
+        }
+      },
+      "ko": {
+        "name": "묘반 유노사토 & 유노하나 짚 오두막",
+        "categoryLabel": "전통 유산 & 산악 유황 온천",
+        "deal": "🏷️ 짚 오두막 무료 견학 / 절경 노천탕 단돈 600엔",
+        "shortDesc": "에도 시대부터 천연 온천 결정체 '유노하나'를 채취해 온 삼각 짚 오두막과 우윳빛 노천탕.",
+        "whyVisit": "국가 중요무형문화재 기법으로 채취하는 온천 결정체 견학과 뽀얀 에메랄드빛 유황 노천탕.",
+        "fullDesc": "산안개가 감도는 묘반 온천에 위치한 삼각형 초가지붕 오두막 군락입니다. 에도 시대부터 전해 내려오는 국가 중요 무형 민속 문화재 기법으로 천연 입욕 결정 '유노하나(온천의 꽃)'를 채취합니다. 산세를 감상하며 즐기는 유백색 유황 노천탕과 묘반 대교의 전망이 일품입니다.",
+        "location": "벳푸시 묘반 온천",
+        "distance": "📍 5.5 km · 벳푸역에서 버스로 약 30분",
+        "duration": "1.5 ~ 2시간",
+        "price": "입욕 ¥600 · 오두막 견학 무료",
+        "tips": "유황 성분이 매우 강하므로 은반지나 목걸이는 검게 변색되니 반드시 벗고 입욕하세요. 찻집의 온천 커스터드 푸딩도 놓치지 마세요.",
+        "tags": [
+          "무형 문화재",
+          "우윳빛 유황 온천",
+          "산악 뷰",
+          "숨은 명소",
+          "에도 시대 역사"
+        ],
+        "popularSignals": [
+          "삼각 짚 오두막",
+          "뽀얀 밀키 블루 유황탕",
+          "온천 지열 푸딩"
+        ],
+        "quoteReview": {
+          "author": "한승우 (한국)",
+          "tag": "유황 온천의 진수",
+          "text": "물 색깔이 정말 신비로운 에메랄드 우윳빛입니다. 짚 오두막을 배경으로 찍은 사진도 이국적이고 멋집니다."
+        },
+        "preferenceReviewSignals": {
+          "dietary": "디저트 만족 · 지열로 쪄낸 달콤한 수제 커스터드 푸딩 인기",
+          "experience": "역사 문화 탐방 · 에도 시대부터 이어진 천연 결정 채취 과정 견학",
+          "practical": "간편 결제 지원 · 입장권 및 기념품 매장 카드/간편결제 가능"
+        }
+      },
+      "zh": {
+        "name": "明矾 汤之里・汤之花茅草小屋",
+        "categoryLabel": "非物质文化遗产与山间秘汤",
+        "deal": "🏷️ 茅草屋参观免费 / 绝景露天汤仅600日元",
+        "shortDesc": "始于江户时代的茅草小屋，手工采撷天然矿物温泉结晶“汤之花”，享受乳白硫磺泉。",
+        "whyVisit": "日本国家指定重要无形民俗文化财产。在云雾缭绕中眺望明矾拱桥，浸泡纯正乳白美肌硫磺泉。",
+        "fullDesc": "座落于明矾温泉云雾缭绕的高山深处，排排三角茅草小屋完整保留了自江户时代传承至今的日本国家重要无形民俗文化遗产技艺。游客可近距离参观地热结晶“汤之花”的制造工法，并在俯瞰明矾拱桥的露天纯天然乳白色硫磺温泉中享受极致的滋润与疗愈。",
+        "location": "别府市 明矾温泉区",
+        "distance": "📍 5.5 km · 别府站搭乘巴士约30分钟",
+        "duration": "1.5 – 2小时",
+        "price": "露天入浴 ¥600 · 参观茅草屋免费",
+        "tips": "因硫磺矿物浓度极高，银质首饰会瞬间氧化发黑，入浴前请务必取下。茶屋的温泉地热蒸布丁香浓美味，极力推荐！",
+        "tags": [
+          "非遗传承",
+          "乳白硫磺名汤",
+          "山间秘境",
+          "私房小众",
+          "江户古法"
+        ],
+        "popularSignals": [
+          "江户茅草小屋群",
+          "乳白色高浓硫磺泉",
+          "天然地热布丁"
+        ],
+        "quoteReview": {
+          "author": "郑女士 (中国)",
+          "tag": "秘汤与非遗",
+          "text": "硫磺泉质极其纯净，泡完皮肤非常光滑。山间茅草屋仿佛世外桃源，拍照非常出片！"
+        },
+        "preferenceReviewSignals": {
+          "dietary": "素食小吃 · 茶屋地热蒸焦糖布丁香浓丝滑，素食友好",
+          "experience": "非遗文化探索 · 免费参观江户古法天然矿物结晶工艺",
+          "practical": "便捷支付 · 门票与特产纪念品店均支持移动免触支付"
+        }
+      },
+      "yue": {
+        "name": "明礬 湯之里・湯之花茅草小屋",
+        "categoryLabel": "非物質文化遺產與深山名湯",
+        "deal": "🏷️ 茅草小屋參觀免費 / 絕景露天溫泉僅600日圓",
+        "shortDesc": "江戶時代傳承至今嘅三角形茅草小屋，天然採集「湯之花」溫泉結晶，浸泡乳白硫磺泉。",
+        "whyVisit": "日本重要無形民俗文化遺產。喺深山雲霧中遠眺明礬大橋，享受奶白色嘅高濃度天然硫磺泉。",
+        "fullDesc": "位於明礬溫泉山腰雲霧之中的茅草小屋群，係日本國家指定嘅重要無形民俗文化遺產。至今依然沿用江戶古法，收集溫泉蒸汽中結晶而成嘅天然入浴劑「湯之花」。除咗參觀古法製作，仲可以喺眺望明礬大橋嘅高山露天溫泉浸泡奶白色嘅高濃度天然硫磺泉，美肌效果顯著。",
+        "location": "別府市 明礬溫泉",
+        "distance": "📍 5.5 km · 由別府站搭巴士約30分鐘",
+        "duration": "1.5 – 2小時",
+        "price": "露天浴場 ¥600 · 參觀茅草屋免費",
+        "tips": "硫磺濃度非常高，銀器飾物會即刻變黑，浸溫泉前記得除低。特產店嘅地熱蒸吉士布甸非常香濃，千祈唔好錯過！",
+        "tags": [
+          "非物質文化遺產",
+          "奶白硫磺泉",
+          "深山秘境",
+          "隱世景點",
+          "江戶古法"
+        ],
+        "popularSignals": [
+          "茅草小屋群",
+          "奶白色硫磺泉",
+          "地熱蒸吉士布甸"
+        ],
+        "quoteReview": {
+          "author": "盧生 (香港)",
+          "tag": "深山秘境",
+          "text": "望住明礬大橋浸奶白色硫磺水真係極致享受，特產舖嘅溫泉地熱布甸好滑好香！"
+        },
+        "preferenceReviewSignals": {
+          "dietary": "素食甜品 · 溫泉地熱蒸布甸同高山熱番薯甜入心扉",
+          "experience": "文化傳承 · 免費近距離睇江戶時代結晶古法",
+          "practical": "電子支付 · 支援信用卡及電子錢包付款"
+        }
+      }
+    }
+  },
+  {
+    "id": "jukkokubashi-alley",
+    "japaneseName": "十文字小路 & 元祖とり天街",
+    "category": "food",
+    "priceLevel": "¥¥",
+    "rating": 4.9,
+    "reviewsCount": 310,
+    "isPopular": false,
+    "isLocalFavorite": true,
+    "image": "https://images.unsplash.com/photo-1554672408-730436b60ede?auto=format&fit=crop&w=1200&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1554672408-730436b60ede?auto=format&fit=crop&w=800&q=80"
+    ],
+    "openingHours": "5:30 PM – Midnight (Varies by izakaya)",
+    "nearbyPlaces": [
+      "takegawara-onsen",
+      "beppu-tower-station"
+    ],
+    "suggestedGuides": [
+      "maria-santos",
+      "yuna-kim",
+      "chloe-chan"
+    ],
+    "attributes": {
+      "dietary": {
+        "halalStatus": "no-pork",
+        "vegetarianOptions": true,
+        "veganOptions": false,
+        "glutenFree": false,
+        "allergyFriendly": true,
+        "noAlcohol": false,
+        "kosher": false
+      },
+      "accessibility": {
+        "wheelchairAccessible": true,
+        "stepFreeAccess": true,
+        "accessibleRestroom": false,
+        "strollerFriendly": true
+      },
+      "budgetOffers": {
+        "tier": "mid",
+        "discountsAvailable": true,
+        "studentDiscount": false,
+        "groupFamilyDiscount": false,
+        "touristPassDiscount": false
+      },
+      "experience": {
+        "familyFriendly": false,
+        "soloFriendly": true,
+        "coupleDate": true,
+        "groups": true,
+        "kidFriendly": false,
+        "quiet": false,
+        "nightlife": true,
+        "photoFriendly": true
+      },
+      "practical": {
+        "reservationRequired": false,
+        "walkInsAccepted": true,
+        "cashless": true,
+        "englishSupport": true,
+        "multilingualSupport": false,
+        "wifi": true,
+        "parking": false
+      }
+    },
+    "locales": {
+      "en": {
+        "name": "Retro Alley Dining & Toriten (Jukkokubashi)",
+        "categoryLabel": "Local Dining & Nightlife",
+        "deal": "🏷️ Early bird izakaya draft beer deal before 7 PM",
+        "shortDesc": "Lantern-lit narrow pedestrian alleys brimming with local izakayas, Oita craft sake, and crispy Toriten chicken.",
+        "whyVisit": "The retro heartbeat of Beppu nightlife. Sip craft barley shochu and savor Oita's signature crispy chicken tempura under warm paper lanterns.",
+        "fullDesc": "Tucked behind Beppu Station is a labyrinth of Showa-era alleyways illuminated by warm red paper lanterns. This is where locals and university students gather after work for Toriten (Oita's signature crispy tempura chicken dipped in mustard and spicy kabosu ponzu), Beppu Reimen (chewy cold noodles with kimchi and beef broth), and cold beer.",
+        "location": "Kitahama & Ekimae-cho, Beppu",
+        "distance": "📍 0.4 km · 5 min walk from Beppu Station",
+        "duration": "2 hours",
+        "price": "¥1,500 – ¥3,000 per person",
+        "tips": "Many mom-and-pop shops have handwritten Japanese menus, so joining an APU student or bilingual local guide here makes it effortless to order hidden specials.",
+        "tags": [
+          "Toriten Tempura",
+          "Showa Vibe",
+          "Craft Sake",
+          "Late Night",
+          "Friendly Masters"
+        ],
+        "popularSignals": [
+          "Crispy Toriten chicken",
+          "Red lantern Showa alleys",
+          "Oita barley shochu"
+        ],
+        "quoteReview": {
+          "author": "Ken & Priya",
+          "tag": "Atmosphere & Food",
+          "text": "Toriten is 100% chicken tempura, perfectly crispy and pork-free! The red-lantern alley feels like stepping straight into a movie."
+        },
+        "preferenceReviewSignals": {
+          "dietary": "No-pork options · Signature Toriten is purely chicken tempura with citrus ponzu",
+          "experience": "Solo & Couple friendly · Welcoming counter seating with friendly izakaya masters",
+          "nightlife": "Late night atmosphere · Open until midnight within 5 min walk of train station"
+        }
+      },
+      "ja": {
+        "name": "十文字小路 ＆ 元祖とり天街",
+        "categoryLabel": "昭和レトロ酒場・ご当地グルメ",
+        "deal": "🏷️ 19時までのハッピーアワービール割引店多数",
+        "shortDesc": "赤提灯が灯る昭和レトロな路地裏。大分名物とり天、別府冷麺、地酒が揃うグルメスポット。",
+        "whyVisit": "大分名物・元祖とり天発祥の地。赤提灯が揺れる昭和ノスタルジックな横丁で、地元の温かい夜を満喫。",
+        "fullDesc": "別府駅や北浜エリアの裏手に広がる、赤提灯が揺れる昭和の風情漂う横丁。地元民やAPU生が集い、サクサクの「とり天」を辛子ポン酢で味わい、出汁の効いた腰のある「別府冷麺」や大分麦焼酎を片手に語り合います。温かい店主との会話も楽しいディープな夜の街です。",
+        "location": "別府市 北浜・駅前町エリア",
+        "distance": "📍 0.4 km · 別府駅東口より徒歩約5分",
+        "duration": "2時間",
+        "price": "1人あたり約 ¥1,500 〜 ¥3,000",
+        "tips": "手書きの日本語メニューが多い名店も多いため、バイリンガルな地元ガイドやAPU留学生と一緒に行くと裏メニューまで安心して楽しめます。",
+        "tags": [
+          "名物とり天",
+          "昭和レトロ横丁",
+          "地酒と焼酎",
+          "深夜営業",
+          "気さくな大将"
+        ],
+        "popularSignals": [
+          "名物とり天",
+          "昭和赤提灯横丁",
+          "大分麦焼酎・地酒"
+        ],
+        "quoteReview": {
+          "author": "ノリコ (愛媛)",
+          "tag": "グルメと雰囲気",
+          "text": "揚げたてのとり天にかぼすポン酢とからしをつけて食べるのが最高！大将も気さくで一人飲みでも安心でした。"
+        },
+        "preferenceReviewSignals": {
+          "dietary": "ポークフリー対応 · とり天は鶏肉100%の天ぷら料理で豚肉不使用",
+          "experience": "おひとり様歓迎 · カウンター席中心で一人旅でも入りやすい雰囲気",
+          "practical": "深夜営業 · 駅徒歩5分で24時頃まで営業する居酒屋多数"
+        }
+      },
+      "ko": {
+        "name": "레트로 골목 미식가 & 토리텐 (줏코쿠바시)",
+        "categoryLabel": "로컬 이자카야 & 나이트라이프",
+        "deal": "🏷️ 오후 7시 이전 해피아워 생맥주 할인 매장 다수",
+        "shortDesc": "붉은 홍등이 은은한 쇼와 시대 골목길. 바삭한 오이타 토리텐 치킨과 시원한 벳푸 냉면의 향연.",
+        "whyVisit": "오이타 대표 명물 토리텐 치킨과 붉은 홍등이 어우러진 쇼와 시대 감성의 로컬 밤거리.",
+        "fullDesc": "벳푸역과 기타하마 뒷골목에 숨겨진 쇼와 시대 감성의 레트로 선술집 골목입니다. 갓 튀겨낸 바삭한 오이타 명물 닭고기 튀김 '토리텐'에 가보스 폰즈 소스를 찍어 먹고, 쫄깃한 메밀 면발의 벳푸 냉면과 지역 보리소주를 곁들이며 현지인들과 어울리는 진짜 로컬 미식의 밤을 선사합니다.",
+        "location": "벳푸시 기타하마 및 에키마에초",
+        "distance": "📍 0.4 km · 벳푸역에서 도보 약 5분",
+        "duration": "2시간",
+        "price": "1인당 약 ¥1,500 ~ ¥3,000",
+        "tips": "손글씨 일본어 메뉴판이 대부분이므로, APU 학생이나 한국어/영어 가이드와 함께 동행하면 숨은 추천 메뉴를 편하게 주문할 수 있습니다.",
+        "tags": [
+          "오이타 토리텐",
+          "쇼와 감성",
+          "지역 사케",
+          "심야 이자카야",
+          "친절한 사장님"
+        ],
+        "popularSignals": [
+          "바삭한 토리텐 닭튀김",
+          "쇼와 홍등 골목",
+          "오이타 보리소주"
+        ],
+        "quoteReview": {
+          "author": "김민혁 (한국)",
+          "tag": "로컬 분위기 & 맛",
+          "text": "카보스 폰즈에 찍어 먹는 닭튀김 토리텐이 기가 막힙니다. 홍등 켜진 골목 정취도 너무 낭만적이에요."
+        },
+        "preferenceReviewSignals": {
+          "dietary": "노포크 (돼지고기 배제) · 대표 메뉴 토리텐은 100% 닭고기 튀김",
+          "experience": "혼행족 안심 · 다찌석(카운터) 완비로 1인 방문객 환영",
+          "nightlife": "심야 영업 · 벳푸역 도보 5분 거리에서 자정까지 운영"
+        }
+      },
+      "zh": {
+        "name": "十文字小路与元祖炸鸡小巷",
+        "categoryLabel": "昭和复古居酒屋与地道宵夜",
+        "deal": "🏷️ 晚7点前早鸟居酒屋生啤特惠折扣",
+        "shortDesc": "红灯笼摇曳的昭和风情窄巷，品味大分特制酥脆鸡肉天妇罗、纯麦烧酒与别府冷面。",
+        "whyVisit": "大分名吃元祖鸡肉天妇罗的诞生地，暖红灯笼摇曳的昭和复古老街夜生活。",
+        "fullDesc": "隐藏在别府站与北滨老街深处的昭和时代居酒屋迷宫。入夜后，暖红色的纸灯笼连片亮起，当地居民与大学生纷纷落座。在这里不可错过大分县代表名吃“Toriten（香脆鸡肉天妇罗配酸橘酱油与黄芥末）”，嚼劲十足的手工别府冷面，以及芳醇爽口的大分麦烧酒。",
+        "location": "别府市 北滨与驿前町老巷",
+        "distance": "📍 0.4 km · 别府站步行约5分钟",
+        "duration": "2小时",
+        "price": "人均约 ¥1,500 – ¥3,000",
+        "tips": "老牌店铺大多使用手写日文菜单，与懂中文的APU国际留学生或地陪向导同行，能轻松点选当季隐形特色菜品！",
+        "tags": [
+          "炸鸡天妇罗",
+          "昭和复古",
+          "纯麦烧酒",
+          "深夜食堂",
+          "热情店主"
+        ],
+        "popularSignals": [
+          "酥脆鸡肉天妇罗",
+          "昭和红灯笼老巷",
+          "大分纯麦烧酒"
+        ],
+        "quoteReview": {
+          "author": "周先生 (中国香港)",
+          "tag": "特色美食与无猪肉",
+          "text": "招牌とり天全是由鲜嫩鸡肉烹制，蘸酸柑酱油非常解腻，红灯笼小巷充满了老电影般的市井温情。"
+        },
+        "preferenceReviewSignals": {
+          "dietary": "无猪肉选项 · 招牌Toriten采用纯鸡肉天妇罗制作，不含猪肉",
+          "experience": "独行与情侣友好 · 吧台座位热络亲切，老板热情好客",
+          "nightlife": "深夜营运 · 距离别府站仅5分钟步程，营业至午夜"
+        }
+      },
+      "yue": {
+        "name": "十文字小路與元祖炸雞街",
+        "categoryLabel": "昭和復古居酒屋與宵夜小巷",
+        "deal": "🏷️ 晚上7點前指定居酒屋享生啤Happy Hour優惠",
+        "shortDesc": "紅燈籠高掛嘅昭和復古巷弄，品嚐大分酥脆炸雞天婦羅、地酒同埋特色別府冷麵。",
+        "whyVisit": "大分名物元祖とり天必試名所！紅燈籠搖曳嘅昭和老街居酒屋，感受最濃厚嘅別府宵夜人情味。",
+        "fullDesc": "藏身喺別府站同北濱後街嘅昭和時代居酒屋小巷。入夜後紅燈籠亮起，充滿濃厚人情味。大分最招牌嘅「とり天（酥脆炸雞天婦羅配香橙酸汁芥末）」、彈牙爽口嘅別府冷麵，配上一杯凍冰冰嘅大分麥燒酒，係體驗別府在地夜生活嘅絕佳去處。",
+        "location": "別府市 北濱及驛前町巷弄",
+        "distance": "📍 0.4 km · 由別府站行路約5分鐘",
+        "duration": "2小時",
+        "price": "每位約 ¥1,500 – ¥3,000",
+        "tips": "好多家庭式老店只有手寫日文菜單，如果同講廣東話嘅APU留學生或者地道嚮導一齊去，點餐溝通零難度，仲可以叫到隱藏料理！",
+        "tags": [
+          "大分炸雞天婦羅",
+          "昭和懷舊氛圍",
+          "地酒居酒屋",
+          "深夜食堂",
+          "地道人情味"
+        ],
+        "popularSignals": [
+          "現炸香脆とり天",
+          "紅燈籠昭和橫町",
+          "大分純麥地酒"
+        ],
+        "quoteReview": {
+          "author": "李生 (香港)",
+          "tag": "宵夜人情味",
+          "text": "即炸熱辣辣嘅雞肉天婦羅點酸柑汁勁惹味！吧台位好啱獨行旅客，老闆娘好熱情，成個氛圍超正！"
+        },
+        "preferenceReviewSignals": {
+          "dietary": "無豬肉選擇 · 招牌とり天全為100%雞肉天婦羅，非豬肉製品",
+          "experience": "獨行及情侶友善 · 吧台位隨時可坐，氣氛親切",
+          "nightlife": "深宵食堂 · 行出別府站5分鐘，營業至深夜十二點"
+        }
+      }
+    }
+  }
+]

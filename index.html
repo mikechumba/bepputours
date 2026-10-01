@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beppu Tourism + Local Guide Marketplace | Discover Beppu Your Way</title>
+  <meta name="description" content="Discover famous hot springs, hidden local food, and connect with trusted local micro-guides and APU students in Beppu, Japan.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♨️</text></svg>">
+</head>
+<body>
+
+  <!-- Site Header (Banff-style Glassmorphism) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <a href="index.html" class="brand-logo" id="brand-home-link">
+          <div class="brand-icon">♨️</div>
+          <div class="brand-text">
+            <span class="brand-title">Beppu</span>
+            <span class="brand-subtitle" data-i18n="brand_sub">Hot Springs & Local Guides</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="explore.html" class="nav-link" data-i18n="nav_explore">Explore</a>
+        <a href="experiences.html" class="nav-link" data-i18n="nav_experiences">Experiences</a>
+        <a href="guides.html" class="nav-link" data-i18n="nav_guides">Guides</a>
+        <a href="trip.html" class="nav-link" id="nav-trip-link">
+          <span data-i18n="nav_trip">My Trip</span>
+          <span class="nav-badge-count js-trip-count">0</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-dropdown-wrap">
+          <button class="lang-switch-btn js-lang-dropdown-btn" aria-label="Select Language" aria-haspopup="true" aria-expanded="false">
+            <span>🌐</span>
+            <span class="js-active-lang-label">English</span>
+            <span style="font-size:0.65rem; opacity:0.7;">▼</span>
+          </button>
+          <div class="lang-dropdown-menu" role="menu">
+            <button class="lang-dropdown-item" data-lang="en">🇬🇧 English</button>
+            <button class="lang-dropdown-item" data-lang="ko">🇰🇷 한국어 (Korean)</button>
+            <button class="lang-dropdown-item" data-lang="zh">🇨🇳 简体中文 (Chinese)</button>
+            <button class="lang-dropdown-item" data-lang="yue">🇭🇰 繁體中文 / 粵語 (Cantonese)</button>
+            <button class="lang-dropdown-item" data-lang="ja">🇯🇵 日本語 (Japanese)</button>
+          </div>
+        </div>
+
+        <a href="trip.html" class="user-avatar-pill" title="My Profile & Planned Trip">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Tourist Avatar" class="user-avatar-img">
+          <span class="user-avatar-name">Visitor</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section: Banff & Lake Louise Inspired Destination Grandeur -->
+  <section class="hero-destination">
+    <img 
+      src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1920&q=80" 
+      alt="Steaming Beppu Onsen townscape with mountain vistas" 
+      class="hero-bg-media"
+    />
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-eyebrow">
+        <span>🇯🇵</span>
+        <span>Oita Prefecture · Hot Spring Capital of the World</span>
+      </div>
+      <h1 class="hero-title" data-i18n="hero_title">
+        Experience Beppu your way.
+      </h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">
+        Discover famous sights, hidden local spots, and people who can show you around.
+      </p>
+
+      <div class="hero-actions">
+        <a href="explore.html" class="btn btn-primary btn-lg" id="hero-btn-explore" data-i18n="btn_explore">
+          Explore Beppu →
+        </a>
+        <a href="guides.html" class="btn btn-secondary btn-lg" id="hero-btn-find-local" data-i18n="btn_find_local">
+          Find a Local Guide
+        </a>
+      </div>
+
+      <div class="hero-floating-stats">
+        <div>
+          <div class="stat-item-number">2,000+</div>
+          <div class="stat-item-label">Natural Hot Spring Vents</div>
+        </div>
+        <div>
+          <div class="stat-item-number">100+</div>
+          <div class="stat-item-label">APU Student Nationalities</div>
+        </div>
+        <div>
+          <div class="stat-item-number">45 min – 3h</div>
+          <div class="stat-item-label">Flexible Micro-Guide Options</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: What Are You Interested In? -->
+  <section style="padding: 64px 0 32px;">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title" data-i18n="cat_heading">What are you interested in?</h2>
+          <p class="section-subtitle">Pick a theme to explore Beppu's rich landscape, food, and culture</p>
+        </div>
+        <a href="explore.html" class="btn btn-secondary btn-sm">View All Categories →</a>
+      </div>
+
+      <div class="categories-carousel" id="categories-list">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Popular in Beppu -->
+  <section style="padding: 48px 0 64px;">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="badge badge-micro" style="margin-bottom: 8px;">Curated for First-Timers</span>
+          <h2 class="section-title" data-i18n="popular_heading">Popular in Beppu</h2>
+          <p class="section-subtitle" data-i18n="popular_sub">Essential landmarks and beloved experiences for first-time visitors</p>
+        </div>
+        <a href="explore.html" class="btn btn-secondary btn-sm">See all 24 places</a>
+      </div>
+
+      <div class="cards-grid" id="popular-places-grid">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: The Micro-Guide Concept Spotlight -->
+  <section class="container">
+    <div class="micro-guide-spotlight">
+      <div class="spotlight-content">
+        <div class="spotlight-eyebrow" data-i18n="micro_guide_title">The Micro-Guide Concept</div>
+        <h2 class="spotlight-title">Local help when you need it.<br>No rigid full-day tours.</h2>
+        <p class="spotlight-desc" data-i18n="micro_guide_sub">
+          You do not need an expensive, all-day tour. Book a local or APU student for 45 minutes to 3 hours exactly when you need advice, translation, or friendly company.
+        </p>
+        <a href="guides.html" class="btn btn-primary">Browse Micro-Guides →</a>
+      </div>
+
+      <div class="spotlight-grid">
+        <div class="spotlight-pill-card">
+          <div class="spotlight-pill-time">⏱️ 30–45 min · ¥1,200</div>
+          <div class="spotlight-pill-name">Meet Me at Beppu Station</div>
+          <div class="spotlight-pill-desc">Luggage drop, Kamenoi bus pass setup, and quick town orientation right off the train.</div>
+        </div>
+
+        <div class="spotlight-pill-card">
+          <div class="spotlight-pill-time">⏱️ 1.5 hours · ¥2,000</div>
+          <div class="spotlight-pill-name">Onsen First-Timer</div>
+          <div class="spotlight-pill-desc">Etiquette, bathing customs, and historic Takegawara sand bath with zero stress.</div>
+        </div>
+
+        <div class="spotlight-pill-card">
+          <div class="spotlight-pill-time">⏱️ 2 hours · ¥2,500</div>
+          <div class="spotlight-pill-name">Local Food & Toriten Walk</div>
+          <div class="spotlight-pill-desc">Wander narrow izakaya alleys and taste crispy Oita chicken tempura & cold noodles.</div>
+        </div>
+
+        <div class="spotlight-pill-card">
+          <div class="spotlight-pill-time">⏱️ 2.5 hours · ¥3,200</div>
+          <div class="spotlight-pill-name">Kannawa Steam Workshop</div>
+          <div class="spotlight-pill-desc">Steam local vegetables and pork buns using pure geothermal rock vents.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Discover Local Beppu (Off the beaten path) -->
+  <section style="padding: 48px 0 64px;">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="badge badge-local" style="margin-bottom: 8px;">Beyond the Tourist Route</span>
+          <h2 class="section-title" data-i18n="local_heading">Discover Local Beppu</h2>
+          <p class="section-subtitle" data-i18n="local_sub">
+            Go beyond the famous sights. Discover places, food, and experiences recommended by people who live, study, and work in Beppu.
+          </p>
+        </div>
+        <a href="experiences.html" class="btn btn-secondary btn-sm">Explore All Experiences →</a>
+      </div>
+
+      <div class="cards-grid" id="local-experiences-grid">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Featured Guides (APU Students & Local Community) -->
+  <section style="padding: 48px 0 72px; background: var(--color-cream-100); border-top: 1px solid var(--color-cream-300);">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="badge badge-apu" style="margin-bottom: 8px;">Multilingual Community</span>
+          <h2 class="section-title">Connect with a Local Guide</h2>
+          <p class="section-subtitle">
+            APU students and local residents ready to share their favorite spots in English, Japanese, and more.
+          </p>
+        </div>
+        <a href="guides.html" class="btn btn-secondary btn-sm">View All Guides →</a>
+      </div>
+
+      <div class="cards-grid" id="featured-guides-grid">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Two-Sided Ecosystem / Business & Partner Section -->
+  <section class="partner-banner">
+    <div class="container partner-box">
+      <div>
+        <h3 class="partner-title" data-i18n="partner_title">For local businesses & guides</h3>
+        <p class="partner-desc" data-i18n="partner_desc">
+          Reach visitors looking for authentic Beppu experiences. We partner with local shops, traditional bathhouses, and bilingual residents to foster sustainable, respectful community tourism.
+        </p>
+      </div>
+      <div style="display:flex; gap: 12px; flex-wrap: wrap;">
+        <button class="btn btn-teal btn-sm" onclick="showToast('Guide application portal opening soon for Spring 2027.', 'info')">
+          Become a Guide
+        </button>
+        <button class="btn btn-secondary btn-sm" onclick="showToast('Business listing portal: Inquire at partners@bepputour.jp', 'info')">
+          List Your Business
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">♨️ Beppu</div>
+          <p style="max-width: 320px; line-height: 1.6; margin-bottom: 20px;">
+            The modern tourism discovery and local micro-guide marketplace for Beppu, Oita, Japan.
+          </p>
+          <div style="font-size: 0.82rem; color: rgba(255,255,255,0.6);">
+            In collaboration with local community champions & APU international students.
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Discover</h4>
+          <ul class="footer-links">
+            <li><a href="explore.html">Famous Sights</a></li>
+            <li><a href="experiences.html">Local Food Alleys</a></li>
+            <li><a href="experiences.html">Onsen Etiquette</a></li>
+            <li><a href="explore.html?cat=nature">Mount Tsurumi</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Guides</h4>
+          <ul class="footer-links">
+            <li><a href="guides.html">APU Student Guides</a></li>
+            <li><a href="guides.html?filter=resident">Local Residents</a></li>
+            <li><a href="guides.html">How Micro-Guides Work</a></li>
+            <li><a href="guides.html">Trust & Verification</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Plan Your Trip</h4>
+          <ul class="footer-links">
+            <li><a href="trip.html">My Beppu Itinerary</a></li>
+            <li><a href="explore.html">Bus Pass Guide</a></li>
+            <li><a href="trip.html">No-Car 3-Day Plan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Beppu Tourism & Local Guide Marketplace. Prototype.</div>
+        <div style="display:flex;gap:16px;">
+          <span>Privacy</span>
+          <span>Terms</span>
+          <span>Community Guidelines</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Bottom Navigation (Responsive) -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
+    <ul class="bottom-nav-list">
+      <li class="bottom-nav-item">
+        <a href="index.html" class="bottom-nav-link active">
+          <span class="bottom-nav-icon">🏠</span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="explore.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🗺️</span>
+          <span>Explore</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="experiences.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🍜</span>
+          <span>Local</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="guides.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">👥</span>
+          <span>Guides</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="trip.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">📋</span>
+          <span>My Trip</span>
+          <span class="bottom-nav-badge js-trip-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Render Categories
+      const catContainer = document.getElementById('categories-list');
+      if (catContainer && window.BEPPU_DATA) {
+        catContainer.innerHTML = window.BEPPU_DATA.categories.map(cat => `
+          <a href="explore.html?cat=${cat.id}" class="category-card" id="cat-card-${cat.id}">
+            <div class="category-icon">${cat.icon}</div>
+            <div class="category-name">${cat.name}</div>
+            <div class="category-count">${cat.count} spots</div>
+          </a>
+        `).join('');
+      }
+
+      // Render Popular Places (first 3)
+      const popularGrid = document.getElementById('popular-places-grid');
+      const placesList = (window.beppuStore && window.beppuStore.places) ? window.beppuStore.places : (window.BEPPU_DATA ? window.BEPPU_DATA.places : []);
+      if (popularGrid && placesList.length > 0) {
+        const popularPlaces = placesList.slice(0, 3);
+        popularGrid.innerHTML = popularPlaces.map(renderPlaceCard).join('');
+      }
+
+      // Render Local Experiences (first 3)
+      const expGrid = document.getElementById('local-experiences-grid');
+      const expsList = (window.beppuStore && window.beppuStore.experiences) ? window.beppuStore.experiences : (window.BEPPU_DATA ? window.BEPPU_DATA.experiences : []);
+      if (expGrid && expsList.length > 0) {
+        const exps = expsList.slice(0, 3);
+        expGrid.innerHTML = exps.map(renderExperienceCard).join('');
+      }
+
+      // Render Featured Guides (first 3)
+      const guidesGrid = document.getElementById('featured-guides-grid');
+      const guidesList = (window.beppuStore && window.beppuStore.guides) ? window.beppuStore.guides : (window.BEPPU_DATA ? window.BEPPU_DATA.guides : []);
+      if (guidesGrid && guidesList.length > 0) {
+        const guides = guidesList.slice(0, 3);
+        guidesGrid.innerHTML = guides.map(renderGuideCard).join('');
+      }
+    });
+  </script>
+</body>
+</html>

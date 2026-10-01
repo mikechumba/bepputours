@@ -1,0 +1,218 @@
+[
+  {
+    "id": "onsen",
+    "icon": "♨️",
+    "count": 18,
+    "locales": {
+      "en": {
+        "name": "Onsen & Spas",
+        "desc": "World-famous hot spring baths, sand baths, and healing waters"
+      },
+      "ja": {
+        "name": "温泉・スパ",
+        "desc": "世界有数の名湯、名物砂湯、心身を癒やす薬効泉"
+      },
+      "ko": {
+        "name": "온천 & 스파",
+        "desc": "세계적으로 유명한 천연 온천, 모래찜질, 치유의 명탕"
+      },
+      "zh": {
+        "name": "温泉与水疗",
+        "desc": "世界闻名的温泉涌泉、特色砂汤与身心疗愈之泉"
+      },
+      "yue": {
+        "name": "溫泉與水療",
+        "desc": "世界聞名嘅天然名湯、招牌砂浴同埋身心療愈之泉"
+      }
+    }
+  },
+  {
+    "id": "nature",
+    "icon": "🌋",
+    "count": 12,
+    "locales": {
+      "en": {
+        "name": "Nature & Views",
+        "desc": "Mount Tsurumi, scenic bays, and volcanic crater panoramas"
+      },
+      "ja": {
+        "name": "自然・絶景",
+        "desc": "鶴見岳、別府湾のパノラマ、壮大な活火山地形"
+      },
+      "ko": {
+        "name": "자연 & 전망",
+        "desc": "쓰루미산, 벳푸만 파노라마, 웅장한 화산 지형"
+      },
+      "zh": {
+        "name": "自然与绝景",
+        "desc": "鹤见岳高空缆车、别府湾壮丽海景与火山地质奇观"
+      },
+      "yue": {
+        "name": "自然與絕景",
+        "desc": "鶴見岳高空纜車、別府灣開揚海景與火山壯麗全景"
+      }
+    }
+  },
+  {
+    "id": "food",
+    "icon": "🍜",
+    "count": 24,
+    "locales": {
+      "en": {
+        "name": "Food & Dining",
+        "desc": "Jigokumushi steam cooking, crispy Toriten chicken, and Beppu Reimen"
+      },
+      "ja": {
+        "name": "グルメ・食文化",
+        "desc": "名物・地獄蒸し料理、元祖とり天、別府冷麺"
+      },
+      "ko": {
+        "name": "맛집 & 식도락",
+        "desc": "지요쿠무시 지옥찜 요리, 바삭한 토리텐, 벳푸 냉면"
+      },
+      "zh": {
+        "name": "美食与料理",
+        "desc": "地狱地热地蒸料理、大分特色炸鸡天妇罗与别府冷面"
+      },
+      "yue": {
+        "name": "地道美食與料理",
+        "desc": "地獄地熱蒸煮料理、大分酥脆炸雞天婦羅同別府冷麵"
+      }
+    }
+  },
+  {
+    "id": "local",
+    "icon": "🏘️",
+    "count": 15,
+    "locales": {
+      "en": {
+        "name": "Local Beppu",
+        "desc": "Hidden alleys, retro kissaten cafes, and neighborhood footbaths"
+      },
+      "ja": {
+        "name": "ローカル別府",
+        "desc": "路地裏散策、昭和レトロな喫茶店、地元の足湯"
+      },
+      "ko": {
+        "name": "로컬 벳푸",
+        "desc": "골목길 탐방, 쇼와 레트로 카페, 동네 족욕탕"
+      },
+      "zh": {
+        "name": "地道别府",
+        "desc": "老街巷弄探索、昭和复古怀旧咖啡馆与街坊足汤"
+      },
+      "yue": {
+        "name": "地道別府",
+        "desc": "舊街巷弄探索、昭和復古懷舊喫茶店同街坊免費足湯"
+      }
+    }
+  },
+  {
+    "id": "culture",
+    "icon": "🎎",
+    "count": 9,
+    "locales": {
+      "en": {
+        "name": "Culture & History",
+        "desc": "Meiji bathhouse architecture, bamboo craft, and mountain shrines"
+      },
+      "ja": {
+        "name": "歴史・文化",
+        "desc": "明治建築の共同浴場、伝統別府竹細工、歴史ある神社仏閣"
+      },
+      "ko": {
+        "name": "역사 & 문화",
+        "desc": "메이지 목조 공동 목욕탕, 전통 대나무 공예, 산사"
+      },
+      "zh": {
+        "name": "历史与文化",
+        "desc": "明治时代的木造公浴建筑、别府传统竹细工与古老神社"
+      },
+      "yue": {
+        "name": "歷史與文化",
+        "desc": "明治時代木造公眾浴場建築、傳統別府竹細工與歷史神社"
+      }
+    }
+  },
+  {
+    "id": "nightlife",
+    "icon": "🌙",
+    "count": 11,
+    "locales": {
+      "en": {
+        "name": "Nightlife",
+        "desc": "Lantern-lit izakayas, Oita craft sake, and cozy snack bars"
+      },
+      "ja": {
+        "name": "ナイトライフ",
+        "desc": "赤提灯の居酒屋、大分の地酒と麦焼酎、レトロなスナック"
+      },
+      "ko": {
+        "name": "나이트라이프",
+        "desc": "붉은 홍등 이자카야, 오이타 지역 사케, 아늑한 선술집"
+      },
+      "zh": {
+        "name": "夜生活与居酒屋",
+        "desc": "红灯笼居酒屋、大分纯米清酒与温馨复古酒吧"
+      },
+      "yue": {
+        "name": "夜生活與居酒屋",
+        "desc": "紅燈籠居酒屋、大分純米地酒與溫馨深宵小酒館"
+      }
+    }
+  },
+  {
+    "id": "photo",
+    "icon": "📸",
+    "count": 14,
+    "locales": {
+      "en": {
+        "name": "Photography",
+        "desc": "Steam billowing across the townscape, bay sunsets, and vintage neon"
+      },
+      "ja": {
+        "name": "絶景フォト",
+        "desc": "街中に立ち上る湯けむり展望、夕暮れの別府湾、レトロネオン"
+      },
+      "ko": {
+        "name": "포토 스팟",
+        "desc": "도시 위로 피어오르는 온천 증기, 벳푸만 일몰, 빈티지 네온사인"
+      },
+      "zh": {
+        "name": "摄影打卡",
+        "desc": "全城温泉白烟升腾、别府湾落日余晖与复古街景"
+      },
+      "yue": {
+        "name": "攝影打卡",
+        "desc": "全城溫泉白煙繚繞、別府灣夕陽晚霞與復古昭和霓虹"
+      }
+    }
+  },
+  {
+    "id": "student",
+    "icon": "🎓",
+    "count": 8,
+    "locales": {
+      "en": {
+        "name": "Student Life",
+        "desc": "APU international community favorites, hillside cafes, and budget gems"
+      },
+      "ja": {
+        "name": "学生カルチャー",
+        "desc": "立命館APU国際生の行きつけ、山の手カフェ、穴場コスパ店"
+      },
+      "ko": {
+        "name": "학생 문화",
+        "desc": "APU 다국적 유학생들의 단골집, 언덕 카페, 가성비 맛집"
+      },
+      "zh": {
+        "name": "国际学府生活",
+        "desc": "APU国际大学生常去的小店、半山景观咖啡馆与平价宝藏美食"
+      },
+      "yue": {
+        "name": "國際學府生活",
+        "desc": "立命館APU多國籍留學生心水小店、半山景觀Cafe與超值隱世小食"
+      }
+    }
+  }
+]

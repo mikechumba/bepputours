@@ -1,0 +1,751 @@
+[
+  {
+    "id": "maria-santos",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+    "nationality": "Philippines",
+    "rating": 4.94,
+    "reviewsCount": 23,
+    "experiencesCount": 38,
+    "responseRate": "100%",
+    "responseTime": "Within 1 hour",
+    "priceValue": 2500,
+    "verified": true,
+    "availabilityFilter": "weekend",
+    "experiencesOffered": ["exp-hidden-ramen", "exp-station-welcome"],
+    "languages": [
+      { "name": "English", "flag": "🇬🇧", "level": "Native / Fluent" },
+      { "name": "Japanese", "flag": "🇯🇵", "level": "Conversational (JLPT N2)" },
+      { "name": "Filipino", "flag": "🇵🇭", "level": "Native" }
+    ],
+    "locales": {
+      "en": {
+        "name": "Maria Santos",
+        "guideType": "APU Student",
+        "languagesShort": "🇬🇧 English · 🇯🇵 Japanese · 🇵🇭 Filipino",
+        "bio": "Hi! I'm a 3rd-year International Management student at APU. I fell in love with Beppu's backstreets, cozy ramen counters, and quiet coastal spots. I love showing visitors the small restaurants and neighborhood onsens that I discovered after moving here. Traveling without a car? Don't worry, I know every bus shortcut by heart!",
+        "quote": "I love showing visitors the small restaurants and onsens around Beppu that I discovered after moving here.",
+        "interests": ["Food & Izakaya", "Onsen", "Local Life", "Nightlife", "Student Budgeting"],
+        "availability": "Available This Weekend & Weekdays after 3 PM",
+        "rateHourly": "¥1,500 / hr",
+        "startingPrice": "From ¥2,500 / 2 hours",
+        "badges": ["Identity Verified", "APU Student", "Orientation Completed", "Top Rated"],
+        "reviews": [
+          {
+            "author": "Sarah & Liam (UK)",
+            "date": "September 2026",
+            "rating": 5,
+            "text": "Maria was an absolute lifesaver! We arrived at Beppu Station completely confused by the bus system with two heavy suitcases. She met us with a big smile, helped us get the Kamenoi pass, and took us to a fantastic Toriten chicken shop we never would have found ourselves. 10/10 recommended!"
+          },
+          {
+            "author": "Marcus C. (Australia)",
+            "date": "August 2026",
+            "rating": 5,
+            "text": "The evening alley walk with Maria felt like hanging out with a good friend who knows all the coolest spots in town. She translated menus, showed us how to order custom skewers, and taught us so much about life at APU."
+          }
+        ]
+      },
+      "ja": {
+        "name": "マリア・サントス",
+        "guideType": "APU現役留学生",
+        "languagesShort": "🇬🇧 英語 · 🇯🇵 日本語（N2） · 🇵🇭 タガログ語",
+        "bio": "立命館アジア太平洋大学（APU）国際経営学部3年生。別府のノスタルジックな路地裏や家族経営の居酒屋、海辺の隠れスポットが大好きです。車がなくても大丈夫！亀の井バスの乗りこなしやお得な周遊ルートを熟知しています。",
+        "quote": "私が別府に住んで見つけた大好きな小さな食堂や街の温泉を、世界中の方に伝えたいです。",
+        "interests": ["グルメ・居酒屋", "共同浴場", "学生ローカル生活", "夜散歩", "バス旅"],
+        "availability": "今週末および平日15時以降対応可能",
+        "rateHourly": "¥1,500 / 時間",
+        "startingPrice": "¥2,500 〜 / 2時間",
+        "badges": ["本人確認済み", "APU現役学生", "ガイド講習修了", "高評価ガイド"],
+        "reviews": [
+          {
+            "author": "サラ ＆ リアム (イギリス)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "別府駅で大きなスーツケースを持って途方に暮れていたところ、マリアさんが笑顔で迎えてくれました。バスパスの購入から絶品の元祖とり天のお店まで完璧に案内してくれて本当に感謝しています！"
+          }
+        ]
+      },
+      "ko": {
+        "name": "마리아 산토스",
+        "guideType": "APU 유학생",
+        "languagesShort": "🇬🇧 영어 · 🇯🇵 일본어 · 🇵🇭 필리핀어",
+        "bio": "APU 국제경영학부 3학년입니다. 벳푸의 정겨운 뒷골목과 따뜻한 냉면집, 조용한 해안 산책로를 사랑합니다. 렌터카가 없어도 걱정하지 마세요! 카메노이 버스 지름길과 환승 비결을 완벽하게 안내해 드립니다.",
+        "quote": "벳푸에 살면서 직접 발견한 숨은 식당들과 동네 온천들을 여행자 여러분께 기쁜 마음으로 소개해 드려요.",
+        "interests": ["미식 & 이자카야", "동네 온천", "로컬 라이프", "골목길 산책", "버스 여행"],
+        "availability": "이번 주말 및 평일 오후 3시 이후 가능",
+        "rateHourly": "¥1,500 / 시간",
+        "startingPrice": "¥2,500부터 / 2시간",
+        "badges": ["본인 인증 완료", "APU 재학생", "가이드 교육 수료", "최우수 평점"],
+        "reviews": [
+          {
+            "author": "김민지 & 이준호 (한국)",
+            "date": "2026년 9월",
+            "rating": 5,
+            "text": "마리아와의 골목길 투어는 정말 잊지 못할 추억입니다. 현지인들만 가는 토리텐 맛집에서 메뉴 주문도 도와주고, APU 유학 생활 이야기도 들려주어 친구와 여행하는 것처럼 편안했습니다!"
+          }
+        ]
+      },
+      "zh": {
+        "name": "玛丽亚・桑托斯 (Maria)",
+        "guideType": "APU在读国际留学生",
+        "languagesShort": "🇬🇧 英语母语 · 🇯🇵 日语流畅 · 🇵🇭 菲律宾语",
+        "bio": "立命馆APU大学国际经营系大三在读。自从搬到别府，我深深爱上了这里的昭和复古小巷、温馨拉面馆和海滨角落。即使不自驾租车也完全不必担心，我熟记别府每一趟巴士路线与快捷省钱方式！",
+        "quote": "我想把我来到别府后发现的所有暖心小店与街坊温泉，毫无保留地分享给远道而来的大家。",
+        "interests": ["居酒屋美食", "老街温泉", "在地生活", "深夜探店", "留学生省钱指南"],
+        "availability": "本周末及工作日下午3点后可约",
+        "rateHourly": "¥1,500 / 小时",
+        "startingPrice": "¥2,500起 / 2小时",
+        "badges": ["官方身份认证", "APU在校生", "向导培训合格", "金牌好评向导"],
+        "reviews": [
+          {
+            "author": "张先生一家 (中国上海)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "刚到别府站面对巴士线路很茫然，玛丽亚微笑着在闸口接我们，帮我们迅速买好巴士两日券，还带我们去了一家极其美味的本地炸鸡小店，沟通非常顺畅！"
+          }
+        ]
+      },
+      "yue": {
+        "name": "瑪麗亞・桑托斯 (Maria)",
+        "guideType": "立命館APU在讀留學生",
+        "languagesShort": "🇬🇧 英語母語 · 🇯🇵 日語流利 · 🇵🇭 菲律賓語",
+        "bio": "立命館亞洲太平洋大學（APU）三年級學生。熱愛別府北濱後巷、隱世拉麵小店同埋寧靜海岸。即使唔租車自駕都唔使驚，我熟悉晒所有龜之井巴士捷徑同轉車心得！",
+        "quote": "我想將自己住喺別府發掘到嘅所有私竇食肆同地道街坊溫泉，親自帶你一齊體驗。",
+        "interests": ["居酒屋美食", "街坊溫泉", "在地留學生活", "黃昏夜行", "巴士自由行攻略"],
+        "availability": "今個週末及平日下晝3點後可預約",
+        "rateHourly": "¥1,500 / 小時",
+        "startingPrice": "¥2,500起 / 2小時",
+        "badges": ["身份核實認證", "APU在讀生", "嚮導考核合格", "全五星好評"],
+        "reviews": [
+          {
+            "author": "陳生陳太 (香港)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "Maria真係好熱情友善！喺別府站出閘就見到佢，幫手買齊車飛同寄存行李，仲帶我哋去咗間遊客完全唔識去嘅元祖とり天老舖，大人小朋友都好滿意！"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "kenji-takahashi",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80",
+    "nationality": "Japan",
+    "rating": 4.96,
+    "reviewsCount": 42,
+    "experiencesCount": 65,
+    "responseRate": "98%",
+    "responseTime": "Within 2 hours",
+    "priceValue": 3500,
+    "verified": true,
+    "availabilityFilter": "today",
+    "experiencesOffered": ["exp-kannawa-steam"],
+    "languages": [
+      { "name": "Japanese", "flag": "🇯🇵", "level": "Native" },
+      { "name": "English", "flag": "🇬🇧", "level": "Fluent (Lived in Vancouver)" }
+    ],
+    "locales": {
+      "en": {
+        "name": "Kenji Takahashi",
+        "guideType": "Local Resident",
+        "languagesShort": "🇯🇵 Japanese · 🇬🇧 English",
+        "bio": "Born and raised in Beppu. After studying architecture in Vancouver for 4 years, I returned home with a profound appreciation for Beppu's Meiji-era bathhouses and wooden heritage. I specialize in Kannawa geothermal cooking workshops, architectural history walks, and peaceful scenic cycling.",
+        "quote": "Beppu's steam has warmed generations of bathers. Let me introduce you to the craftspeople and shop owners who keep its spirit alive.",
+        "interests": ["Architecture", "Kannawa Steam", "Culture & History", "Local Heritage", "Nature"],
+        "availability": "Available Today & Tomorrow",
+        "rateHourly": "¥1,800 / hr",
+        "startingPrice": "From ¥3,500 / 2 hours",
+        "badges": ["Identity Verified", "Local Resident", "Partner Guide", "Heritage Specialist"],
+        "reviews": [
+          {
+            "author": "Elena & David (Canada)",
+            "date": "September 2026",
+            "rating": 5,
+            "text": "Kenji made Kannawa come alive for us. The geothermal steam cooking workshop was the highlight of our 2-week trip in Japan. His English is flawless, and his knowledge of the hot spring plumbing and Meiji woodwork was fascinating."
+          }
+        ]
+      },
+      "ja": {
+        "name": "高橋 健二",
+        "guideType": "別府地元住民",
+        "languagesShort": "🇯🇵 日本語（ネイティブ） · 🇬🇧 英語（バンクーバー留学4年）",
+        "bio": "別府生まれ別府育ち。バンクーバーで建築を4年間学んだ後、別府の明治期の木造建築や温泉文化の尊さに魅了されUターン。鉄輪での地獄蒸しワークショップや建築散歩、湯けむり景観ガイドを得意としています。",
+        "quote": "立ち上る湯けむりは別府の命です。この街の文化を育んできた職人や店主たちとぜひ触れ合ってください。",
+        "interests": ["建築遺産", "地獄蒸し", "温泉の歴史", "伝統工芸", "サイクリング"],
+        "availability": "本日および明日予約可能",
+        "rateHourly": "¥1,800 / 時間",
+        "startingPrice": "¥3,500 〜 / 2時間",
+        "badges": ["本人確認済み", "地元住民", "公式パートナー", "文化財スペシャリスト"],
+        "reviews": [
+          {
+            "author": "エレナ ＆ デビッド (カナダ)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "健二さんの案内で鉄輪が特別な場所になりました。地獄蒸し料理の体験は今回の日本旅行で一番の思い出です。建築の歴史解説も大変深く、英語も完璧でした！"
+          }
+        ]
+      },
+      "ko": {
+        "name": "타카하시 켄지",
+        "guideType": "벳푸 현지 토박이",
+        "languagesShort": "🇯🇵 일본어 · 🇬🇧 영어 (캐나다 4년 거주)",
+        "bio": "벳푸에서 태어나고 자란 현지인입니다. 캐나다 밴쿠버에서 4년간 건축학을 전공한 뒤 고향의 아름다운 메이지 시대 목조 건축과 온천 유산에 매료되었습니다. 간나와 지열 찜 요리 체험과 역사 건축 도보 투어를 전문으로 합니다.",
+        "quote": "수백 년간 피어오른 온천 수증기는 벳푸의 영혼입니다. 이 전통을 지켜온 현지 장인들을 직접 만나보세요.",
+        "interests": ["건축 유산", "간나와 지옥찜", "역사 & 문화", "로컬 스토리", "자전거 투어"],
+        "availability": "오늘 및 내일 즉시 예약 가능",
+        "rateHourly": "¥1,800 / 시간",
+        "startingPrice": "¥3,500부터 / 2시간",
+        "badges": ["본인 인증 완료", "현지 거주민", "공식 파트너", "역사 문화 전문가"],
+        "reviews": [
+          {
+            "author": "박성민 & 정다은 (한국)",
+            "date": "2026년 9월",
+            "rating": 5,
+            "text": "켄지 님의 지옥찜 쿠킹 워크숍은 정말 최고였습니다! 영어 설명이 매우 유창하고 온천 마을의 배관 구조와 목조 가옥의 역사 이야기까지 흥미진진하게 들려주셨습니다."
+          }
+        ]
+      },
+      "zh": {
+        "name": "高桥 健二 (Kenji)",
+        "guideType": "别府本地常住居民",
+        "languagesShort": "🇯🇵 日语母语 · 🇬🇧 英语流利（加拿大留学4年）",
+        "bio": "生于别府、长于别府。在加拿大温哥华专攻建筑学4年后回到故乡，对别府明治时期的木造温泉建筑与地热奇观怀有深厚敬意。擅长铁轮地热地蒸料理手作坊、建筑历史散步及山海骑行。",
+        "quote": "别府的地热蒸气温暖了千百年来客。让我带您结识那些世代守护这座泉都烟火气的街坊匠人。",
+        "interests": ["历史建筑", "地狱地蒸", "温泉文化", "传统民俗", "慢节奏骑行"],
+        "availability": "今天与明天均可预约",
+        "rateHourly": "¥1,800 / 小时",
+        "startingPrice": "¥3,500起 / 2小时",
+        "badges": ["官方身份认证", "本地居民", "官方合作向导", "历史文化专员"],
+        "reviews": [
+          {
+            "author": "刘先生与太太 (中国北京)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "健二先生的英语非常地道流利，对铁轮老街每一幢木造建筑的历史了如指掌。带领我们亲手蒸海鲜的体验生动有趣，是不可错过的深度体验！"
+          }
+        ]
+      },
+      "yue": {
+        "name": "高橋 健二 (Kenji)",
+        "guideType": "別府在地土生土長居民",
+        "languagesShort": "🇯🇵 日語母語 · 🇬🇧 英語流利（加拿大留學4年）",
+        "bio": "土生土長別府人。喺加拿大溫哥華修讀建築4年之後回流故鄉，對別府明治時期嘅木造公共浴場同溫泉歷史極有研究。專長帶領鐵輪天然地熱蒸海鮮料理工作坊與古蹟建築散步遊。",
+        "quote": "別府嘅地熱蒸汽溫暖咗無數世代。等我帶你親身接觸守護呢個溫泉之鄉嘅老街匠人。",
+        "interests": ["古蹟建築", "地獄蒸料理", "溫泉文化", "在地歷史", "悠閒單車遊"],
+        "availability": "今日及聽日均可即時預約",
+        "rateHourly": "¥1,800 / 小時",
+        "startingPrice": "¥3,500起 / 2小時",
+        "badges": ["身份核實認證", "在地居民", "特選夥伴嚮導", "歷史建築專家"],
+        "reviews": [
+          {
+            "author": "黃生 (香港)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "Kenji英文極流利，帶我哋去鐵輪蒸海鮮，由揀材料到控制火候教得好細心。佢講解明治木造建築嘅背景故事生動有趣，極之推薦！"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "yuna-kim",
+    "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80",
+    "nationality": "South Korea",
+    "rating": 4.91,
+    "reviewsCount": 31,
+    "experiencesCount": 49,
+    "responseRate": "100%",
+    "responseTime": "Within 30 mins",
+    "priceValue": 2800,
+    "verified": true,
+    "availabilityFilter": "tomorrow",
+    "experiencesOffered": ["exp-night-walk"],
+    "languages": [
+      { "name": "Korean", "flag": "🇰🇷", "level": "Native" },
+      { "name": "English", "flag": "🇬🇧", "level": "Fluent" },
+      { "name": "Japanese", "flag": "🇯🇵", "level": "Fluent" }
+    ],
+    "locales": {
+      "en": {
+        "name": "Yuna Kim",
+        "guideType": "International Resident",
+        "languagesShort": "🇰🇷 Korean · 🇬🇧 English · 🇯🇵 Japanese",
+        "bio": "APU alumna turned boutique cafe creator and lifestyle photographer in Beppu. Having lived in Beppu for over six years, I know every aesthetic corner, golden-hour photo viewpoint over Beppu Bay, and quiet artisanal kissaten in town.",
+        "quote": "I want visitors to experience Beppu beyond the places they see on Google — through light, coffee, and quiet moments.",
+        "interests": ["Photography", "Hidden Cafes", "Night Walks", "Aesthetic Spots", "Art & Ceramics"],
+        "availability": "Available Tomorrow & This Weekend",
+        "rateHourly": "¥1,600 / hr",
+        "startingPrice": "From ¥2,800 / 2 hours",
+        "badges": ["Identity Verified", "APU Alumna", "Orientation Completed", "Photo Specialist"],
+        "reviews": [
+          {
+            "author": "Chloe T. (Singapore)",
+            "date": "August 2026",
+            "rating": 5,
+            "text": "Yuna took the most stunning photos of us during our dusk walk in Kitahama! She is so kind, speaks fantastic English, and showed us a tucked-away 1960s coffee shop with the best homemade cheesecake."
+          }
+        ]
+      },
+      "ja": {
+        "name": "キム・ユナ",
+        "guideType": "別府在住クリエイター（APU卒業生）",
+        "languagesShort": "🇰🇷 韓国語 · 🇬🇧 英語 · 🇯🇵 日本語（流暢）",
+        "bio": "立命館APU卒業後、別府でカフェ運営とフォトグラファーとして活動中。在住6年目だからこそ知る、別府湾の夕焼けスポット、隠れ家純喫茶、写真映えする路地裏の光景を優しくご案内します。",
+        "quote": "検索だけでは見つからない、光と珈琲、静かな時間を通じて別府の美しさを感じてください。",
+        "interests": ["写真撮影", "隠れ家カフェ", "夜の路地歩き", "陶芸・アート", "別府湾ビュー"],
+        "availability": "明日および今週末予約可能",
+        "rateHourly": "¥1,600 / 時間",
+        "startingPrice": "¥2,800 〜 / 2時間",
+        "badges": ["本人確認済み", "APU卒業生", "ガイド講習修了", "フォトスペシャリスト"],
+        "reviews": [
+          {
+            "author": "クロエ・T (シンガポール)",
+            "date": "2026年8月",
+            "rating": 5,
+            "text": "夕暮れの北浜散歩で本当に素敵な写真をたくさん撮っていただきました！英語も日本語も堪能で、昭和レトロな喫茶店のチーズケーキも最高でした。"
+          }
+        ]
+      },
+      "ko": {
+        "name": "김유나 (Yuna)",
+        "guideType": "현지 거주 크리에이터 (APU 동문)",
+        "languagesShort": "🇰🇷 한국어 (모국어) · 🇬🇧 영어 · 🇯🇵 일본어",
+        "bio": "APU 졸업 후 벳푸에서 감성 카페를 운영하며 사진작가로 활동하고 있습니다. 벳푸 거주 6년 차의 노하우로, 관광객이 모르는 벳푸만의 황금빛 일몰 명소와 60년대 킷사텐, 감성 골목길을 안내합니다.",
+        "quote": "인터넷 검색창 너머, 따스한 햇살과 커피 향기, 고요한 골목 속 진짜 벳푸를 보여드리고 싶어요.",
+        "interests": ["감성 스냅 촬영", "숨은 카페", "저녁 산책", "포토 스팟", "도자기 공예"],
+        "availability": "내일 및 이번 주말 예약 가능",
+        "rateHourly": "¥1,600 / 시간",
+        "startingPrice": "¥2,800부터 / 2시간",
+        "badges": ["본인 인증 완료", "APU 동문", "가이드 교육 수료", "스냅 사진 전문가"],
+        "reviews": [
+          {
+            "author": "이지은 & 한동훈 (한국)",
+            "date": "2026년 8월",
+            "rating": 5,
+            "text": "유나 님 덕분에 인생 사진 건졌습니다! 한국어로 편안하게 대화하면서 기타하마 바닷가와 옛 다방을 둘러봤는데, 일본 소도시 특유의 따스함이 가득 담긴 시간이었습니다."
+          }
+        ]
+      },
+      "zh": {
+        "name": "金润娥 (Yuna Kim)",
+        "guideType": "定居别府创作者（APU优秀毕业生）",
+        "languagesShort": "🇰🇷 韩语母语 · 🇬🇧 英语流利 · 🇯🇵 日语精通",
+        "bio": "毕业于立命馆APU，现为别府独立咖啡馆主理人兼人文摄影师。在别府生活6年，熟知别府湾每一个落日机位、昭和纯喫茶与宁静的陶艺小院。",
+        "quote": "我希望带您体会网络攻略之外的别府——在那缕夕阳、那杯咖啡与安静的时光之中。",
+        "interests": ["胶片写真", "私房咖啡馆", "暮色漫步", "美学打卡", "器皿艺术"],
+        "availability": "明天及本周末可约",
+        "rateHourly": "¥1,600 / 小时",
+        "startingPrice": "¥2,800起 / 2小时",
+        "badges": ["官方身份认证", "APU毕业生", "向导培训合格", "人文摄影特长"],
+        "reviews": [
+          {
+            "author": "周小姐与好友 (中国台湾)",
+            "date": "2026年8月",
+            "rating": 5,
+            "text": "Yuna拍摄的人像照片色调太美了！人非常温柔耐心，带我们去的一家1960年代复古咖啡馆的自制芝士蛋糕极其惊艳，太值得体验了！"
+          }
+        ]
+      },
+      "yue": {
+        "name": "金潤娥 (Yuna Kim)",
+        "guideType": "旅日生活攝影師（APU畢業生）",
+        "languagesShort": "🇰🇷 韓語母語 · 🇬🇧 英語流利 · 🇯🇵 日語精通",
+        "bio": "畢業於立命館APU，目前喺別府經營自家Cafe同從事生活人像攝影。喺別府定居超過6年，熟透別府灣每一個私藏日落打卡位同六十年代復古喫茶店。",
+        "quote": "我希望帶你感受Google以外嘅別府——喺微光、咖啡香同寧靜片刻之中體會這座城市的溫度。",
+        "interests": ["人像攝影", "隱世喫茶店", "暮色散步", "美學打卡", "手造陶瓷"],
+        "availability": "聽日及今個週末均可預約",
+        "rateHourly": "¥1,600 / 小時",
+        "startingPrice": "¥2,800起 / 2小時",
+        "badges": ["身份核實認證", "APU畢業生", "嚮導考核合格", "攝影特長嚮導"],
+        "reviews": [
+          {
+            "author": "李小姐 (香港)",
+            "date": "2026年8月",
+            "rating": 5,
+            "text": "Yuna影相真係好靚好有Feel！帶我哋去咗北濱一間隱蔽嘅懷舊咖啡店，一邊飲手沖咖啡一邊睇日落，非常放鬆治癒！"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "daiki-sato",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+    "nationality": "Japan",
+    "rating": 5.0,
+    "reviewsCount": 35,
+    "experiencesCount": 55,
+    "responseRate": "95%",
+    "responseTime": "Within 3 hours",
+    "priceValue": 2000,
+    "verified": true,
+    "availabilityFilter": "today",
+    "experiencesOffered": ["exp-onsen-first-timer"],
+    "languages": [
+      { "name": "Japanese", "flag": "🇯🇵", "level": "Native" },
+      { "name": "English", "flag": "🇬🇧", "level": "Conversational" }
+    ],
+    "locales": {
+      "en": {
+        "name": "Daiki Sato",
+        "guideType": "Local Resident",
+        "languagesShort": "🇯🇵 Japanese · 🇬🇧 English",
+        "bio": "Certified Hot Spring Sommelier and lifelong Beppu dweller. With over 2,000 hot spring sources in our city, every bath has its own pH, minerals, and healing personality. I help visitors navigate etiquette with ease, overcome hesitation, and discover the exact bath suited to their body.",
+        "quote": "There is an onsen for everyone. I help first-time travelers step into the warm waters with peace of mind.",
+        "interests": ["Onsen Wellness", "Hot Spring Science", "Sand Baths", "Local History"],
+        "availability": "Available Today & This Weekend",
+        "rateHourly": "¥2,000 / hr",
+        "startingPrice": "From ¥2,000 / 1.5 hours",
+        "badges": ["Certified Onsen Sommelier", "Identity Verified", "Local Resident", "5.0 Star Guide"],
+        "reviews": [
+          {
+            "author": "Paul & Jenna (USA)",
+            "date": "September 2026",
+            "rating": 5,
+            "text": "We were nervous about onsen etiquette as Americans with small tattoos. Daiki met us outside Takegawara, explained everything patiently, and made the whole sand bath experience deeply relaxing and respectful. We could not have done it without him!"
+          }
+        ]
+      },
+      "ja": {
+        "name": "佐藤 大輝",
+        "guideType": "別府地元住民（温泉ソムリエ）",
+        "languagesShort": "🇯🇵 日本語（ネイティブ） · 🇬🇧 英語（日常会話）",
+        "bio": "公認温泉ソムリエであり別府生まれ。市内2,000以上の源泉の中から、泉質や効能、お好みの温度に合わせた最適な名湯をご提案。初めての共同浴場でのマナーやタオルの扱い、名物砂湯の楽しみ方を優しくエスコートします。",
+        "quote": "温泉は誰もが素直になれる場所。不安を取り除き、心から寛げる湯巡りをお届けします。",
+        "interests": ["温泉保養学", "泉質別効能", "砂湯・蒸し湯", "別府八湯の歴史"],
+        "availability": "本日および今週末対応可能",
+        "rateHourly": "¥2,000 / 時間",
+        "startingPrice": "¥2,000 〜 / 1.5時間",
+        "badges": ["温泉ソムリエ公認", "本人確認済み", "地元住民", "評価5.0満点"],
+        "reviews": [
+          {
+            "author": "ポール ＆ ジェナ (アメリカ)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "タトゥーがあるため日本の温泉に入れるか不安でしたが、大輝さんが竹瓦温泉の前で優しく案内してくれました。砂湯も最高に温まり、安心して楽しめました！"
+          }
+        ]
+      },
+      "ko": {
+        "name": "사토 다이키",
+        "guideType": "온천 소믈리에 (벳푸 토박이)",
+        "languagesShort": "🇯🇵 일본어 · 🇬🇧 영어",
+        "bio": "일본 공인 '온천 소믈리에' 자격을 보유한 벳푸 토박이입니다. 2,000개가 넘는 벳푸 온천수 중 체질과 피로도에 딱 맞는 명탕을 추천해 드립니다. 낯선 일본 온천 이용 에티켓과 다케가와라 모래찜질을 편안하게 안내합니다.",
+        "quote": "모든 여행자에게 꼭 맞는 온천이 있습니다. 망설이지 않고 온천의 행복에 푹 빠지실 수 있도록 돕겠습니다.",
+        "interests": ["온천 웰니스", "온천 수질 과학", "천연 모래 온천", "벳푸 온천사"],
+        "availability": "오늘 및 이번 주말 예약 가능",
+        "rateHourly": "¥2,000 / 시간",
+        "startingPrice": "¥2,000부터 / 1.5시간",
+        "badges": ["공인 온천 소믈리에", "본인 인증 완료", "현지인 가이드", "5.0 만점 가이드"],
+        "reviews": [
+          {
+            "author": "최유석 (한국)",
+            "date": "2026년 9월",
+            "rating": 5,
+            "text": "일본 온천 수칙이 까다롭다고 해서 긴장했는데, 다이키 씨가 수건 위치부터 샤워 매너까지 친절히 가르쳐주어 다케가와라 모래찜질을 너무나 편안하게 즐겼습니다!"
+          }
+        ]
+      },
+      "zh": {
+        "name": "佐藤 大辉 (Daiki)",
+        "guideType": "认证温泉侍酒师（别府本地人）",
+        "languagesShort": "🇯🇵 日语母语 · 🇬🇧 基础日常英语",
+        "bio": "日本官方认证温泉侍酒师（温泉专家），自幼在别府泉水中长大。别府拥有超过2,000处泉眼，每处泉质酸碱度与疗效各不相同。我致力于帮助外国游客轻松掌握泡汤礼仪，体验历史悠久的竹瓦火山暖砂浴。",
+        "quote": "别府的每一汪泉水都有独特的疗愈能量。我愿让每位第一次体验日式温泉的客人感到从容与安心。",
+        "interests": ["温泉康养", "矿物泉质解析", "地热砂浴", "别府八汤史话"],
+        "availability": "今天与本周末均可预约",
+        "rateHourly": "¥2,000 / 小时",
+        "startingPrice": "¥2,000起 / 1.5小时",
+        "badges": ["认证温泉侍酒师", "官方身份认证", "本地向导", "5.0满分好评"],
+        "reviews": [
+          {
+            "author": "黄先生 (中国香港)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "大辉先生非常专业！在竹瓦温泉门口详细解说了更衣和毛巾规矩，砂浴体验极其震撼，整个人身心彻底放松，满分推荐！"
+          }
+        ]
+      },
+      "yue": {
+        "name": "佐藤 大輝 (Daiki)",
+        "guideType": "認證溫泉侍酒師（別府在地人）",
+        "languagesShort": "🇯🇵 日語母語 · 🇬🇧 日常英語",
+        "bio": "日本認證「溫泉侍酒師」，自細喺別府溫泉水浸大。別府有過二千個源泉，每種泉水礦物酸鹼同功效都唔同。我會貼心教你更衣沖涼禮儀，帶你體驗竹瓦百年火山黑砂浴。",
+        "quote": "每個人都可以搵到啱自己體質嘅溫泉。我會幫第一次浸溫泉嘅旅客掃除所有疑慮，安心享受。",
+        "interests": ["溫泉養生", "溫泉水質研究", "火山砂浴", "別府八湯歷史"],
+        "availability": "今日及今個週末均可預約",
+        "rateHourly": "¥2,000 / 小時",
+        "startingPrice": "¥2,000起 / 1.5小時",
+        "badges": ["日本認證溫泉侍酒師", "身份核實認證", "在地居民", "5.0滿分好評"],
+        "reviews": [
+          {
+            "author": "梁小姐 (澳門)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "大輝好有耐性講解入浴須知同毛巾點放，喺竹瓦溫泉試砂浴好特別好舒服，有佢帶路完全唔會覺得尷尬！"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "carlos-mendez",
+    "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=600&q=80",
+    "nationality": "Mexico",
+    "rating": 4.89,
+    "reviewsCount": 19,
+    "experiencesCount": 31,
+    "responseRate": "100%",
+    "responseTime": "Within 1 hour",
+    "priceValue": 2800,
+    "verified": true,
+    "availabilityFilter": "weekend",
+    "experiencesOffered": ["exp-apu-secrets"],
+    "languages": [
+      { "name": "Spanish", "flag": "🇲🇽", "level": "Native" },
+      { "name": "English", "flag": "🇬🇧", "level": "Fluent" },
+      { "name": "Japanese", "flag": "🇯🇵", "level": "Conversational (JLPT N3)" }
+    ],
+    "locales": {
+      "en": {
+        "name": "Carlos Mendez",
+        "guideType": "APU Student",
+        "languagesShort": "🇲🇽 Spanish · 🇬🇧 English · 🇯🇵 Japanese",
+        "bio": "Graduate student at APU studying Sustainable Tourism. Passionate trail runner, nature lover, and bus route strategist. I love guiding fellow nature fans up Mount Tsurumi, around the cedar forests, and to hilltop viewpoints overlooking the steaming town and Beppu Bay.",
+        "quote": "Beppu is where lush volcanic mountains touch the blue ocean. Let's explore its scenic nature together.",
+        "interests": ["Nature & Hiking", "Mount Tsurumi", "Student Life", "Scenic Viewpoints", "Cycling"],
+        "availability": "Available This Weekend",
+        "rateHourly": "¥1,500 / hr",
+        "startingPrice": "From ¥2,800 / 2.5 hours",
+        "badges": ["Identity Verified", "APU Graduate Student", "Eco-Guide", "Active Lifestyle"],
+        "reviews": [
+          {
+            "author": "Carlos & Sofia (Spain)",
+            "date": "July 2026",
+            "rating": 5,
+            "text": "Great energy and super knowledgeable about Mount Tsurumi trails. Having someone who speaks both fluent Spanish and English was amazing for my family."
+          }
+        ]
+      },
+      "ja": {
+        "name": "カルロス・メンデス",
+        "guideType": "APU大学院生",
+        "languagesShort": "🇲🇽 スペイン語 · 🇬🇧 英語（流暢） · 🇯🇵 日本語（N3）",
+        "bio": "立命館APU大学院で持続可能観光学（サステナブルツーリズム）を研究中。トレイルランニングや鶴見岳の自然散策を愛し、別府湾を一望する絶景ルートや隠れた展望足湯をご案内します。",
+        "quote": "別府は火山と青い海が調和する奇跡の街。豊かな大自然を一緒に体感しましょう！",
+        "interests": ["ハイキング・登山", "鶴見岳パノラマ", "APU学生生活", "エコツアー", "サイクリング"],
+        "availability": "今週末予約可能",
+        "rateHourly": "¥1,500 / 時間",
+        "startingPrice": "¥2,800 〜 / 2.5時間",
+        "badges": ["本人確認済み", "APU大学院生", "エコツアーガイド", "アウトドア派"],
+        "reviews": [
+          {
+            "author": "カルロス ＆ ソフィア (スペイン)",
+            "date": "2026年7月",
+            "rating": 5,
+            "text": "鶴見岳のトレイルをとても楽しく案内してくれました！スペイン語と英語の両方で家族みんなが快適に楽しめました。"
+          }
+        ]
+      },
+      "ko": {
+        "name": "카를로스 멘데스",
+        "guideType": "APU 대학원생",
+        "languagesShort": "🇲🇽 스페인어 · 🇬🇧 영어 · 🇯🇵 일본어",
+        "bio": "APU 대학원에서 지속 가능한 관광학을 전공하고 있습니다. 트레일 러닝과 하이킹 매니아로서, 쓰루미산 숲길과 벳푸만을 내려다보는 환상적인 언덕길 전망대로 여러분을 안내합니다.",
+        "quote": "푸른 화산과 청명한 바다가 만나는 벳푸의 대자연을 저와 함께 호흡해 보세요.",
+        "interests": ["자연 & 트레킹", "쓰루미산 등산", "학생 문화", "파노라마 뷰", "친환경 투어"],
+        "availability": "이번 주말 예약 가능",
+        "rateHourly": "¥1,500 / 시간",
+        "startingPrice": "¥2,800부터 / 2.5시간",
+        "badges": ["본인 인증 완료", "APU 대학원생", "에코 가이드", "액티브 라이프"],
+        "reviews": [
+          {
+            "author": "김민수 (한국)",
+            "date": "2026년 7월",
+            "rating": 5,
+            "text": "쓰루미산 케이블카와 연계된 숲길을 걸으며 벳푸만의 절경을 감상했습니다. 긍정적인 에너지와 유창한 영어 설명 덕분에 정말 즐거운 하이킹이었습니다!"
+          }
+        ]
+      },
+      "zh": {
+        "name": "卡洛斯・门德斯 (Carlos)",
+        "guideType": "APU研究生",
+        "languagesShort": "🇲🇽 西班牙语 · 🇬🇧 英语流利 · 🇯🇵 日语交流",
+        "bio": "立命馆APU大学可持续旅游专业硕士在读。越野跑与户外自然爱好者，深谙鹤见岳森林步道与俯瞰别府湾落日的私密观景高台路线。",
+        "quote": "别府是翠绿火山与蔚蓝大海完美交汇之地。让我们一起走出喧嚣，感受山海自然之美。",
+        "interests": ["户外徒步", "鹤见岳风光", "大学生活", "观景制高点", "绿色生态游"],
+        "availability": "本周末可预约",
+        "rateHourly": "¥1,500 / 小时",
+        "startingPrice": "¥2,800起 / 2.5小时",
+        "badges": ["官方身份认证", "APU硕士生", "生态向导", "活力运动风"],
+        "reviews": [
+          {
+            "author": "林先生与朋友 (中国)",
+            "date": "2026年7月",
+            "rating": 5,
+            "text": "卡洛斯充满活力，带我们登上鹤见岳山顶步道，视角极其开阔，还推荐了半山腰的清幽咖啡馆，非常棒的体验！"
+          }
+        ]
+      },
+      "yue": {
+        "name": "卡洛斯・門德斯 (Carlos)",
+        "guideType": "立命館APU研究生",
+        "languagesShort": "🇲🇽 西班牙語 · 🇬🇧 英語流利 · 🇯🇵 日語溝通",
+        "bio": "立命館APU可持續旅遊學碩士生。熱愛山徑越野跑同大自然，熟悉鶴見岳森林步道同埋居高臨下俯瞰別府灣嘅秘境觀景點。",
+        "quote": "別府係翠綠火山與蔚藍海洋相遇嘅地方。一齊行入大自然，感受清新山風！",
+        "interests": ["行山健行", "鶴見岳風光", "留學生文化", "全景打卡位", "綠色生態遊"],
+        "availability": "今個週末可預約",
+        "rateHourly": "¥1,500 / 小時",
+        "startingPrice": "¥2,800起 / 2.5小時",
+        "badges": ["身份核實認證", "APU碩士研究生", "生態遊嚮導", "陽光活力"],
+        "reviews": [
+          {
+            "author": "鄧生 (香港)",
+            "date": "2026年7月",
+            "rating": 5,
+            "text": "Carlos精力充沛，帶我哋搭纜車上鶴見岳山頂行步道，沿途詳細介紹植物同群山，英語溝通超順暢，一家人玩得好開心！"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "chloe-chan",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
+    "nationality": "Hong Kong",
+    "rating": 4.97,
+    "reviewsCount": 28,
+    "experiencesCount": 44,
+    "responseRate": "100%",
+    "responseTime": "Within 30 mins",
+    "priceValue": 2500,
+    "verified": true,
+    "availabilityFilter": "today",
+    "experiencesOffered": ["exp-hidden-ramen", "exp-station-welcome"],
+    "languages": [
+      { "name": "Cantonese", "flag": "🇭🇰", "level": "Native (廣東話)" },
+      { "name": "Chinese (Mandarin)", "flag": "🇨🇳", "level": "Native / Fluent (普通话)" },
+      { "name": "English", "flag": "🇬🇧", "level": "Fluent" },
+      { "name": "Japanese", "flag": "🇯🇵", "level": "Fluent (JLPT N1)" }
+    ],
+    "locales": {
+      "en": {
+        "name": "Chloe Chan (陳嘉欣)",
+        "guideType": "APU Student",
+        "languagesShort": "🇭🇰 Cantonese · 🇨🇳 Mandarin · 🇬🇧 English · 🇯🇵 Japanese (N1)",
+        "bio": "Hello! I am a final-year APU student from Hong Kong majoring in Culture & Tourism. Having lived in Beppu for four years without a car, I'm an expert on Kamenoi bus routes, Kannawa geothermal steam cooking, and coastal sunset viewpoints. I love helping Cantonese and Mandarin speaking families and couples discover Beppu with total comfort!",
+        "quote": "Whether you speak Cantonese or Mandarin, I can guide you to authentic eats and help you navigate buses and onsens with ease!",
+        "interests": ["Kannawa Steam Food", "Photography", "Bus Pass Routes", "Family Friendly", "Onsen Etiquette"],
+        "availability": "Available Today, Tomorrow & This Weekend",
+        "rateHourly": "¥1,500 / hr",
+        "startingPrice": "From ¥2,500 / 2 hours",
+        "badges": ["Identity Verified", "APU Student", "Cantonese & Mandarin Guide", "Top Rated"],
+        "reviews": [
+          {
+            "author": "Wong Family (Hong Kong / 香港)",
+            "date": "September 2026",
+            "rating": 5,
+            "text": "Chloe was incredibly thoughtful! Traveling with elderly parents and kids without a rental car had made us anxious. Chloe met us at Beppu Station, bought our bus tickets, and led us to steam seafood in Kannawa. Highly recommended!"
+          },
+          {
+            "author": "Lin & Wang (Taiwan / 台灣)",
+            "date": "August 2026",
+            "rating": 5,
+            "text": "Chloe is wonderful! Her Mandarin and Japanese are both fluent. She helped translate the onsen ryokan menu and gave us the best itinerary tips. 5 stars!"
+          }
+        ]
+      },
+      "ja": {
+        "name": "クロエ・チャン (陳嘉欣)",
+        "guideType": "APU現役学生（香港出身）",
+        "languagesShort": "🇭🇰 広東語 · 🇨🇳 中国語（普通話） · 🇬🇧 英語 · 🇯🇵 日本語（N1）",
+        "bio": "香港出身のAPU観光学部4年生。車なしで別府に4年間暮らしているため、亀の井バスの効率的な乗り方や鉄輪の地獄蒸し、海辺の夕景スポットを知り尽くしています。広東語・中国語・英語・日本語で家族旅行やカップルを温かくサポートします。",
+        "quote": "広東語でも標準中国語でも大歓迎！別府の美味しいグルメや温泉文化を楽しく安心にご案内します。",
+        "interests": ["鉄輪地獄蒸し", "写真撮影", "バス乗り継ぎ攻略", "家族向け観光", "温泉マナー"],
+        "availability": "本日・明日・今週末いつでも予約可能",
+        "rateHourly": "¥1,500 / 時間",
+        "startingPrice": "¥2,500 〜 / 2時間",
+        "badges": ["本人確認済み", "APU現役学生", "中国語・広東語特化", "高評価ガイド"],
+        "reviews": [
+          {
+            "author": "ウォン様ファミリー (香港)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "高齢の両親を連れての車なし旅行でしたが、クロエさんが駅で出迎えてくれ、バス切符の手配から鉄輪での地獄蒸し体験まで完璧にサポートしてくれました！"
+          }
+        ]
+      },
+      "ko": {
+        "name": "클로이 챈 (Chloe Chan / 陳嘉欣)",
+        "guideType": "APU 4학년 유학생 (홍콩 출신)",
+        "languagesShort": "🇭🇰 광둥어 · 🇨🇳 중국어 · 🇬🇧 영어 · 🇯🇵 일본어 (N1)",
+        "bio": "홍콩 출신의 APU 관광문화학과 4학년입니다. 벳푸에서 4년 동안 차 없이 생활해 왔기 때문에 카메노이 버스 노선, 간나와 온천 지열찜, 아름다운 해안 일몰 포인트를 꿰뚫고 있습니다. 가족 여행자와 커플을 다정하게 안내합니다.",
+        "quote": "광둥어, 중국어, 영어로 소통하며 벳푸의 진정한 미식과 온천 문화를 편안하게 안내해 드립니다!",
+        "interests": ["간나와 지옥찜", "사진 촬영", "버스 노선 정복", "가족 친화 코스", "온천 에티켓"],
+        "availability": "오늘, 내일 및 이번 주말 즉시 가능",
+        "rateHourly": "¥1,500 / 시간",
+        "startingPrice": "¥2,500부터 / 2시간",
+        "badges": ["본인 인증 완료", "APU 4학년", "광둥어/중국어 전문", "최고 평점"],
+        "reviews": [
+          {
+            "author": "왕 씨 가족 (홍콩)",
+            "date": "2026년 9월",
+            "rating": 5,
+            "text": "부모님과 아이들을 동반한 벳푸 자유여행이었는데 클로이 덕분에 이동 걱정 없이 정말 편안하게 다녔습니다. 역 마중부터 간나와 지옥찜 해산물 안내까지 완벽했습니다!"
+          }
+        ]
+      },
+      "zh": {
+        "name": "陈嘉欣 (Chloe Chan)",
+        "guideType": "APU大四留学生（香港籍）",
+        "languagesShort": "🇭🇰 广东话母语 · 🇨🇳 普通话流利 · 🇬🇧 英语精通 · 🇯🇵 日语N1",
+        "bio": "来自香港的立命馆APU大学观光文化系大四学生。在别府无车生活4年，是龟之井巴士线路、铁轮地热蒸海鲜与海滨日落机位的行家里手。精通粤语、普通话、英语与日语，专注为华语家庭自由行与情侣提供贴心省心的微向导陪伴！",
+        "quote": "无论您习惯讲广东话还是普通话，我都带您吃透别府地道美食、轻松搭乘巴士泡温泉！",
+        "interests": ["铁轮地热海鲜", "人文拍照", "巴士通票省钱攻略", "家庭亲子行程", "温泉泡汤指引"],
+        "availability": "今天、明天及本周末随时可约",
+        "rateHourly": "¥1,500 / 小时",
+        "startingPrice": "¥2,500起 / 2小时",
+        "badges": ["官方身份认证", "APU应届生", "粤语与普通话金牌", "最高好评率"],
+        "reviews": [
+          {
+            "author": "王先生一家 (中国香港)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "Chloe真的非常贴心细致！带着老人小孩来别府自由行没租车本来很焦虑。Chloe在别府站接我们，帮我们买好巴士通票，还带我们去铁轮蒸新鲜海鲜，长辈赞不绝口！"
+          },
+          {
+            "author": "林小姐与王先生 (中国台湾)",
+            "date": "2026年8月",
+            "rating": 5,
+            "text": "Chloe人超级好，普通话和日语都非常流利，帮我们翻译温泉旅馆的日文手写怀石菜单，还推荐了省时又出片的地狱路线，强烈推荐！"
+          }
+        ]
+      },
+      "yue": {
+        "name": "陳嘉欣 (Chloe Chan)",
+        "guideType": "立命館APU大四學生（香港人）",
+        "languagesShort": "🇭🇰 廣東話母語 · 🇨🇳 普通話流利 · 🇬🇧 英語流利 · 🇯🇵 日語N1",
+        "bio": "香港出世長大，立命館亞洲太平洋大學（APU）文化觀光學系四年級。喺別府無租車生活咗4年，對龜之井巴士路線、鐵輪地獄蒸海鮮同埋海岸日落靚景瞭如指掌。精通廣東話、普通話、英文同日語，專為香港、台灣家庭及情侶自由行旅客提供最地道貼心嘅嚮導體驗！",
+        "quote": "無論你講廣東話定國語，我都可以帶你食盡別府地道美食、教你搭巴士浸溫泉！",
+        "interests": ["鐵輪地熱蒸海鮮", "日落打卡位", "巴士Pass慳錢捷徑", "家庭親子友善", "溫泉禮儀"],
+        "availability": "今日、聽日同今個週末隨時可預約",
+        "rateHourly": "¥1,500 / 小時",
+        "startingPrice": "¥2,500起 / 2小時",
+        "badges": ["身份核實認證", "APU應屆生", "全廣東話/國語向導", "超高好評率"],
+        "reviews": [
+          {
+            "author": "黃氏一家 (香港 / Hong Kong)",
+            "date": "2026年9月",
+            "rating": 5,
+            "text": "Chloe真係非常細心！帶住屋企長輩同小朋友黎別府自由行，無租車本來好擔心交通。Chloe喺別府站等我哋，幫手買好龜之井巴士飛，仲帶我哋去鐵輪蒸海鮮，長輩讚不絕口！"
+          },
+          {
+            "author": "林小姐與王生 (台灣 / Taiwan)",
+            "date": "2026年8月",
+            "rating": 5,
+            "text": "Chloe人超級好，國語同日語都超級流利，幫我們翻譯溫泉旅館菜單，還推薦了地獄巡禮最省時的路線，五星推薦！"
+          }
+        ]
+      }
+    }
+  }
+]

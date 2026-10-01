@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Find a Local Guide | Beppu Tourism Marketplace</title>
+  <meta name="description" content="Connect with trusted local residents and APU students for micro-tours, onsen etiquette, and food walks in Beppu.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♨️</text></svg>">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">♨️</div>
+          <div class="brand-text">
+            <span class="brand-title">Beppu</span>
+            <span class="brand-subtitle" data-i18n="brand_sub">Hot Springs & Local Guides</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="explore.html" class="nav-link" data-i18n="nav_explore">Explore</a>
+        <a href="experiences.html" class="nav-link" data-i18n="nav_experiences">Experiences</a>
+        <a href="guides.html" class="nav-link active" data-i18n="nav_guides">Guides</a>
+        <a href="trip.html" class="nav-link">
+          <span data-i18n="nav_trip">My Trip</span>
+          <span class="nav-badge-count js-trip-count">0</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-dropdown-wrap">
+          <button class="lang-switch-btn js-lang-dropdown-btn" aria-label="Select Language" aria-haspopup="true" aria-expanded="false">
+            <span>🌐</span>
+            <span class="js-active-lang-label">English</span>
+            <span style="font-size:0.65rem; opacity:0.7;">▼</span>
+          </button>
+          <div class="lang-dropdown-menu" role="menu">
+            <button class="lang-dropdown-item" data-lang="en">🇬🇧 English</button>
+            <button class="lang-dropdown-item" data-lang="ko">🇰🇷 한국어 (Korean)</button>
+            <button class="lang-dropdown-item" data-lang="zh">🇨🇳 简体中文 (Chinese)</button>
+            <button class="lang-dropdown-item" data-lang="yue">🇭🇰 繁體中文 / 粵語 (Cantonese)</button>
+            <button class="lang-dropdown-item" data-lang="ja">🇯🇵 日本語 (Japanese)</button>
+          </div>
+        </div>
+
+        <a href="trip.html" class="user-avatar-pill">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Tourist Avatar" class="user-avatar-img">
+          <span class="user-avatar-name">Visitor</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section style="background: linear-gradient(180deg, var(--color-cream-100) 0%, var(--color-cream-50) 100%); padding: 48px 0 24px; border-bottom: 1px solid var(--color-cream-300);">
+    <div class="container">
+      <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+        <span class="badge badge-apu">APU & Community Network</span>
+        <span class="badge badge-verified">✓ 100% Identity Verified</span>
+      </div>
+      <h1 class="section-title" style="font-size: 2.8rem; margin-bottom: 12px;">Find a Local</h1>
+      <p class="section-subtitle">
+        Find someone who can show you Beppu from their perspective. Connect for 45-minute transit help, food crawls, or hot spring etiquette walks.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Directory -->
+  <main class="container" style="padding: 36px 24px 80px;">
+
+    <!-- Filter Bar -->
+    <div class="discovery-toolbar">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 20px;">
+        <!-- Language Filter -->
+        <div>
+          <label style="display:block; font-size: 0.8rem; font-weight: 700; color: var(--color-slate-700); margin-bottom: 6px;">
+            Language
+          </label>
+          <select id="guide-lang-filter" class="form-select">
+            <option value="all">Any Language</option>
+            <option value="English">🇬🇧 English</option>
+            <option value="Korean">🇰🇷 한국어 (Korean)</option>
+            <option value="普通话">🇨🇳 普通话 (Mandarin)</option>
+            <option value="廣東話">🇭🇰 廣東話 (Cantonese)</option>
+            <option value="Japanese">🇯🇵 日本語 (Japanese)</option>
+            <option value="Spanish">🇲🇽 Spanish</option>
+            <option value="Filipino">🇵🇭 Filipino</option>
+          </select>
+        </div>
+
+        <!-- Guide Type Filter -->
+        <div>
+          <label style="display:block; font-size: 0.8rem; font-weight: 700; color: var(--color-slate-700); margin-bottom: 6px;">
+            Guide Background
+          </label>
+          <select id="guide-type-filter" class="form-select">
+            <option value="all">All Backgrounds</option>
+            <option value="APU Student">🎓 APU Student</option>
+            <option value="Local Resident">🏡 Local Resident</option>
+            <option value="International Resident">🌏 International Resident</option>
+          </select>
+        </div>
+
+        <!-- Availability Filter -->
+        <div>
+          <label style="display:block; font-size: 0.8rem; font-weight: 700; color: var(--color-slate-700); margin-bottom: 6px;">
+            Availability
+          </label>
+          <select id="guide-avail-filter" class="form-select">
+            <option value="all">Any Availability</option>
+            <option value="today">Available Today</option>
+            <option value="tomorrow">Available Tomorrow</option>
+            <option value="weekend">This Weekend</option>
+          </select>
+        </div>
+
+        <!-- Interests Filter -->
+        <div>
+          <label style="display:block; font-size: 0.8rem; font-weight: 700; color: var(--color-slate-700); margin-bottom: 6px;">
+            Primary Interest
+          </label>
+          <select id="guide-interest-filter" class="form-select">
+            <option value="all">All Interests</option>
+            <option value="Food">🍜 Food & Izakayas</option>
+            <option value="Onsen">♨️ Onsen & Sand Baths</option>
+            <option value="Architecture">⛩️ Architecture & History</option>
+            <option value="Photography">📸 Photography & Cafes</option>
+            <option value="Nature">🌋 Nature & Hiking</option>
+          </select>
+        </div>
+      </div>
+
+      <div style="display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--color-cream-200); padding-top: 14px;">
+        <div style="font-size: 0.85rem; color: var(--color-slate-600);" id="guides-count-display">
+          Showing 5 guides
+        </div>
+        <button class="btn btn-secondary btn-sm" id="btn-reset-guide-filters">
+          Clear Filters
+        </button>
+      </div>
+    </div>
+
+    <!-- Guides Grid -->
+    <div class="cards-grid" id="guides-list-grid">
+      <!-- Injected dynamically via JS -->
+    </div>
+
+    <!-- Trust & Verification Explainer (Section 13) -->
+    <section style="margin-top: 72px; background: white; border: 1px solid var(--color-cream-300); border-radius: var(--radius-xl); padding: 36px; box-shadow: var(--shadow-sm);">
+      <div style="text-align: center; max-width: 680px; margin: 0 auto 36px;">
+        <span class="badge badge-verified" style="margin-bottom: 8px;">Safety, Respect & Verification</span>
+        <h2 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 8px; color: var(--color-slate-950);">
+          How We Ensure Trust & Safety
+        </h2>
+        <p style="color: var(--color-slate-600);">
+          Our platform works in harmony with local tourism organizations and universities to ensure friendly, safe, and culturally respectful exchanges.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+        <div style="padding: 20px; background: var(--color-cream-50); border-radius: var(--radius-lg); border: 1px solid var(--color-cream-200);">
+          <div style="font-size: 1.5rem; margin-bottom: 8px;">🆔</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 6px;">Identity Verified</h3>
+          <p style="font-size: 0.85rem; color: var(--color-slate-600); line-height: 1.5;">
+            Every guide completes government ID / student ID verification before listing micro-experiences.
+          </p>
+        </div>
+
+        <div style="padding: 20px; background: var(--color-cream-50); border-radius: var(--radius-lg); border: 1px solid var(--color-cream-200);">
+          <div style="font-size: 1.5rem; margin-bottom: 8px;">🎓</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 6px;">APU & Community Vetted</h3>
+          <p style="font-size: 0.85rem; color: var(--color-slate-600); line-height: 1.5;">
+            Student guides attend cross-cultural orientation covering onsen customs, safety guidelines, and bus routing.
+          </p>
+        </div>
+
+        <div style="padding: 20px; background: var(--color-cream-50); border-radius: var(--radius-lg); border: 1px solid var(--color-cream-200);">
+          <div style="font-size: 1.5rem; margin-bottom: 8px;">🤝</div>
+          <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 6px;">Partner Guides</h3>
+          <p style="font-size: 0.85rem; color: var(--color-slate-600); line-height: 1.5;">
+            Local shopkeepers and certified hot spring sommeliers partner directly to support authentic local venues.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Mobile Bottom Nav -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
+    <ul class="bottom-nav-list">
+      <li class="bottom-nav-item">
+        <a href="index.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🏠</span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="explore.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🗺️</span>
+          <span>Explore</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="experiences.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🍜</span>
+          <span>Local</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="guides.html" class="bottom-nav-link active">
+          <span class="bottom-nav-icon">👥</span>
+          <span>Guides</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="trip.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">📋</span>
+          <span>My Trip</span>
+          <span class="bottom-nav-badge js-trip-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('guides-list-grid');
+      const counter = document.getElementById('guides-count-display');
+
+      const langFilter = document.getElementById('guide-lang-filter');
+      const typeFilter = document.getElementById('guide-type-filter');
+      const availFilter = document.getElementById('guide-avail-filter');
+      const interestFilter = document.getElementById('guide-interest-filter');
+      const resetBtn = document.getElementById('btn-reset-guide-filters');
+
+      function filterAndRender() {
+        const langVal = langFilter.value;
+        const typeVal = typeFilter.value;
+        const availVal = availFilter.value;
+        const interestVal = interestFilter.value;
+
+        const guidesList = (window.beppuStore && window.beppuStore.guides) ? window.beppuStore.guides : window.BEPPU_DATA.guides;
+        const filtered = guidesList.filter(guide => {
+          if (langVal !== 'all' && !guide.languagesShort.includes(langVal)) return false;
+          if (typeVal !== 'all' && guide.guideType !== typeVal) return false;
+          if (availVal !== 'all' && guide.availabilityFilter !== availVal) return false;
+          if (interestVal !== 'all' && !guide.interests.some(i => i.toLowerCase().includes(interestVal.toLowerCase()))) return false;
+          return true;
+        });
+
+        grid.innerHTML = filtered.map(renderGuideCard).join('');
+        counter.textContent = `Showing ${filtered.length} of ${guidesList.length} guides`;
+      }
+
+      [langFilter, typeFilter, availFilter, interestFilter].forEach(el => {
+        el.addEventListener('change', filterAndRender);
+      });
+
+      resetBtn.addEventListener('click', () => {
+        langFilter.value = 'all';
+        typeFilter.value = 'all';
+        availFilter.value = 'all';
+        interestFilter.value = 'all';
+        filterAndRender();
+      });
+
+      filterAndRender();
+    });
+  </script>
+</body>
+</html>

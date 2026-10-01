@@ -1,0 +1,548 @@
+[
+  {
+    "id": "exp-hidden-ramen",
+    "category": "food",
+    "creatorId": "maria-santos",
+    "rating": 4.95,
+    "reviewsCount": 38,
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80",
+    "languages": ["English", "Japanese", "Filipino"],
+    "locales": {
+      "en": {
+        "title": "A Local's Favorite Ramen & Alley Crawl",
+        "subtitle": "Discover Beppu's best-kept noodle secret and cozy izakayas that don't show up on TripAdvisor.",
+        "categoryBadge": "Hidden Spots",
+        "badge": "Bestseller",
+        "duration": "2 hours",
+        "price": "¥2,500",
+        "pricePer": "per person",
+        "highlights": [
+          "Taste authentic Beppu Reimen (cold noodle) & Toriten chicken",
+          "Visit 2 cozy family-run izakayas with cozy retro atmospheres",
+          "Learn essential Japanese dining phrases & table customs",
+          "Vegetarian options available upon advance request"
+        ],
+        "description": "Skip tourist traps! Let Maria take you through the secret back alleys of Kitahama where APU students and longtime residents wind down. We'll taste freshly fried toriten, learn why Beppu cold noodles have a distinctive chewy buckwheat texture inspired by Manchurian recipes, and meet master chefs who love chatting with international travelers."
+      },
+      "ja": {
+        "title": "ローカル偏愛ラーメン＆路地裏はしご酒",
+        "subtitle": "ガイドブックには載らない別府冷麺の名店と、地元民が集う温かい居酒屋へ。",
+        "categoryBadge": "穴場スポット",
+        "badge": "人気No.1",
+        "duration": "2時間",
+        "price": "¥2,500",
+        "pricePer": "1名あたり",
+        "highlights": [
+          "名物・別府冷麺とサクサク元祖とり天を食べ比べ",
+          "アットホームで昭和レトロな個人居酒屋を2軒巡る",
+          "居酒屋での注文のコツや地元ならではの乾杯作法を体験",
+          "事前リクエストでベジタリアン対応も可能"
+        ],
+        "description": "観光地の定番から一歩足を踏み入れ、北浜のノスタルジックな路地裏へ！別府に暮らすAPU学生マリアが、学生や常連に愛される秘密の麺処と居酒屋をご案内。牛骨出汁と手打ち麺が絡む別府冷麺の秘密や、大将との心温まる交流をお届けします。"
+      },
+      "ko": {
+        "title": "현지인 단골 라멘 & 골목길 미식 투어",
+        "subtitle": "가이드북에 없는 숨은 냉면 맛집과 단골들이 모이는 아늑한 이자카야 탐방.",
+        "categoryBadge": "숨은 명소",
+        "badge": "베스트셀러",
+        "duration": "2시간",
+        "price": "¥2,500",
+        "pricePer": "1인 기준",
+        "highlights": [
+          "원조 벳푸 냉면과 바삭한 오이타 토리텐 치킨 시식",
+          "쇼와 레트로 분위기의 단골 이자카야 2곳 방문",
+          "일본 선술집 주문 꿀팁 및 식사 에티켓 안내",
+          "사전 요청 시 채식 메뉴 조율 가능"
+        ],
+        "description": "흔한 관광객 식당은 그만! 기타하마의 매력적인 뒷골목으로 안내합니다. APU 학생 마리아와 함께 쫄깃한 메밀 면발의 벳푸 냉면 맛집과 따뜻한 인심의 로컬 주점을 찾아가며 진짜 벳푸의 밤을 맛보세요."
+      },
+      "zh": {
+        "title": "本地人私藏拉面与老巷居酒屋巡礼",
+        "subtitle": "避开游客餐厅，打卡别府冷面老店与当地熟客云集的温馨居酒屋。",
+        "categoryBadge": "私房秘境",
+        "badge": "畅销推荐",
+        "duration": "2小时",
+        "price": "¥2,500",
+        "pricePer": "每人",
+        "highlights": [
+          "品尝地道别府冷面与现炸大分炸鸡天妇罗",
+          "深度探访2家昭和复古家庭式暖心小酒馆",
+          "学会地道居酒屋点餐日语与日本餐桌礼仪",
+          "可根据提前要求协助安排素食友好选择"
+        ],
+        "description": "告别千篇一律的跟团行程！跟随APU国际学生穿行在北滨充满烟火气的后巷中。品尝吸饱牛肉浓汤的筋道手工冷面，尝一口香脆多汁的炸鸡天妇罗，与热情的老板畅聊别府生活故事。"
+      },
+      "yue": {
+        "title": "在地人口味！隱世拉麵與老巷居酒屋尋味",
+        "subtitle": "唔去遊客打卡店！跟本地熟路人鑽入小巷，嘆正宗別府冷麵同昭和居酒屋。",
+        "categoryBadge": "隱世小店",
+        "badge": "熱門暢銷",
+        "duration": "2小時",
+        "price": "¥2,500",
+        "pricePer": "每位",
+        "highlights": [
+          "試齊正宗別府冷麵同熱辣香脆大分炸雞天婦羅",
+          "走訪2間充滿昭和懷舊人情味嘅家庭式居酒屋",
+          "即學超實用日本居酒屋點餐小技巧同飲酒文化",
+          "如需素食可提前提出彈性安排"
+        ],
+        "description": "帶你避開遊客地雷！由熟悉大街小巷嘅APU留學生帶路，穿梭北濱後巷。親嚐彈牙牛骨湯冷麵，配上剛炸起嘅香脆とり天，同熱情居酒屋老闆互動，感受最地道嘅別府人情味。"
+      }
+    }
+  },
+  {
+    "id": "exp-onsen-first-timer",
+    "category": "onsen",
+    "creatorId": "daiki-sato",
+    "rating": 5.0,
+    "reviewsCount": 46,
+    "image": "https://images.unsplash.com/photo-1545569341-9eb8b30979d9?auto=format&fit=crop&w=800&q=80",
+    "languages": ["English", "Japanese"],
+    "locales": {
+      "en": {
+        "title": "First-Timer's Guide to Onsen Etiquette & Sand Bath",
+        "subtitle": "Never used a Japanese bathhouse? Walk into Takegawara with 100% confidence and zero stress.",
+        "categoryBadge": "Micro-Guide",
+        "badge": "Beginner Friendly",
+        "duration": "1.5 hours",
+        "price": "¥2,000",
+        "pricePer": "per person",
+        "highlights": [
+          "Step-by-step guidance on changing, washing rituals, and towel etiquette",
+          "Experience the historic Takegawara warm volcanic sand bath",
+          "Understand mineral profiles (sulfur, iron, bicarbonate) for wellness",
+          "Includes complimentary tenugui bath towel and cold post-bath cider"
+        ],
+        "description": "Public hot springs can feel intimidating for foreign visitors: Which towel do I bring? Where do I wash? What about tattoos? Certified Hot Spring Sommelier Daiki will demystify the entire ritual outside the historic 1879 Takegawara Onsen, accompany you into the sand bath facility, and ensure you feel relaxed and completely welcomed."
+      },
+      "ja": {
+        "title": "温泉ソムリエが教える！初めての入浴マナー＆砂湯体験",
+        "subtitle": "共同浴場が初めてでも安心。明治創業・竹瓦温泉で心ゆくまで癒やされる90分。",
+        "categoryBadge": "マイクロガイド",
+        "badge": "初心者歓迎",
+        "duration": "1.5時間",
+        "price": "¥2,000",
+        "pricePer": "1名あたり",
+        "highlights": [
+          "脱衣からかけ湯、タオルの扱いまで丁寧にレクチャー",
+          "歴史ある竹瓦温泉の名物「砂湯」を安心して体験",
+          "別府八湯の泉質（硫黄・炭酸水素塩など）と効能をわかりやすく解説",
+          "特製手ぬぐいタオル＆湯上がりの冷たいご当地サイダー付き"
+        ],
+        "description": "日本の温泉文化は初めての方には少しハードルが高く感じられることも。公認温泉ソムリエの大輝が、竹瓦温泉の歴史を交えながら入浴ルールやマナーを優しく伝授。名物・砂湯への入浴も手厚くサポートし、心地よいリフレッシュをお約束します。"
+      },
+      "ko": {
+        "title": "초보자를 위한 온천 에티켓 & 다케가와라 모래찜질 가이드",
+        "subtitle": "일본 목욕탕이 처음이라도 걱정 끝! 1879년 전통 다케가와라에서 편안하게 온천 즐기기.",
+        "categoryBadge": "마이크로 가이드",
+        "badge": "초보자 안심",
+        "duration": "1.5시간",
+        "price": "¥2,000",
+        "pricePer": "1인 기준",
+        "highlights": [
+          "탈의, 세신 요령, 온천 수건 사용법 등 상세한 1:1 안내",
+          "다케가와라 온천의 명물 천연 화산 모래찜질 완벽 체험",
+          "유황천·탄산천 등 온천 성분별 건강 효능 친절한 해설",
+          "기념 전통 온천 수건(테누구이) 및 목욕 후 시원한 사이다 제공"
+        ],
+        "description": "공동 온천 이용이 낯설고 문신이나 수건 규칙 때문에 망설여지시나요? 온천 소믈리에 다이키가 건물 외관부터 탈의실, 탕 이용법까지 알기 쉽게 설명해 드립니다. 따뜻한 화산 모래 속에 누워 완벽한 힐링을 경험해 보세요."
+      },
+      "zh": {
+        "title": "初次泡汤指南：温泉礼仪详解与竹瓦砂浴体验",
+        "subtitle": "第一次在日本泡公共温泉？温泉侍酒师贴心陪同，彻底告别不知所措与尴尬。",
+        "categoryBadge": "微向导陪伴",
+        "badge": "新手友好",
+        "duration": "1.5小时",
+        "price": "¥2,000",
+        "pricePer": "每人",
+        "highlights": [
+          "逐步讲解更衣、冲淋净身顺序与小毛巾正确使用礼节",
+          "从容体验百年名汤竹瓦温泉独家火山暖砂浴",
+          "通俗讲解别府不同温泉水质矿物成分与护肤疗效",
+          "赠送特色纪念日式棉毛巾及出浴冰爽果味汽水"
+        ],
+        "description": "对于初来日本的游客，公共裸汤往往令人既好奇又紧张：毛巾怎么拿？有小纹身怎么办？认证温泉侍酒师大辉会在竹瓦温泉门前耐心地为您答疑解惑，手把手带领体验舒适惬意的天然热砂浴，让您全程宾至如归。"
+      },
+      "yue": {
+        "title": "新手浸溫泉指南：溫泉禮儀全攻略與竹瓦砂浴體驗",
+        "subtitle": "第一次試日本公共浴場？專業溫泉侍酒師貼心帶領，輕鬆投入竹瓦砂浴。",
+        "categoryBadge": "微型嚮導",
+        "badge": "初哥必選",
+        "duration": "1.5小時",
+        "price": "¥2,000",
+        "pricePer": "每位",
+        "highlights": [
+          "由更衣、沖涼淨身到毛巾放置禮儀一步步指導",
+          "安心體驗1879年創立竹瓦溫泉嘅招牌火山溫熱砂浴",
+          "深入淺出介紹別府溫泉礦物水質與舒緩美肌功效",
+          "包特色日式紀念毛巾乙條同埋出浴冰凍消暑汽水"
+        ],
+        "description": "第一次去日本浸溫泉，好多規矩驚做錯好尷尬？認證溫泉侍酒師大輝會喺竹瓦溫泉門口為你詳細拆解所有入浴常識，帶你順利入去體驗暖笠笠嘅黑砂浴，享受極致放鬆。"
+      }
+    }
+  },
+  {
+    "id": "exp-kannawa-steam",
+    "category": "food",
+    "creatorId": "kenji-takahashi",
+    "rating": 4.88,
+    "reviewsCount": 29,
+    "image": "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80",
+    "languages": ["English", "Japanese"],
+    "locales": {
+      "en": {
+        "title": "Jigokumushi: Steam Your Own Lunch in Volcanic Vents",
+        "subtitle": "Select fresh Oita seafood and mountain veggies, then harness natural steam kilns in Kannawa.",
+        "categoryBadge": "Hands-on Workshop",
+        "badge": "Interactive",
+        "duration": "2.5 hours",
+        "price": "¥3,200",
+        "pricePer": "per person",
+        "highlights": [
+          "Shop at Kannawa local produce stall for heirloom vegetables & fresh eggs",
+          "Learn the ancient technique of timing geothermal steam cooking",
+          "Enjoy a feast naturally seasoned with gentle hot spring salt minerals",
+          "Stroll the scenic steam alleys and discover hidden free footbaths"
+        ],
+        "description": "Geothermal steam cooking (Jigokumushi) has been practiced in Kannawa since the Edo period. The mineral steam seals in moisture and natural sweet flavors without any added cooking oil. Longtime local Kenji shows you how to choose the best seasonal produce, operate the heavy stone kiln lids safely, and enjoy a memorable feast together."
+      },
+      "ja": {
+        "title": "地獄蒸し体験！天然の温泉噴気で味わう旬の蒸し料理ランチ",
+        "subtitle": "大分の山海の幸を選び、鉄輪の伝統釜で美味しく蒸し上げる手作りクッキング。",
+        "categoryBadge": "体験ワークショップ",
+        "badge": "体験型",
+        "duration": "2.5時間",
+        "price": "¥3,200",
+        "pricePer": "1名あたり",
+        "highlights": [
+          "地元商店で採れたて高原野菜や朝採れ卵を買い出し",
+          "江戸時代から続く地熱蒸気釜のタイマー調節技術を学ぶ",
+          "温泉ミネラルが引き出す食材本来の旨味をランチで堪能",
+          "食後は湯けむり立ち上る路地を散策し、隠れた足蒸しへ"
+        ],
+        "description": "鉄輪の地獄蒸しは、塩分を含む100度の温泉蒸気で食材を一気に蒸し上げる伝統調理法。地元出身のケンジが、食材の選び方から重い石釜の蓋の扱い方、ベストな蒸し時間までしっかりサポート。驚くほど甘く仕上がる野菜や海鮮をみんなで味わいましょう。"
+      },
+      "ko": {
+        "title": "지옥찜 체험: 화산 지열 수증기로 쪄먹는 특별한 점심",
+        "subtitle": "오이타산 신선 해산물과 제철 채소를 골라 천연 지열 가마에서 직접 쪄내는 이색 요리.",
+        "categoryBadge": "체험 워크숍",
+        "badge": "체험형 프로그램",
+        "duration": "2.5시간",
+        "price": "¥3,200",
+        "pricePer": "1인 기준",
+        "highlights": [
+          "간나와 현지 청과물 상점에서 고품질 채소와 신선한 달걀 장보기",
+          "에도 시대부터 전해진 천연 온천 증기 가마 이용법 배우기",
+          "온천수 천연 미네랄로 은은하게 간이 배어든 건강한 성찬 즐기기",
+          "온천 수증기 골목길 산책 및 숨겨진 무료 발 찜질 체험"
+        ],
+        "description": "기름 한 방울 쓰지 않고 자연의 증기만으로 완성하는 천연 슬로우 푸드! 오랜 토박이 켄지와 함께 재료를 손질하고 돌가마 뚜껑을 열어 김이 펄펄 나는 점심을 완성해 보세요. 자연의 감칠맛에 감탄하게 됩니다."
+      },
+      "zh": {
+        "title": "地狱地蒸体验：用火山地热蒸汽蒸煮专属海鲜蔬菜午餐",
+        "subtitle": "挑选大分当季海陆食材，在铁轮百年地热古灶亲手烹制美味。",
+        "categoryBadge": "手作料理坊",
+        "badge": "趣味互动",
+        "duration": "2.5小时",
+        "price": "¥3,200",
+        "pricePer": "每人",
+        "highlights": [
+          "前往铁轮老集市采购本地高山甜番薯、鲜鸡蛋与海产",
+          "掌握江户时代传承至今的火山地热蒸灶火候与时间掌握",
+          "品尝饱含温泉天然微量矿物盐分、鲜嫩多汁的原味健康大餐",
+          "漫步蒸汽古朴街巷，探索不为人知的街角免费足蒸体验"
+        ],
+        "description": "地狱蒸无需任何明火与食用油，纯靠地下喷薄而出的高温矿物蒸汽将食材快速锁鲜。别府老居民健二将全程指导安全操作重型石灶盖，分享最佳焖蒸时间，带您收获兼具趣味与美味的地道体验。"
+      },
+      "yue": {
+        "title": "地獄蒸DIY！天然溫泉地熱親手蒸出海鮮蔬果午餐",
+        "subtitle": "揀選大分當季新鮮海產同鮮甜蔬菜，喺鐵輪傳統石灶蒸煮純天然美食。",
+        "categoryBadge": "手作體驗坊",
+        "badge": "互動趣味",
+        "duration": "2.5小時",
+        "price": "¥3,200",
+        "pricePer": "每位",
+        "highlights": [
+          "去鐵輪街坊小店搜羅新鮮大分產高山番薯、鮮雞蛋同海產",
+          "學識江戶時代流傳至今嘅天然地熱蒸灶計時竅門",
+          "品嚐天然溫泉礦物質微鹹原汁原味，零添加油超健康",
+          "飯後漫步白煙古街，發掘隱藏街角嘅免費蒸腳溫泉"
+        ],
+        "description": "利用攝氏100度嘅天然溫泉蒸汽，將食物嘅天然鮮甜完全鎖住！由自細喺別府長大嘅Kenji帶路，教你揀選最正食材、操作石灶，一齊享用熱騰騰又健康嘅豐富午餐。"
+      }
+    }
+  },
+  {
+    "id": "exp-station-welcome",
+    "category": "local",
+    "creatorId": "maria-santos",
+    "rating": 4.96,
+    "reviewsCount": 52,
+    "image": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80",
+    "languages": ["English", "Japanese", "Filipino"],
+    "locales": {
+      "en": {
+        "title": "Meet Me at Beppu Station: Transit & Itinerary Kickoff",
+        "subtitle": "Get oriented in 45 minutes: Kamenoi bus passes, ticket tips, luggage drop, and neighborhood shortcuts.",
+        "categoryBadge": "Micro-Guide",
+        "badge": "Micro-Guide · 45m",
+        "duration": "45 min",
+        "price": "¥1,200",
+        "pricePer": "group (up to 4)",
+        "highlights": [
+          "In-person greeting at Beppu Station train platform or lobby",
+          "Help purchasing and setting up the ideal Kamenoi bus pass",
+          "Custom 2-day walking route map tailored to your hotel location",
+          "Answers to any transit, dietary, or onsen questions right away"
+        ],
+        "description": "Just stepped off the Sonic express train with luggage and feeling overwhelmed by bus numbers? Let an APU student meet you right at the ticket gates! We will sort out your transit pass, stow your bags in the best lockers, point out the best nearby lunch, and give you clear confidence for your stay."
+      },
+      "ja": {
+        "title": "別府駅で待ち合わせ！交通パス購入＆滞在スタートサポート",
+        "subtitle": "到着直後の45分でスッキリ解決：亀の井バス乗車券の買い方、コインロッカー、近道ルート案内。",
+        "categoryBadge": "マイクロガイド",
+        "badge": "短時間45分",
+        "duration": "45分",
+        "price": "¥1,200",
+        "pricePer": "1グループ（4名まで）",
+        "highlights": [
+          "別府駅改札口での対面お出迎え＆荷物ロッカー案内",
+          "観光にお得な亀の井バスフリーきっぷの購入を徹底サポート",
+          "ご宿泊先のホテルに合わせた最適な2日間モデルコースを伝授",
+          "食事のアレルギーや温泉の疑問点もその場で全て解決"
+        ],
+        "description": "特急ソニックを降りたばかりで、バスの乗り場やチケット購入に迷っていませんか？APU留学生が駅改札でお迎えし、お得なバスパスの手配や荷物の預け先、近隣の美味しいランチ情報まで、旅のスタートを45分で快適にナビゲートします。"
+      },
+      "ko": {
+        "title": "벳푸역 만남 서비스: 버스 패스 구매 & 맞춤 일정 킥오프",
+        "subtitle": "도착 직후 45분 만에 해결: 카메노이 버스 패스 구매, 코인락커 짐 보관, 최적의 동선 코칭.",
+        "categoryBadge": "마이크로 가이드",
+        "badge": "퀵 서비스 45분",
+        "duration": "45분",
+        "price": "¥1,200",
+        "pricePer": "그룹당 (최대 4인)",
+        "highlights": [
+          "벳푸역 개찰구 앞 대면 마중 및 코인락커 안내",
+          "가장 알뜰한 카메노이 버스 프리 패스 구매 지원",
+          "예약하신 호텔 위치에 맞춘 2일간의 최적 도보/버스 동선 제안",
+          "식당 예약, 온천 추천 등 궁금증 즉석 답변"
+        ],
+        "description": "특급 소닉 열차에서 캐리어를 끌고 내렸는데 버스 번호판이 복잡해 막막하신가요? APU 학생이 역에서 반갑게 맞이하여 교통권 구입부터 짐 보관, 동네 지름길 안내까지 완벽하게 출발을 도와드립니다."
+      },
+      "zh": {
+        "title": "别府站出站迎接：巴士周游券购买与行程起步指引",
+        "subtitle": "出站45分钟轻松搞定：龟之井巴士车票购买、大件行李寄存、酒店周边捷径。",
+        "categoryBadge": "微向导服务",
+        "badge": "45分钟速通",
+        "duration": "45分钟",
+        "price": "¥1,200",
+        "pricePer": "每组（最多4人）",
+        "highlights": [
+          "别府站检票口面对面热情迎接与协助行李寄存",
+          "协助购买最划算的龟之井巴士通票并演示乘车方法",
+          "根据您的酒店位置量身规划未来2天的乘车步行捷径",
+          "现场解答关于用餐忌口、退税及温泉规则的所有疑虑"
+        ],
+        "description": "刚拖着大包小包走出特急电车，面对复杂的巴士线路感到不知所措？APU留学生会在闸口准时迎接您！帮您快速买好省钱车票，妥善寄存行李，推荐车站周边的正宗美食，让您的别府之旅从容开启。"
+      },
+      "yue": {
+        "title": "別府站出閘迎接：巴士Pass代購與行程出發速通指引",
+        "subtitle": "落車45分鐘搞掂晒：龜之井巴士車票購買教學、行李寄存位、酒店點對點捷徑。",
+        "categoryBadge": "微型嚮導",
+        "badge": "45分鐘輕巧體驗",
+        "duration": "45分鐘",
+        "price": "¥1,200",
+        "pricePer": "每組（最多4人）",
+        "highlights": [
+          "別府站出閘口親自迎接，帶你搵最方便嘅大型行李儲物櫃",
+          "協助購買最抵用嘅龜之井巴士周遊Pass並示範搭車方式",
+          "因應你入住嘅酒店地點，即場教你最快最順路嘅乘車捷徑",
+          "解答所有關於餐廳點餐、飲食習慣同浸溫泉嘅疑問"
+        ],
+        "description": "一落JR特急列車拖住大行李，睇住成個站嘅巴士線路唔知點搭？等APU留學生喺出閘口等你！幫你買好最平嘅車飛，搞掂行李寄存，介紹站前最好食嘅名物午餐，令你全程安心無憂。"
+      }
+    }
+  },
+  {
+    "id": "exp-night-walk",
+    "category": "nightlife",
+    "creatorId": "yuna-kim",
+    "rating": 4.92,
+    "reviewsCount": 33,
+    "image": "https://images.unsplash.com/photo-1513407030348-c983a97b98d8?auto=format&fit=crop&w=800&q=80",
+    "languages": ["English", "Korean", "Japanese"],
+    "locales": {
+      "en": {
+        "title": "Beppu Twilight & Retro Lantern Walk",
+        "subtitle": "A stroll through atmospheric wooden bathhouses, glowing neon retro signs, and tranquil seaside piers.",
+        "categoryBadge": "Nightlife",
+        "badge": "Evening Walk",
+        "duration": "2 hours",
+        "price": "¥2,200",
+        "pricePer": "per person",
+        "highlights": [
+          "Magical dusk photography spots along Kitahama coastline",
+          "Wander through lantern-draped Showa-era wooden arcades",
+          "Stop at an artisanal retro kissaten for hot matcha and sweets",
+          "Hear untold folklore of Beppu’s golden era in the 1950s"
+        ],
+        "description": "When the sun dips behind Mount Tsurumi, Beppu shifts into a mesmerizing cinematic mood. Steam glows against twilight street lamps, and tavern signs flicker to life. Yuna guides you through quiet coastal parks and backstreets for photos, stories, and warm conversations."
+      },
+      "ja": {
+        "title": "黄昏の別府路地裏散歩 ＆ 昭和レトロ提灯めぐり",
+        "subtitle": "木造浴場が夕闇に浮かび、赤提灯とレトロネオンが灯る風情ある夜の別府海岸散策路。",
+        "categoryBadge": "ナイトライフ",
+        "badge": "夕暮れ散策",
+        "duration": "2時間",
+        "price": "¥2,200",
+        "pricePer": "1名あたり",
+        "highlights": [
+          "北浜海岸から眺める夕暮れ時のグラデーションと湯けむり撮影",
+          "昭和の木造アーケード街に灯る赤提灯のフォトスポット散策",
+          "純喫茶で味わう温かいお抹茶または珈琲と自家製スイーツ",
+          "1950年代の別府の黄金期を物語る隠れた歴史エピソード"
+        ],
+        "description": "鶴見岳の向こうに夕日が沈むと、別府は映画のワンシーンのような幻想的な表情を見せます。街灯に照らされる湯けむりとノスタルジックな酒場街。カメラ好きのユナが、最高のフォトスポットと心温まるストーリーをご案内します。"
+      },
+      "ko": {
+        "title": "벳푸 황혼 산책 & 레트로 홍등 골목길 투어",
+        "subtitle": "어둠이 내린 목조 온천 건물, 은은한 홍등과 네온사인이 빛나는 감성 밤바다 산책.",
+        "categoryBadge": "나이트라이프",
+        "badge": "저녁 감성 산책",
+        "duration": "2시간",
+        "price": "¥2,200",
+        "pricePer": "1인 기준",
+        "highlights": [
+          "기타하마 해안선에서 즐기는 환상적인 일몰 사진 촬영",
+          "붉은 홍등이 드리워진 쇼와 시대 목조 아케이드 탐방",
+          "분위기 있는 옛날 다방(킷사텐)에서 즐기는 말차와 디저트",
+          "1950년대 번성했던 벳푸의 재미있는 로컬 스토리"
+        ],
+        "description": "쓰루미산 뒤로 해가 지면 벳푸는 로맨틱한 영화 속 풍경으로 변합니다. 가로등 불빛 아래 하얗게 빛나는 온천 증기와 정겨운 주점 골목. 사진작가이자 카페 크리에이터 유나와 함께 잊지 못할 밤의 추억을 남겨보세요."
+      },
+      "zh": {
+        "title": "别府黄昏漫步与昭和复古灯笼小径",
+        "subtitle": "穿行于暮色中的古朴木造温泉馆、老街红灯笼与宁静的海滨步道。",
+        "categoryBadge": "夜生活",
+        "badge": "暮色夜游",
+        "duration": "2小时",
+        "price": "¥2,200",
+        "pricePer": "每人",
+        "highlights": [
+          "在北滨海岸记录夕阳余晖与海平线的梦幻光影",
+          "穿梭于红灯笼高挂的昭和复古木质商业小巷",
+          "在手工复古纯喫茶咖啡馆享用香浓抹茶与手作甜点",
+          "聆听别府在1950年代黄金繁荣时期的迷人老故事"
+        ],
+        "description": "当夕阳落入鹤见岳之后，别府便展现出如老电影般质感的沉静之美。路灯映照出袅袅白烟，小酒馆的暖帘迎风轻摆。生活摄影师润娥将带您捕捉最动人的角度，分享温柔而难忘的别府夜色。"
+      },
+      "yue": {
+        "title": "別府黃昏漫步與昭和復古紅燈籠小巷",
+        "subtitle": "暮色中漫步百年木造浴場、懷舊紅燈籠街同海風輕拂嘅北濱海岸線。",
+        "categoryBadge": "夜生活",
+        "badge": "暮色夜行",
+        "duration": "2小時",
+        "price": "¥2,200",
+        "pricePer": "每位",
+        "highlights": [
+          "北濱海岸線捕捉夕陽漸變霞光與海邊溫泉蒸氣倒影",
+          "遊走於紅燈籠與木造拱廊交織嘅昭和懷舊窄巷",
+          "喺老牌純喫茶店小歇，品嚐香滑抹茶同自家製芝士蛋糕",
+          "細聽別府上世紀五六十年代繁華熱鬧嘅民間傳奇趣事"
+        ],
+        "description": "夕陽落山之際，別府即刻換上一層富有電影感嘅復古氛圍。街燈映照著裊裊白煙，酒館招牌陸續亮起。熱愛攝影嘅Yuna會帶你穿梭私密打卡位，影低最靚嘅別府黃昏夜景。"
+      }
+    }
+  },
+  {
+    "id": "exp-apu-secrets",
+    "category": "student",
+    "creatorId": "carlos-mendez",
+    "rating": 4.9,
+    "reviewsCount": 21,
+    "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80",
+    "languages": ["English", "Spanish", "Japanese"],
+    "locales": {
+      "en": {
+        "title": "APU Student's Secret Cafes & Mountain Views",
+        "subtitle": "Experience Beppu through the eyes of the multicultural university community on the mountain ridge.",
+        "categoryBadge": "Student Life",
+        "badge": "APU Special",
+        "duration": "3 hours",
+        "price": "¥2,800",
+        "pricePer": "per person",
+        "highlights": [
+          "Panoramic ridge lookout over Beppu Bay and the Pacific horizon",
+          "Visit student-favorite indie coffee roasters and bakery",
+          "Learn about APU’s 100+ nationality campus culture in Oita",
+          "Discover hidden footbaths surrounded by mountain bamboo"
+        ],
+        "description": "Ritsumeikan Asia Pacific University (APU) brings thousands of students from over 100 countries to Beppu. Carlos shares the hidden hilltop viewpoints, peaceful study sanctuaries, and fusion eateries that make Beppu one of the most uniquely international small towns in Japan."
+      },
+      "ja": {
+        "title": "APU留学生の隠れ家カフェ巡り＆絶景マウンテンビュー",
+        "subtitle": "山の上に広がる多文化キャンパスの目線で楽しむ、別府湾一望の穴場スポット。",
+        "categoryBadge": "学生カルチャー",
+        "badge": "APU特別企画",
+        "duration": "3時間",
+        "price": "¥2,800",
+        "pricePer": "1名あたり",
+        "highlights": [
+          "別府湾と地平線を見晴らす山の手の秘密の展望スポットへ",
+          "留学生御用達のこだわり自家焙煎珈琲店＆ベーカリー訪問",
+          "世界100カ国以上が集うAPUのユニークな多文化共生を体感",
+          "竹林に囲まれた静寂の無料足湯でリラックス"
+        ],
+        "description": "立命館アジア太平洋大学（APU）により、世界100カ国以上の学生が集まる国際温泉都市・別府。大学院生カルロスが、留学生だからこそ知る絶景のビュースポットや居心地抜群の隠れ家カフェをご案内します。"
+      },
+      "ko": {
+        "title": "APU 유학생의 비밀 카페 & 마운틴 뷰 투어",
+        "subtitle": "산꼭대기 다문화 대학교 학생들의 시선으로 발견하는 벳푸만 최고의 전망과 아지트.",
+        "categoryBadge": "학생 문화",
+        "badge": "APU 스페셜",
+        "duration": "3시간",
+        "price": "¥2,800",
+        "pricePer": "1인 기준",
+        "highlights": [
+          "벳푸만과 태평양 수평선이 한눈에 펼쳐지는 산 정상 뷰포인트",
+          "유학생들이 사랑하는 로컬 스페셜티 로스터리 카페 및 베이커리",
+          "100여 개국 청년들이 공존하는 APU 캠퍼스 문화 엿보기",
+          "대나무 숲에 둘러싸인 한적한 비밀 족욕탕 힐링"
+        ],
+        "description": "리츠메이칸 APU로 인해 벳푸는 일본에서 가장 국제적인 소도시가 되었습니다. 대학원생 카를로스와 함께 탁 트인 언덕길 전망대와 조용한 힐링 카페를 둘러보며 색다른 벳푸를 경험해 보세요."
+      },
+      "zh": {
+        "title": "APU留学生私房景观咖啡馆与半山绝景",
+        "subtitle": "以山顶多元化学府青年视角，俯瞰别府湾壮阔全景与隐秘咖啡馆。",
+        "categoryBadge": "大学生活",
+        "badge": "APU特色",
+        "duration": "3小时",
+        "price": "¥2,800",
+        "pricePer": "每人",
+        "highlights": [
+          "登上俯瞰别府湾蔚蓝海面与太平洋地平线的私密观景台",
+          "打卡留学生热捧的独立精品咖啡烘焙店与现烤面包坊",
+          "了解来自全球100多个国家和地区留学生在大分的多元文化生活",
+          "寻找隐匿在青翠竹林之中的静谧天然山间足汤"
+        ],
+        "description": "立命馆亚洲太平洋大学（APU）让数千名来自全球百余个国家的年轻人汇聚别府。研究生卡洛斯将带您登高远眺整座别府海湾，分享留学生私藏的惬意自习咖啡角与国际融合美食。"
+      },
+      "yue": {
+        "title": "APU留學生心水景觀Cafe與半山秘境絕景",
+        "subtitle": "用山上多國籍大學生嘅視角，俯瞰開揚別府灣全景同探訪隱世Cafe。",
+        "categoryBadge": "校園生活",
+        "badge": "APU特選",
+        "duration": "3小時",
+        "price": "¥2,800",
+        "pricePer": "每位",
+        "highlights": [
+          "登上俯瞰別府灣同太平洋海天一色嘅獨家半山觀景台",
+          "走訪留學生極力推薦嘅精品自家烘焙咖啡店與手作麵包坊",
+          "認識來自過百個國家APU學生喺別府激盪出嘅多元文化趣事",
+          "發掘藏喺翠綠竹林深處嘅清幽天然免費足湯"
+        ],
+        "description": "立命館亞洲太平洋大學（APU）吸引咗世界各地過百國嘅學生黎到別府。研究生Carlos會帶你上山，一覽別府灣壯麗景色，探訪私心珍藏嘅隱世咖啡小店，感受別府別樹一幟嘅國際氣息。"
+      }
+    }
+  }
+]

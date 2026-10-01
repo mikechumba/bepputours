@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Place Details | Beppu Tourism & Local Guides</title>
+  <meta name="description" content="Detailed guide, visitor tips, and local companions for Beppu hot springs and attractions.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♨️</text></svg>">
+  <style>
+    .place-hero-img-wrap {
+      position: relative;
+      height: 480px;
+      overflow: hidden;
+      border-radius: var(--radius-xl);
+      background-color: var(--color-slate-900);
+      margin-bottom: 32px;
+    }
+    .place-hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .place-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(13,19,23,0.7) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 36px;
+      color: white;
+    }
+    .place-layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 40px;
+      align-items: start;
+    }
+    .place-info-card {
+      background: white;
+      border: 1px solid var(--color-cream-300);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      position: sticky;
+      top: 96px;
+    }
+    .info-list-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--color-cream-200);
+      font-size: 0.9rem;
+    }
+    .info-list-row:last-child {
+      border-bottom: none;
+    }
+    .info-label {
+      color: var(--color-slate-500);
+      font-weight: 500;
+    }
+    .info-value {
+      font-weight: 700;
+      color: var(--color-slate-900);
+      text-align: right;
+    }
+    .local-guide-box {
+      background: linear-gradient(135deg, var(--color-teal-50) 0%, var(--color-cream-100) 100%);
+      border: 1px solid var(--color-teal-100);
+      border-radius: var(--radius-xl);
+      padding: 32px;
+      margin-top: 48px;
+    }
+    @media (max-width: 860px) {
+      .place-layout-grid {
+        grid-template-columns: 1fr;
+      }
+      .place-hero-img-wrap {
+        height: 320px;
+      }
+      .place-hero-overlay {
+        padding: 20px;
+      }
+      .place-info-card {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">♨️</div>
+          <div class="brand-text">
+            <span class="brand-title">Beppu</span>
+            <span class="brand-subtitle" data-i18n="brand_sub">Hot Springs & Local Guides</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="explore.html" class="nav-link active" data-i18n="nav_explore">Explore</a>
+        <a href="experiences.html" class="nav-link" data-i18n="nav_experiences">Experiences</a>
+        <a href="guides.html" class="nav-link" data-i18n="nav_guides">Guides</a>
+        <a href="trip.html" class="nav-link">
+          <span data-i18n="nav_trip">My Trip</span>
+          <span class="nav-badge-count js-trip-count">0</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-dropdown-wrap">
+          <button class="lang-switch-btn js-lang-dropdown-btn" aria-label="Select Language" aria-haspopup="true" aria-expanded="false">
+            <span>🌐</span>
+            <span class="js-active-lang-label">English</span>
+            <span style="font-size:0.65rem; opacity:0.7;">▼</span>
+          </button>
+          <div class="lang-dropdown-menu" role="menu">
+            <button class="lang-dropdown-item" data-lang="en">🇬🇧 English</button>
+            <button class="lang-dropdown-item" data-lang="ko">🇰🇷 한국어 (Korean)</button>
+            <button class="lang-dropdown-item" data-lang="zh">🇨🇳 简体中文 (Chinese)</button>
+            <button class="lang-dropdown-item" data-lang="yue">🇭🇰 繁體中文 / 粵語 (Cantonese)</button>
+            <button class="lang-dropdown-item" data-lang="ja">🇯🇵 日本語 (Japanese)</button>
+          </div>
+        </div>
+
+        <a href="trip.html" class="user-avatar-pill">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Tourist Avatar" class="user-avatar-img">
+          <span class="user-avatar-name">Visitor</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div style="background: var(--color-cream-100); border-bottom: 1px solid var(--color-cream-300); padding: 12px 0;">
+    <div class="container" style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--color-slate-600);">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="explore.html">Explore</a>
+      <span>/</span>
+      <span id="breadcrumb-place-name" style="font-weight: 600; color: var(--color-slate-900);">Beppu Hell Tour</span>
+    </div>
+  </div>
+
+  <!-- Detail Content Container -->
+  <main class="container" style="padding: 32px 24px 80px;">
+
+    <!-- Hero Media Banner -->
+    <div class="place-hero-img-wrap" id="place-hero-wrap">
+      <img src="https://images.unsplash.com/photo-1578637387939-43c525550085?auto=format&fit=crop&w=1600&q=80" alt="Beppu Hell Tour" class="place-hero-img" id="place-detail-img">
+      <div class="place-hero-overlay">
+        <div style="display: flex; gap: 8px; margin-bottom: 12px;" id="place-tag-pills">
+          <span class="badge badge-micro">Must-Visit</span>
+          <span class="badge badge-rating">⭐ 4.8 (342 reviews)</span>
+        </div>
+        <h1 class="section-title" style="color: white; margin-bottom: 6px;" id="place-detail-title">
+          Beppu Jigoku (Seven Hells) Tour
+        </h1>
+        <p style="font-size: 1.1rem; opacity: 0.9; color: #F0F4F8;" id="place-detail-jpname">
+          別府地獄めぐり · Geothermal Wonder
+        </p>
+      </div>
+    </div>
+
+    <div class="place-layout-grid">
+      <!-- Main Column: Story, Gallery & Guides -->
+      <div>
+        <section style="margin-bottom: 36px;">
+          <h2 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 16px;">About this destination</h2>
+          <p id="place-detail-fulldesc" style="font-size: 1.05rem; line-height: 1.7; color: var(--color-slate-700); margin-bottom: 24px;">
+            The 'Hells' (Jigoku) are seven dramatic geothermal hot springs strictly meant for viewing rather than bathing...
+          </p>
+
+          <div style="background: white; border-radius: var(--radius-lg); padding: 20px; border: 1px solid var(--color-cream-300); display: flex; gap: 16px; align-items: flex-start;">
+            <div style="font-size: 1.8rem; line-height: 1;">💡</div>
+            <div>
+              <strong style="color: var(--color-slate-900); font-size: 0.95rem; display: block; margin-bottom: 4px;">Local Insider Tip:</strong>
+              <p style="font-size: 0.88rem; color: var(--color-slate-600); line-height: 1.5;" id="place-detail-tips">
+                Buy the combined 7-hell ticket if you plan to visit 3 or more. Wear comfortable walking shoes. Kamenoi Bus #5 or #7 takes you directly from Beppu Station West Exit.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Experience it with a local section -->
+        <section class="local-guide-box">
+          <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+            <span class="badge badge-apu">APU & Local Community</span>
+            <span class="badge badge-verified">✓ Verified Companions</span>
+          </div>
+          <h2 style="font-size: 1.8rem; font-family: var(--font-serif); margin-bottom: 8px; color: var(--color-slate-950);">
+            Experience it with a local
+          </h2>
+          <p style="color: var(--color-slate-600); margin-bottom: 24px;">
+            Want someone to show you around, translate signage, and help with the local buses? Connect with a trusted local or APU student.
+          </p>
+
+          <div class="cards-grid" id="place-guides-grid">
+            <!-- Suitable guide cards injected via JS -->
+          </div>
+        </section>
+
+        <!-- Nearby Recommendations -->
+        <section style="margin-top: 48px;">
+          <h2 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 20px;">Nearby Places to Combine</h2>
+          <div class="cards-grid" id="nearby-places-grid">
+            <!-- Nearby place cards -->
+          </div>
+        </section>
+      </div>
+
+      <!-- Right Column: Quick Info & Primary Add CTA -->
+      <aside>
+        <div class="place-info-card">
+          <div style="font-size: 1.5rem; font-weight: 800; color: var(--color-slate-950); margin-bottom: 4px;" id="place-sidebar-price">
+            ¥2,200
+          </div>
+          <div style="font-size: 0.82rem; color: var(--color-slate-500); margin-bottom: 20px;">
+            Admission / Estimated Cost
+          </div>
+
+          <button class="btn btn-primary" id="btn-detail-add-trip" style="width: 100%; margin-bottom: 12px; font-size: 1.05rem;">
+            + Add to My Trip
+          </button>
+
+          <button class="btn btn-secondary js-save-item" id="btn-detail-save" style="width: 100%; margin-bottom: 24px;">
+            🤍 Save to Wishlist
+          </button>
+
+          <div style="font-size: 0.82rem; font-weight: 700; text-transform: uppercase; color: var(--color-slate-500); letter-spacing: 0.05em; margin-bottom: 12px;">
+            Visit Overview
+          </div>
+
+          <div class="info-list-row">
+            <span class="info-label">⏱️ Duration</span>
+            <span class="info-value" id="place-sidebar-duration">2.5 – 3 hours</span>
+          </div>
+          <div class="info-list-row">
+            <span class="info-label">📍 Location</span>
+            <span class="info-value" id="place-sidebar-location" style="max-width: 180px;">Kannawa District</span>
+          </div>
+          <div class="info-list-row">
+            <span class="info-label">🚌 Transit</span>
+            <span class="info-value" id="place-sidebar-transit" style="max-width: 180px;">20 min bus from station</span>
+          </div>
+          <div class="info-list-row">
+            <span class="info-label">🕒 Opening Hours</span>
+            <span class="info-value" id="place-sidebar-hours">8:30 AM – 5:00 PM</span>
+          </div>
+          <div class="info-list-row">
+            <span class="info-label">👫 Ideal For</span>
+            <span class="info-value">Couples, Sightseers</span>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--color-cream-200); font-size: 0.82rem; color: var(--color-slate-500);">
+            <strong style="color: var(--color-slate-800);">No Car Needed:</strong> Easily reachable via Kamenoi Bus Route #5 or #7 directly from Beppu Station.
+          </div>
+        </div>
+      </aside>
+    </div>
+
+  </main>
+
+  <!-- Mobile Bottom Nav -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
+    <ul class="bottom-nav-list">
+      <li class="bottom-nav-item">
+        <a href="index.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🏠</span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="explore.html" class="bottom-nav-link active">
+          <span class="bottom-nav-icon">🗺️</span>
+          <span>Explore</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="experiences.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🍜</span>
+          <span>Local</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="guides.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">👥</span>
+          <span>Guides</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="trip.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">📋</span>
+          <span>My Trip</span>
+          <span class="bottom-nav-badge js-trip-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const placeId = urlParams.get('id') || 'beppu-hell-tour';
+      const placesList = (window.beppuStore && window.beppuStore.places) ? window.beppuStore.places : window.BEPPU_DATA.places;
+      const place = placesList.find(p => p.id === placeId) || placesList[0];
+
+      if (!place) return;
+
+      // Populate Head & Breadcrumb
+      document.title = `${place.name} | Beppu Destination Guide`;
+      document.getElementById('breadcrumb-place-name').textContent = place.name;
+
+      // Populate Hero & Details
+      document.getElementById('place-detail-img').src = place.image;
+      document.getElementById('place-detail-img').alt = place.name;
+      document.getElementById('place-detail-title').textContent = place.name;
+      document.getElementById('place-detail-jpname').textContent = `${place.japaneseName} · ${place.categoryLabel}`;
+      document.getElementById('place-detail-fulldesc').textContent = place.fullDesc;
+      document.getElementById('place-detail-tips').textContent = place.tips;
+
+      // Populate Sidebar Info
+      document.getElementById('place-sidebar-price').textContent = place.price;
+      document.getElementById('place-sidebar-duration').textContent = place.duration;
+      document.getElementById('place-sidebar-location').textContent = place.location;
+      document.getElementById('place-sidebar-transit').textContent = place.distance;
+      document.getElementById('place-sidebar-hours').textContent = place.openingHours;
+
+      // Populate Tags
+      const tagsContainer = document.getElementById('place-tag-pills');
+      if (tagsContainer) {
+        tagsContainer.innerHTML = (place.tags || []).map(t => `<span class="badge badge-micro">${t}</span>`).join('');
+      }
+
+      // Add to Trip Button State & Toggle Action
+      const addBtn = document.getElementById('btn-detail-add-trip');
+      const updateAddBtnState = () => {
+        const inTrip = window.beppuStore.isInItinerary(place.id);
+        if (inTrip) {
+          addBtn.textContent = '✓ In Your Trip (Click to Remove)';
+          addBtn.classList.add('btn-secondary');
+          addBtn.classList.remove('btn-primary');
+        } else {
+          addBtn.textContent = '+ Add to My Trip';
+          addBtn.classList.add('btn-primary');
+          addBtn.classList.remove('btn-secondary');
+        }
+      };
+
+      updateAddBtnState();
+
+      addBtn.addEventListener('click', () => {
+        if (window.beppuStore.isInItinerary(place.id)) {
+          window.beppuStore.removeFromItinerary(place.id);
+          updateAddBtnState();
+          window.showToast(`Removed "${place.name}" from your trip`, 'info');
+        } else {
+          const res = window.beppuStore.addToItinerary({
+            placeId: place.id,
+            title: place.name,
+            duration: place.duration,
+            cost: place.price,
+            notes: place.shortDesc
+          });
+          if (res.success) {
+            updateAddBtnState();
+            window.showToast(`Added "${place.name}" to your trip!`, 'success');
+          } else {
+            window.showToast(res.error, 'warning');
+          }
+        }
+      });
+
+      // Save Wishlist Button
+      const saveBtn = document.getElementById('btn-detail-save');
+      saveBtn.dataset.id = place.id;
+      if (window.beppuStore.isSaved(place.id)) {
+        saveBtn.textContent = '❤️ Saved to Wishlist';
+        saveBtn.classList.add('saved');
+      }
+
+      // Render Suggested Guides
+      const guidesGrid = document.getElementById('place-guides-grid');
+      if (guidesGrid) {
+        const guidesList = window.beppuStore.guides || window.BEPPU_DATA.guides;
+        const guides = (place.suggestedGuides || ['maria-santos', 'kenji-takahashi'])
+          .map(gid => guidesList.find(g => g.id === gid))
+          .filter(Boolean);
+        guidesGrid.innerHTML = guides.map(renderGuideCard).join('');
+      }
+
+      // Render Nearby Places
+      const nearbyGrid = document.getElementById('nearby-places-grid');
+      if (nearbyGrid) {
+        const nearby = (place.nearbyPlaces || [])
+          .map(nid => placesList.find(p => p.id === nid))
+          .filter(Boolean);
+        nearbyGrid.innerHTML = nearby.map(renderPlaceCard).join('');
+      }
+    });
+  </script>
+</body>
+</html>

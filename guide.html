@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guide Profile | Beppu Tourism & Local Guides</title>
+  <meta name="description" content="View local guide profile, experiences, languages, verified credentials, and traveler reviews.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♨️</text></svg>">
+  <style>
+    .guide-profile-hero {
+      background: white;
+      border-bottom: 1px solid var(--color-cream-300);
+      padding: 48px 0 32px;
+    }
+    .profile-header-grid {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .profile-hero-avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: var(--shadow-md);
+      flex-shrink: 0;
+    }
+    .profile-content-layout {
+      display: grid;
+      grid-template-columns: 1fr 360px;
+      gap: 40px;
+      padding: 40px 0 80px;
+      align-items: start;
+    }
+    .sticky-booking-box {
+      position: sticky;
+      top: 96px;
+      background: white;
+      border: 1px solid var(--color-cream-300);
+      border-radius: var(--radius-xl);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .review-card {
+      background: white;
+      border: 1px solid var(--color-cream-300);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .star-select-btn {
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      cursor: pointer;
+      color: #D8E0E6;
+      transition: color var(--transition-fast);
+      padding: 0 4px;
+    }
+    .star-select-btn.active, .star-select-btn:hover {
+      color: #E6A100;
+    }
+    .field-error-msg {
+      color: #D32F2F;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-top: 4px;
+      display: none;
+    }
+    @media (max-width: 860px) {
+      .profile-header-grid {
+        flex-direction: column;
+        text-align: center;
+      }
+      .profile-content-layout {
+        grid-template-columns: 1fr;
+      }
+      .sticky-booking-box {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">♨️</div>
+          <div class="brand-text">
+            <span class="brand-title">Beppu</span>
+            <span class="brand-subtitle" data-i18n="brand_sub">Hot Springs & Local Guides</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="explore.html" class="nav-link" data-i18n="nav_explore">Explore</a>
+        <a href="experiences.html" class="nav-link" data-i18n="nav_experiences">Experiences</a>
+        <a href="guides.html" class="nav-link active" data-i18n="nav_guides">Guides</a>
+        <a href="trip.html" class="nav-link">
+          <span data-i18n="nav_trip">My Trip</span>
+          <span class="nav-badge-count js-trip-count">0</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-dropdown-wrap">
+          <button class="lang-switch-btn js-lang-dropdown-btn" aria-label="Select Language" aria-haspopup="true" aria-expanded="false">
+            <span>🌐</span>
+            <span class="js-active-lang-label">English</span>
+            <span style="font-size:0.65rem; opacity:0.7;">▼</span>
+          </button>
+          <div class="lang-dropdown-menu" role="menu">
+            <button class="lang-dropdown-item" data-lang="en">🇬🇧 English</button>
+            <button class="lang-dropdown-item" data-lang="ko">🇰🇷 한국어 (Korean)</button>
+            <button class="lang-dropdown-item" data-lang="zh">🇨🇳 简体中文 (Chinese)</button>
+            <button class="lang-dropdown-item" data-lang="yue">🇭🇰 繁體中文 / 粵語 (Cantonese)</button>
+            <button class="lang-dropdown-item" data-lang="ja">🇯🇵 日本語 (Japanese)</button>
+          </div>
+        </div>
+
+        <a href="trip.html" class="user-avatar-pill">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Tourist Avatar" class="user-avatar-img">
+          <span class="user-avatar-name">Visitor</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Profile Hero Header -->
+  <section class="guide-profile-hero">
+    <div class="container">
+      <div style="font-size: 0.85rem; color: var(--color-slate-500); margin-bottom: 20px;">
+        <a href="guides.html">← Back to Guides Directory</a>
+      </div>
+
+      <div class="profile-header-grid">
+        <img src="" alt="" class="profile-hero-avatar" id="guide-avatar">
+        <div>
+          <div style="display:flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;" id="guide-top-badges">
+            <span class="badge badge-apu" id="guide-badge-type">APU Student</span>
+            <span class="badge badge-verified">✓ Identity Verified</span>
+          </div>
+
+          <h1 class="section-title" style="margin-bottom: 6px;" id="guide-name">Maria Santos</h1>
+          <div style="font-size: 1.05rem; color: var(--color-slate-600); margin-bottom: 12px;" id="guide-languages-full">
+            🇬🇧 English (Native) · 🇯🇵 Japanese (N2) · 🇵🇭 Filipino
+          </div>
+
+          <div style="display: flex; gap: 16px; align-items: center; font-size: 0.9rem;">
+            <span class="badge badge-rating" style="font-size: 0.9rem; padding: 6px 12px;" id="guide-rating-pill">
+              ⭐ 4.94 (23 reviews)
+            </span>
+            <span style="color: var(--color-slate-500);" id="guide-exp-count">
+              38 experiences completed
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Profile Body -->
+  <main class="container">
+    <div class="profile-content-layout">
+
+      <!-- Left Column: Story, Experiences & Reviews -->
+      <div>
+        <!-- Quote -->
+        <blockquote class="guide-quote" style="font-size: 1.15rem; margin-bottom: 32px;" id="guide-quote">
+          "I love showing visitors the small restaurants and onsens around Beppu that I discovered after moving here."
+        </blockquote>
+
+        <!-- About Section -->
+        <section style="margin-bottom: 40px;">
+          <h2 style="font-size: 1.4rem; font-weight: 700; margin-bottom: 16px;">About Me</h2>
+          <p style="font-size: 1.05rem; line-height: 1.7; color: var(--color-slate-700);" id="guide-bio">
+            Hi! I'm a 3rd-year International Management student at APU...
+          </p>
+
+          <div style="margin-top: 24px;">
+            <div style="font-size: 0.85rem; font-weight: 700; color: var(--color-slate-800); margin-bottom: 10px;">
+              Passions & Local Knowledge:
+            </div>
+            <div class="guide-interests-wrap" id="guide-interests-pills">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Trust Badges Detailed -->
+        <section style="margin-bottom: 40px; background: white; border: 1px solid var(--color-cream-300); border-radius: var(--radius-xl); padding: 24px;">
+          <h3 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 16px;">Trust & Verification Badges</h3>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;" id="guide-verification-list">
+            <!-- Rendered via JS -->
+          </div>
+        </section>
+
+        <!-- Experiences Offered Section -->
+        <section style="margin-bottom: 48px;">
+          <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 20px;">
+            <h2 style="font-size: 1.4rem; font-weight: 700;">Experiences Offered</h2>
+            <span style="font-size: 0.85rem; color: var(--color-slate-500);">Flexible micro-experiences</span>
+          </div>
+
+          <div class="cards-grid" id="guide-experiences-grid">
+            <!-- Injected via JS -->
+          </div>
+        </section>
+
+        <!-- Reviews Section with Interactive Review Modal Trigger -->
+        <section>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+            <div>
+              <h2 style="font-size: 1.4rem; font-weight: 700;">Traveler Reviews</h2>
+              <span class="badge badge-rating" id="guide-reviews-header-badge">⭐ 4.9 · Verified Travelers</span>
+            </div>
+            <button class="btn btn-secondary btn-sm" id="btn-open-review-modal">
+              ✎ Write a Review
+            </button>
+          </div>
+
+          <!-- Add Review Form (collapsible) -->
+          <div id="add-review-box" style="display:none; background:white; border:1px solid var(--color-cream-300); border-radius:var(--radius-xl); padding:24px; margin-bottom:24px; box-shadow:var(--shadow-sm);">
+            <h3 style="font-size:1.15rem; font-weight:700; margin-bottom:12px;">Share your experience with <span id="review-guide-firstname">Maria</span></h3>
+
+            <div style="margin-bottom:16px;">
+              <label style="display:block; font-size:0.82rem; font-weight:700; margin-bottom:6px;">Your Rating *</label>
+              <div id="star-rating-picker" style="display:flex; gap:4px;">
+                <button type="button" class="star-select-btn active" data-stars="1">★</button>
+                <button type="button" class="star-select-btn active" data-stars="2">★</button>
+                <button type="button" class="star-select-btn active" data-stars="3">★</button>
+                <button type="button" class="star-select-btn active" data-stars="4">★</button>
+                <button type="button" class="star-select-btn active" data-stars="5">★</button>
+              </div>
+            </div>
+
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px;">
+              <div>
+                <label style="display:block; font-size:0.8rem; font-weight:700; margin-bottom:4px;">Your Name *</label>
+                <input type="text" id="review-author" placeholder="e.g. Alex & Maya (Canada)" class="form-input" style="padding:10px 12px; font-size:0.9rem;">
+                <div class="field-error-msg" id="err-rev-author">Please enter your name.</div>
+              </div>
+            </div>
+
+            <div style="margin-bottom:16px;">
+              <label style="display:block; font-size:0.8rem; font-weight:700; margin-bottom:4px;">Your Review * (Min 15 characters)</label>
+              <textarea id="review-text" class="form-textarea" placeholder="Describe your experience: What was special? How did your guide help you navigate Beppu?"></textarea>
+              <div class="field-error-msg" id="err-rev-text">Review must be at least 15 characters long.</div>
+            </div>
+
+            <div style="display:flex; justify-content:flex-end; gap:8px;">
+              <button type="button" class="btn btn-secondary btn-sm" id="btn-cancel-review">Cancel</button>
+              <button type="button" class="btn btn-primary btn-sm" id="btn-submit-review">Publish Review</button>
+            </div>
+          </div>
+
+          <div id="guide-reviews-list">
+            <!-- Reviews injected via JS -->
+          </div>
+        </section>
+      </div>
+
+      <!-- Right Column: Sticky Booking / Request CTA -->
+      <aside>
+        <div class="sticky-booking-box">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+            <div style="font-size: 1.6rem; font-weight: 800; color: var(--color-slate-950);" id="guide-box-price">
+              From ¥2,500
+            </div>
+            <div style="font-size: 0.82rem; color: var(--color-slate-500);">
+              Micro-guide rate
+            </div>
+          </div>
+
+          <p style="font-size: 0.85rem; color: var(--color-slate-500); margin-bottom: 20px;" id="guide-box-avail">
+            ⚡ Typical response within 1 hour
+          </p>
+
+          <a href="#" id="btn-request-guide-main" class="btn btn-primary" style="width: 100%; margin-bottom: 14px; font-size: 1.05rem;">
+            Request Guide →
+          </a>
+
+          <div style="background: var(--color-cream-50); border: 1px solid var(--color-cream-200); border-radius: var(--radius-md); padding: 14px; font-size: 0.82rem; color: var(--color-slate-600); margin-bottom: 20px;">
+            <strong>Attach your trip:</strong> You can select items from your <em>My Trip</em> itinerary so your guide knows exactly what you want to see!
+          </div>
+
+          <div style="font-size: 0.8rem; color: var(--color-slate-500); line-height: 1.6;">
+            <div>✓ Verified identity & student credentials</div>
+            <div>✓ Instant notification sent to guide</div>
+            <div>✓ Free cancellation up to 24h prior</div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Mobile Bottom Nav -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
+    <ul class="bottom-nav-list">
+      <li class="bottom-nav-item">
+        <a href="index.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🏠</span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="explore.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🗺️</span>
+          <span>Explore</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="experiences.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🍜</span>
+          <span>Local</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="guides.html" class="bottom-nav-link active">
+          <span class="bottom-nav-icon">👥</span>
+          <span>Guides</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="trip.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">📋</span>
+          <span>My Trip</span>
+          <span class="bottom-nav-badge js-trip-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const guideId = urlParams.get('id') || 'maria-santos';
+      let guide = window.beppuStore.guides.find(g => g.id === guideId) || window.beppuStore.guides[0];
+
+      if (!guide) return;
+
+      renderGuideDetails(guide);
+
+      // Review Form Interactivity
+      let selectedRating = 5;
+      const reviewBox = document.getElementById('add-review-box');
+      const openReviewBtn = document.getElementById('btn-open-review-modal');
+      const cancelReviewBtn = document.getElementById('btn-cancel-review');
+      const submitReviewBtn = document.getElementById('btn-submit-review');
+
+      if (openReviewBtn) {
+        openReviewBtn.addEventListener('click', () => {
+          reviewBox.style.display = reviewBox.style.display === 'none' ? 'block' : 'none';
+          if (reviewBox.style.display === 'block') {
+            document.getElementById('review-author').focus();
+          }
+        });
+      }
+
+      if (cancelReviewBtn) {
+        cancelReviewBtn.addEventListener('click', () => {
+          reviewBox.style.display = 'none';
+        });
+      }
+
+      // Star picker
+      const starBtns = document.querySelectorAll('#star-rating-picker .star-select-btn');
+      starBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          selectedRating = parseInt(btn.dataset.stars, 10);
+          starBtns.forEach((b, idx) => {
+            b.classList.toggle('active', idx < selectedRating);
+          });
+        });
+      });
+
+      // Submit Review with Validation
+      if (submitReviewBtn) {
+        submitReviewBtn.addEventListener('click', () => {
+          const authorInput = document.getElementById('review-author');
+          const textInput = document.getElementById('review-text');
+
+          const author = authorInput.value.trim();
+          const text = textInput.value.trim();
+
+          document.querySelectorAll('.field-error-msg').forEach(el => el.style.display = 'none');
+          authorInput.classList.remove('is-invalid');
+          textInput.classList.remove('is-invalid');
+
+          let hasError = false;
+          if (!author || author.length < 2) {
+            authorInput.classList.add('is-invalid');
+            document.getElementById('err-rev-author').style.display = 'block';
+            hasError = true;
+          }
+
+          if (!text || text.length < 15) {
+            textInput.classList.add('is-invalid');
+            document.getElementById('err-rev-text').style.display = 'block';
+            hasError = true;
+          }
+
+          if (hasError) return;
+
+          const res = window.beppuStore.addGuideReview(guide.id, {
+            author,
+            rating: selectedRating,
+            text
+          });
+
+          if (!res.success) {
+            window.showToast('Validation failed. Please check inputs.', 'warning');
+            return;
+          }
+
+          // Reset inputs and hide form
+          authorInput.value = '';
+          textInput.value = '';
+          reviewBox.style.display = 'none';
+
+          // Update UI with newly calculated guide data
+          guide = res.guide;
+          renderGuideDetails(guide);
+          window.showToast(`Thank you! Your 5-star review has been published and saved.`, 'success');
+        });
+      }
+    });
+
+    function renderGuideDetails(guide) {
+      document.title = `${guide.name} (${guide.guideType}) | Beppu Local Guide Profile`;
+
+      // Header Elements
+      document.getElementById('guide-avatar').src = guide.avatar;
+      document.getElementById('guide-avatar').alt = guide.name;
+      document.getElementById('guide-name').textContent = guide.name;
+      document.getElementById('guide-badge-type').textContent = `${guide.guideType} · ${guide.nationality}`;
+      document.getElementById('guide-languages-full').textContent = guide.languagesShort;
+      document.getElementById('guide-rating-pill').textContent = `⭐ ${guide.rating} (${guide.reviewsCount || (guide.reviews ? guide.reviews.length : 0)} reviews)`;
+      document.getElementById('guide-exp-count').textContent = `${guide.experiencesCount} experiences completed`;
+      document.getElementById('review-guide-firstname').textContent = guide.name.split(' ')[0];
+      document.getElementById('guide-reviews-header-badge').textContent = `⭐ ${guide.rating} · Verified Reviews`;
+
+      // Main Text
+      document.getElementById('guide-quote').textContent = `"${guide.quote}"`;
+      document.getElementById('guide-bio').textContent = guide.bio;
+
+      // Interests
+      const interestsWrap = document.getElementById('guide-interests-pills');
+      if (interestsWrap) {
+        interestsWrap.innerHTML = guide.interests.map(i => `<span class="interest-tag">${i}</span>`).join('');
+      }
+
+      // Trust Badges
+      const verificationList = document.getElementById('guide-verification-list');
+      if (verificationList) {
+        verificationList.innerHTML = (guide.badges || ['Identity Verified', 'Orientation Completed']).map(b => `
+          <div style="display:flex;align-items:center;gap:8px;font-size:0.88rem;color:var(--color-slate-800);font-weight:600;">
+            <span style="color:var(--color-emerald);font-size:1.1rem;">✓</span>
+            <span>${b}</span>
+          </div>
+        `).join('');
+      }
+
+      // Experiences Offered
+      const expGrid = document.getElementById('guide-experiences-grid');
+      if (expGrid) {
+        const exps = (guide.experiencesOffered || [])
+          .map(eid => window.beppuStore.experiences.find(e => e.id === eid))
+          .filter(Boolean);
+        expGrid.innerHTML = exps.map(renderExperienceCard).join('');
+      }
+
+      // Reviews
+      const reviewsList = document.getElementById('guide-reviews-list');
+      if (reviewsList) {
+        reviewsList.innerHTML = (guide.reviews || []).map(r => `
+          <div class="review-card">
+            <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
+              <div>
+                <strong style="color:var(--color-slate-900);">${r.author}</strong>
+                <span style="font-size:0.78rem;color:var(--color-slate-400);margin-left:8px;">${r.date}</span>
+              </div>
+              <span class="badge badge-rating">⭐ ${r.rating}.0</span>
+            </div>
+            <p style="font-size:0.92rem;color:var(--color-slate-600);line-height:1.6;">${r.text}</p>
+          </div>
+        `).join('');
+      }
+
+      // Sticky Booking Box
+      document.getElementById('guide-box-price').textContent = guide.startingPrice.split('/')[0].trim();
+      document.getElementById('guide-box-avail').textContent = `⚡ Responds ${guide.responseTime.toLowerCase()} · ${guide.availability}`;
+
+      // CTA Link to Request Flow
+      const reqBtn = document.getElementById('btn-request-guide-main');
+      reqBtn.href = `request.html?guide=${guide.id}`;
+      reqBtn.textContent = `Request ${guide.name.split(' ')[0]} →`;
+    }
+  </script>
+</body>
+</html>

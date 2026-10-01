@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Local Beppu | Hidden Food, Onsen Walks & Student Secrets</title>
+  <meta name="description" content="Go beyond standard tourist spots. Experience Beppu through the eyes of APU international students and longtime residents.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♨️</text></svg>">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-wrap">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">♨️</div>
+          <div class="brand-text">
+            <span class="brand-title">Beppu</span>
+            <span class="brand-subtitle" data-i18n="brand_sub">Hot Springs & Local Guides</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="main-nav" aria-label="Primary Navigation">
+        <a href="explore.html" class="nav-link" data-i18n="nav_explore">Explore</a>
+        <a href="experiences.html" class="nav-link active" data-i18n="nav_experiences">Experiences</a>
+        <a href="guides.html" class="nav-link" data-i18n="nav_guides">Guides</a>
+        <a href="trip.html" class="nav-link">
+          <span data-i18n="nav_trip">My Trip</span>
+          <span class="nav-badge-count js-trip-count">0</span>
+        </a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-dropdown-wrap">
+          <button class="lang-switch-btn js-lang-dropdown-btn" aria-label="Select Language" aria-haspopup="true" aria-expanded="false">
+            <span>🌐</span>
+            <span class="js-active-lang-label">English</span>
+            <span style="font-size:0.65rem; opacity:0.7;">▼</span>
+          </button>
+          <div class="lang-dropdown-menu" role="menu">
+            <button class="lang-dropdown-item" data-lang="en">🇬🇧 English</button>
+            <button class="lang-dropdown-item" data-lang="ko">🇰🇷 한국어 (Korean)</button>
+            <button class="lang-dropdown-item" data-lang="zh">🇨🇳 简体中文 (Chinese)</button>
+            <button class="lang-dropdown-item" data-lang="yue">🇭🇰 繁體中文 / 粵語 (Cantonese)</button>
+            <button class="lang-dropdown-item" data-lang="ja">🇯🇵 日本語 (Japanese)</button>
+          </div>
+        </div>
+
+        <a href="trip.html" class="user-avatar-pill">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Tourist Avatar" class="user-avatar-img">
+          <span class="user-avatar-name">Visitor</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner -->
+  <section style="background: linear-gradient(135deg, var(--color-teal-900) 0%, #153E3B 100%); color: white; padding: 64px 0 48px;">
+    <div class="container">
+      <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+        <span class="badge badge-micro">Micro-Experiences & Walks</span>
+        <span class="badge" style="background: rgba(255,255,255,0.15); color:white;">No All-Day Commitment</span>
+      </div>
+      <h1 class="section-title" style="color: white; font-size: 2.8rem; margin-bottom: 16px;">
+        Discover Local Beppu
+      </h1>
+      <p style="font-size: 1.15rem; color: rgba(255, 255, 255, 0.88); max-width: 680px; line-height: 1.6;">
+        Go beyond the famous sights. Discover places, food, and experiences recommended by people who live, study, and work in Beppu.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container" style="padding: 40px 24px 80px;">
+
+    <!-- Categories Filters for Experiences -->
+    <div class="discovery-toolbar" style="margin-bottom: 36px;">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 12px;">
+        <div style="font-size: 0.9rem; font-weight: 700; color: var(--color-slate-900);">
+          Filter Local Experiences:
+        </div>
+        <div style="font-size: 0.85rem; color: var(--color-slate-500);">
+          All experiences led by verified local or APU guides
+        </div>
+      </div>
+
+      <div class="filter-pills-row" id="exp-category-pills">
+        <button class="filter-pill active" data-exp-cat="all">All Experiences (7)</button>
+        <button class="filter-pill" data-exp-cat="food">🍜 Local Food & Izakayas</button>
+        <button class="filter-pill" data-exp-cat="onsen">♨️ Onsen Etiquette & Sand Baths</button>
+        <button class="filter-pill" data-exp-cat="local">🧭 Station Welcome & Transit</button>
+        <button class="filter-pill" data-exp-cat="nightlife">🌙 Twilight & Night Walks</button>
+        <button class="filter-pill" data-exp-cat="student">🎓 APU Student Secrets</button>
+      </div>
+    </div>
+
+    <!-- Experiences Cards Grid -->
+    <div class="cards-grid" id="all-experiences-grid">
+      <!-- Injected dynamically via JS -->
+    </div>
+
+    <!-- Micro-Guide Callout Explanation Box -->
+    <div style="margin-top: 64px; background: white; border: 1px solid var(--color-cream-300); border-radius: var(--radius-xl); padding: 36px; box-shadow: var(--shadow-sm);">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center;">
+        <div>
+          <span class="badge badge-apu" style="margin-bottom: 12px;">Why Micro-Guides?</span>
+          <h2 style="font-family: var(--font-serif); font-size: 1.8rem; margin-bottom: 14px; color: var(--color-slate-950);">
+            Travel independently, with local help when you want it.
+          </h2>
+          <p style="color: var(--color-slate-600); line-height: 1.6; margin-bottom: 20px;">
+            Traditional tour groups are rigid and expensive. In Beppu, most travelers just need a friendly bilingual local to help order at a hole-in-the-wall izakaya, explain the hot spring rituals, or figure out the local Kamenoi bus schedule.
+          </p>
+          <a href="guides.html" class="btn btn-primary btn-sm">Find Your Guide →</a>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <div style="background: var(--color-emerald-light); color: var(--color-emerald); padding: 6px 10px; border-radius: 50%; font-weight: 800;">✓</div>
+            <div>
+              <strong style="color: var(--color-slate-900); font-size: 0.95rem;">Affordable & Transparent:</strong>
+              <p style="font-size: 0.85rem; color: var(--color-slate-500);">Typical rates are ¥1,200 to ¥3,200 per session — no massive tour-operator markups.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <div style="background: var(--color-emerald-light); color: var(--color-emerald); padding: 6px 10px; border-radius: 50%; font-weight: 800;">✓</div>
+            <div>
+              <strong style="color: var(--color-slate-900); font-size: 0.95rem;">APU Students & Local Insight:</strong>
+              <p style="font-size: 0.85rem; color: var(--color-slate-500);">Ritsumeikan Asia Pacific University brings bright, bilingual students from over 100 nations right here in Beppu.</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 12px; align-items: flex-start;">
+            <div style="background: var(--color-emerald-light); color: var(--color-emerald); padding: 6px 10px; border-radius: 50%; font-weight: 800;">✓</div>
+            <div>
+              <strong style="color: var(--color-slate-900); font-size: 0.95rem;">Customized to Your Pace:</strong>
+              <p style="font-size: 0.85rem; color: var(--color-slate-500);">Connect places from your "My Trip" itinerary directly to your guide request.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Mobile Bottom Navigation -->
+  <nav class="mobile-bottom-nav" aria-label="Mobile Navigation">
+    <ul class="bottom-nav-list">
+      <li class="bottom-nav-item">
+        <a href="index.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🏠</span>
+          <span>Home</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="explore.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">🗺️</span>
+          <span>Explore</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="experiences.html" class="bottom-nav-link active">
+          <span class="bottom-nav-icon">🍜</span>
+          <span>Local</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="guides.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">👥</span>
+          <span>Guides</span>
+        </a>
+      </li>
+      <li class="bottom-nav-item">
+        <a href="trip.html" class="bottom-nav-link">
+          <span class="bottom-nav-icon">📋</span>
+          <span>My Trip</span>
+          <span class="bottom-nav-badge js-trip-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/app.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const grid = document.getElementById('all-experiences-grid');
+      if (!grid || !window.BEPPU_DATA) return;
+
+      const expList = (window.beppuStore && window.beppuStore.experiences) ? window.beppuStore.experiences : window.BEPPU_DATA.experiences;
+
+      const render = (cat = 'all') => {
+        const filtered = cat === 'all' 
+          ? expList 
+          : expList.filter(e => e.category === cat);
+        grid.innerHTML = filtered.map(renderExperienceCard).join('');
+      };
+
+      render('all');
+
+      // Category Pill Click Listeners
+      document.querySelectorAll('#exp-category-pills .filter-pill').forEach(pill => {
+        pill.addEventListener('click', () => {
+          document.querySelectorAll('#exp-category-pills .filter-pill').forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+          render(pill.dataset.expCat);
+        });
+      });
+    });
+  </script>
+</body>
+</html>

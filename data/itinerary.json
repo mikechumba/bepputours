@@ -1,0 +1,229 @@
+[
+  {
+    "id": "item-1",
+    "placeId": "beppu-tower-station",
+    "time": "10:00 AM",
+    "cost": "Free",
+    "assignedGuideId": "maria-santos",
+    "guideName": "Maria Santos",
+    "status": "confirmed",
+    "locales": {
+      "en": {
+        "day": "Day 1 · Saturday",
+        "title": "Arrival at Beppu Station & Transit Orientation",
+        "notes": "Pick up 2-Day Kamenoi Bus Pass & try the warm hand bath (Te-yu)",
+        "duration": "45 min",
+        "guideRole": "Micro-Guide Orientation"
+      },
+      "ja": {
+        "day": "1日目 · 土曜日",
+        "title": "別府駅到着 ＆ 交通パス購入・オリエンテーション",
+        "notes": "亀の井バス2日フリーきっぷを購入し、駅前の名物「手湯」で温まる",
+        "duration": "45分",
+        "guideRole": "到着サポート・マイクロガイド"
+      },
+      "ko": {
+        "day": "1일차 · 토요일",
+        "title": "벳푸역 도착 & 교통 패스 발권 및 오리엔테이션",
+        "notes": "카메노이 버스 2일권 구매 후 역전 무료 손 온천(테유) 체험",
+        "duration": "45분",
+        "guideRole": "역 마중 및 일정 킥오프"
+      },
+      "zh": {
+        "day": "第一天 · 周六",
+        "title": "抵达别府站 · 购买巴士周游券与行程指引",
+        "notes": "购买龟之井巴士2日通票，体验站前杉木天然免费“手汤”",
+        "duration": "45分钟",
+        "guideRole": "微向导接站与出行指引"
+      },
+      "yue": {
+        "day": "第一天 · 星期六",
+        "title": "抵達別府站 · 購買巴士Pass與出發指引",
+        "notes": "購買龜之井巴士2日Pass，一出站試浸免費天然「手湯」",
+        "duration": "45分鐘",
+        "guideRole": "出閘迎接與微型嚮導"
+      }
+    }
+  },
+  {
+    "id": "item-2",
+    "placeId": "beppu-hell-tour",
+    "time": "11:15 AM",
+    "cost": "¥2,200",
+    "assignedGuideId": null,
+    "status": "planned",
+    "locales": {
+      "en": {
+        "day": "Day 1 · Saturday",
+        "title": "Beppu Jigoku (Seven Hells) Tour",
+        "notes": "Bus #5 to Kannawa. Explore Umi Jigoku and eat onsen steamed pudding",
+        "duration": "2.5 hours",
+        "guideRole": null
+      },
+      "ja": {
+        "day": "1日目 · 土曜日",
+        "title": "別府地獄めぐり（海地獄・血の池地獄など）",
+        "notes": "別府駅西口より5番バスで鉄輪へ。海地獄を見学し地獄蒸し焼きプリンを味わう",
+        "duration": "2.5時間",
+        "guideRole": null
+      },
+      "ko": {
+        "day": "1일차 · 토요일",
+        "title": "벳푸 지옥 온천 순례 (바다 지옥 & 피의 연못)",
+        "notes": "5번 버스로 간나와 이동. 신비로운 우미 지고쿠 관람 및 온천 푸딩 맛보기",
+        "duration": "2.5시간",
+        "guideRole": null
+      },
+      "zh": {
+        "day": "第一天 · 周六",
+        "title": "别府地狱巡礼（海地狱、血之池地狱等）",
+        "notes": "乘5路巴士前往铁轮，观赏海地狱蔚蓝泉景并品尝特色地热蒸布丁",
+        "duration": "2.5小时",
+        "guideRole": null
+      },
+      "yue": {
+        "day": "第一天 · 星期六",
+        "title": "別府地獄巡禮（海地獄、血之池地獄等）",
+        "notes": "搭5號巴士去鐵輪，參觀蔚藍海地獄同品嚐招牌地熱蒸布甸",
+        "duration": "2.5小時",
+        "guideRole": null
+      }
+    }
+  },
+  {
+    "id": "item-3",
+    "placeId": "kannawa-steam-district",
+    "time": "01:45 PM",
+    "cost": "¥1,500",
+    "assignedGuideId": null,
+    "status": "planned",
+    "locales": {
+      "en": {
+        "day": "Day 1 · Saturday",
+        "title": "Kannawa Steam Village Lunch",
+        "notes": "Steam fresh vegetables and pork dumplings in volcanic stone kilns",
+        "duration": "1.5 hours",
+        "guideRole": null
+      },
+      "ja": {
+        "day": "1日目 · 土曜日",
+        "title": "鉄輪温泉街で地獄蒸し工房ランチ",
+        "notes": "地熱蒸気の石釜で大分県産新鮮野菜と黒豚点心を蒸し上げて味わう",
+        "duration": "1.5時間",
+        "guideRole": null
+      },
+      "ko": {
+        "day": "1일차 · 토요일",
+        "title": "간나와 온천 마을 지옥찜 런치",
+        "notes": "천연 지열 증기 가마에서 오이타산 제철 채소와 딤섬을 직접 쪄먹는 점심",
+        "duration": "1.5시간",
+        "guideRole": null
+      },
+      "zh": {
+        "day": "第一天 · 周六",
+        "title": "铁轮温泉街 · 地狱蒸工房地热午餐",
+        "notes": "租用天然地热蒸灶，亲手焖蒸大分产时令蔬菜与猪肉点心",
+        "duration": "1.5小时",
+        "guideRole": null
+      },
+      "yue": {
+        "day": "第一天 · 星期六",
+        "title": "鐵輪溫泉街 · 地獄蒸工房地熱海鮮蔬果午餐",
+        "notes": "租用天然地熱石灶，親手蒸熟大分新鮮蔬菜同鮮味豬肉點心",
+        "duration": "1.5小時",
+        "guideRole": null
+      }
+    }
+  },
+  {
+    "id": "item-4",
+    "placeId": "hyotan-onsen",
+    "time": "03:45 PM",
+    "cost": "¥940",
+    "assignedGuideId": null,
+    "status": "planned",
+    "locales": {
+      "en": {
+        "day": "Day 1 · Saturday",
+        "title": "Hyotan Onsen Afternoon Soak",
+        "notes": "Waterfall baths and cedar outdoor pools to soothe walking legs",
+        "duration": "2 hours",
+        "guideRole": null
+      },
+      "ja": {
+        "day": "1日目 · 土曜日",
+        "title": "ひょうたん温泉で午後の湯治・露天風呂",
+        "notes": "ミシュラン3つ星の名湯。名物「瀧湯」の打たせ湯で歩き疲れを癒やす",
+        "duration": "2時間",
+        "guideRole": null
+      },
+      "ko": {
+        "day": "1일차 · 토요일",
+        "title": "효탄 온천 오후 힐링 입욕",
+        "notes": "미슐랭 3스타 명소. 시원한 폭포 마사지탕과 노천탕에서 피로 풀기",
+        "duration": "2시간",
+        "guideRole": null
+      },
+      "zh": {
+        "day": "第一天 · 周六",
+        "title": "米其林三星 · 葫芦温泉惬意午后泡汤",
+        "notes": "体验壮观的高落差瀑布打背温泉与露天桧木风吕，缓解步履疲劳",
+        "duration": "2小时",
+        "guideRole": null
+      },
+      "yue": {
+        "day": "第一天 · 星期六",
+        "title": "米芝蓮三星 · 葫蘆溫泉下午放鬆浸湯",
+        "notes": "體驗招牌高空衝擊「瀧湯」同戶外露天岩石池，舒緩行街行足大半日嘅疲勞",
+        "duration": "2小時",
+        "guideRole": null
+      }
+    }
+  },
+  {
+    "id": "item-5",
+    "placeId": "jukkokubashi-alley",
+    "time": "06:30 PM",
+    "cost": "¥2,500",
+    "assignedGuideId": "maria-santos",
+    "guideName": "Maria Santos",
+    "status": "requested",
+    "locales": {
+      "en": {
+        "day": "Day 1 · Saturday",
+        "title": "Retro Alley Dining & Toriten",
+        "notes": "Lantern-lit dinner with crispy Oita chicken tempura & cold drinks",
+        "duration": "2 hours",
+        "guideRole": "Alley Dining Companion"
+      },
+      "ja": {
+        "day": "1日目 · 土曜日",
+        "title": "十文字小路 昭和レトロ酒場とり天ディナー",
+        "notes": "赤提灯揺れる横丁でサクサク元祖とり天と大分地酒・別府冷麺を満喫",
+        "duration": "2時間",
+        "guideRole": "横丁グルメ案内人"
+      },
+      "ko": {
+        "day": "1일차 · 토요일",
+        "title": "레트로 골목 토리텐 치킨 & 이자카야 디너",
+        "notes": "홍등 켜진 골목에서 갓 튀긴 바삭한 토리텐과 시원한 생맥주 즐기기",
+        "duration": "2시간",
+        "guideRole": "골목 미식 동행 가이드"
+      },
+      "zh": {
+        "day": "第一天 · 周六",
+        "title": "十文字小路 昭和红灯笼居酒屋与炸鸡宵夜",
+        "notes": "在怀旧小巷品尝大分特色香脆鸡肉天妇罗配大分麦烧酒及冷面",
+        "duration": "2小时",
+        "guideRole": "居酒屋探店同游向导"
+      },
+      "yue": {
+        "day": "第一天 · 星期六",
+        "title": "十文字小路 昭和紅燈籠居酒屋與とり天炸雞晚餐",
+        "notes": "喺懷舊紅燈籠窄巷大擦大分酥脆炸雞天婦羅，嘆凍啤酒同別府冷麵",
+        "duration": "2小時",
+        "guideRole": "小巷尋味嚮導夥伴"
+      }
+    }
+  }
+]
